@@ -1,4 +1,6 @@
 /* Reset CSS */
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -14,7 +16,7 @@ body {
 
 /* Hero Section */
 .hero {
-    background: url('/assets/porto.jpg') no-repeat center center/cover; /* Modifica con il tuo sfondo */
+    background: url('/assets/porto2.webp') no-repeat center center/cover; /* Modifica con il tuo sfondo */
     height: 100vh;
     display: flex;
     align-items: center;
@@ -22,7 +24,7 @@ body {
     color: white;
     text-align: center;
     padding: 20px;
-    text-shadow: 2px 2px 4px rgb(95, 9, 255);
+    text-shadow: 2px 2px 4px rgb(255, 177, 9);
 }
 .hero::before {
     content: ""; /* Contenuto vuoto per il pseudo-elemento */
@@ -31,7 +33,7 @@ body {
     left: 5px;
     right: 5px;
     bottom: -8px;
-    background-color: rgba(0, 4, 8, 0.5); /* Overlay scuro con opacità del 50% */
+    background-color: rgba(0, 1, 8, 0.37); /* Overlay scuro con opacità del 50% */
     z-index: 1; /* Assicurati che l'overlay sia sopra lo sfondo */
 }
 .hero-content {
@@ -40,12 +42,14 @@ body {
 }
 .hero h1 {
     font-size: 3rem;
-    margin-bottom: 20px;
+    margin-bottom: 50%;
+    font-family: 'Poppins', sans-serif;
 }
 
 .hero p {
     font-size: 1.25rem;
-    margin-bottom: 120%;
+    font-family: 'Lora', serif;
+    margin-bottom: 10%;
 }
 
 .hero-buttons {
@@ -54,9 +58,10 @@ body {
 }
 
 .hero-buttons .button {
-    background: #008CBA; /* Colore del pulsante */
+    font-family: 'Poppins', sans-serif;
+    background: #ec9108; /* Colore del pulsante */
     color: white;
-    padding: 15px 30px;
+    padding: 3% 2%;
     border: none;
     border-radius: 5px;
     text-decoration: none;
