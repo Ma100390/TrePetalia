@@ -1,0 +1,189 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Hero Section */
+.hero {
+    background: url('/assets/porto.jpg') no-repeat center center/cover; /* Modifica con il tuo sfondo */
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    text-shadow: 2px 2px 4px rgb(95, 9, 255);
+}
+.hero::before {
+    content: ""; /* Contenuto vuoto per il pseudo-elemento */
+    position: absolute; /* Posizione assoluta per coprire l'intera sezione */
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: -8px;
+    background-color: rgba(0, 4, 8, 0.5); /* Overlay scuro con opacità del 50% */
+    z-index: 1; /* Assicurati che l'overlay sia sopra lo sfondo */
+}
+.hero-content {
+    position: relative; /* Posizione relativa per sovrapporre il contenuto sopra l'overlay */
+    z-index: 2; /* Il contenuto deve apparire sopra l'overlay */
+}
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.25rem;
+    margin-bottom: 120%;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.hero-buttons .button {
+    background: #008CBA; /* Colore del pulsante */
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 1rem;
+    transition: background 0.3s ease;
+}
+
+.hero-buttons .button:hover {
+    background: #005f73; /* Colore al passaggio del mouse */
+}
+
+/* Chi Siamo Section */
+.about {
+    padding: 60px 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.about h2 {
+    margin-bottom: 20px;
+}
+
+.about p {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Servizi Section */
+.services {
+    padding: 60px 20px;
+}
+
+.service-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.service-card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px;
+    flex: 1 1 30%; /* Consente la crescita e la contrazione */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.service-card h3 {
+    margin-bottom: 10px;
+}
+
+.service-card h4 {
+    margin: 10px 0;
+    font-weight: normal;
+}
+
+.service-card h5 {
+    margin: 10px 0;
+    font-weight: normal;
+}
+
+.service-card p {
+    margin-bottom: 15px;
+}
+
+.service-card ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.service-card .button {
+    display: inline-block;
+    background: #4CAF50; /* Verde per il pulsante */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.service-card .button:hover {
+    background: #45a049; /* Colore al passaggio del mouse */
+}
+
+/* Progetti Section */
+.projects {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+}
+
+.project-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.project-item {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.project-item h3 {
+    margin-bottom: 10px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .service-cards {
+        flex-direction: column; /* Disposizione verticale sui dispositivi mobili */
+    }
+
+    .service-card {
+        flex: 1 1 100%; /* Ogni card occupa l'intera larghezza */
+    }
+
+    .hero h1 {
+        font-size: 2.5rem; /* Dimensione del font per dispositivi più piccoli */
+    }
+
+    .hero p {
+        font-size: 1rem; /* Dimensione del font per dispositivi più piccoli */
+    }
+}
