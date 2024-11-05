@@ -16,7 +16,7 @@ body {
 
 /* Hero Section */
 .hero {
-    background: url('/assets/porto2.webp') no-repeat center center/cover; /* Modifica con il tuo sfondo */
+    background: url('/TrePetalia/assets/porto2.webp') no-repeat center center / cover;
     height: 100vh;
     display: flex;
     align-items: center;
