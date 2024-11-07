@@ -76,6 +76,7 @@ header {
     margin-left: 1rem;
     border-right: 1px solid rgba(255, 255, 255, 0.3);
     padding-right: 1rem;
+    
 }
 
 .navbar .nav-links a {
@@ -93,6 +94,7 @@ header {
     font-family: 'Poppins', sans-serif;
     font-weight: 200;
     color: #82a8f5;
+    cursor: pointer;
 }
 .hamburger {
     display: none;
@@ -161,7 +163,14 @@ header {
 }
 
 @media (max-width: 30em) {
-
+    .dropdown-menu li a {
+        display: ruby;
+        /* Riduci il padding interno del link */
+    }
+    .navbar .nav-links li{
+        margin: 2%;
+      
+    }
     /* Adatta per schermi più piccoli come smartphone in modalità verticale */
     .nav-links {
         display: flex;
@@ -192,43 +201,34 @@ header {
 
     .navbar .nav-links a {
         font-size: 1.75rem;
-        /* Ridotto per adattarsi meglio ai piccoli schermi */
         margin: 0.75rem;
-        /* Spaziatura ridotta */
+
     }
     .navbar .nav-links span {
         font-size: 1.75rem;
-        /* Ridotto per adattarsi meglio ai piccoli schermi */
         margin: 0.75rem;
-        /* Spaziatura ridotta */
     }
 
     .hamburger {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        /* Centra l'icona hamburger */
         align-items: center;
-        /* Centra l'icona hamburger */
         cursor: pointer;
-        /* Cambia il cursore per indicare che è cliccabile */
+
     }
 
     .hamburger div {
         width: 2rem;
-        /* Ridotto per spazi più piccoli */
         height: 0.2rem;
-        /* Ridotto per spazi più piccoli */
         background-color: #fff;
-        /* Colore per visibilità */
         margin: 0.3rem 0;
-        /* Spaziatura tra le righe dell'icona */
         transition: background-color 0.3s ease;
-        /* Transizione per l'effetto di hover */
+
     }
 
     .hamburger:hover div {
         background-color: #bbb;
-        /* Colore di hover per l'icona */
+
     }
 }

@@ -5,7 +5,7 @@
     <ul class="nav-links" [class.active]="isMenuOpen">
       <li><a routerLink="/" title="Vai alla pagina Home" aria-label="Vai alla pagina Home"
           (click)="closeMenu()">Home</a></li>
-   
+
       <li><a routerLink="/casa-di-riposo-provincia-di-lecce" title="Vai alla pagina aree intervento"
           aria-label="Vai alla pagina aree intervento" (click)="closeMenu()">Casa di Riposo</a></li>
       <li><a routerLink="/assistenza-domiciliare-lecce" title="Vai alla pagina laboratori creativi"
@@ -13,24 +13,25 @@
 
       <li><a routerLink="/accompagnamento-strutture-lecce" title="Vai alla pagina contatti"
           aria-label="Vai alla pagina contatti" (click)="closeMenu()">Accompagnamento</a></li>
-   
-          <li (mouseenter)="toggleDropdown(true)" (mouseleave)="toggleDropdown(false)">
-            <span title="Vai alla pagina dei servizi" aria-label="Vai alla pagina dei servizi">
-              Altri Servizi 
+
+          <li >
+            <span (click)="toggleDropdown()" title="Vai alla pagina dei servizi" aria-label="Vai alla pagina dei servizi">
+              Altri Servizi
+              <fa-icon class="after-icon" [icon]="faCaretDown"></fa-icon>
             </span>
-            <fa-icon class="after-icon" [icon]="faCaretDown"></fa-icon>
-    
+          
             <!-- Lista dei servizi, mostrata solo se 'isDropdownOpen' è true -->
             <ul *ngIf="isDropdownOpen" class="dropdown-menu">
-              <li><a routerLink="/infermieri" (click)="closeMenu()">Infermieri</a></li>
-              <li><a routerLink="/fisioterapisti" (click)="closeMenu()">Fisioterapisti</a></li>
-              <li><a routerLink="/psicologo" (click)="closeMenu()">Psicologo</a></li>
-              <li><a routerLink="/psicoterapeuta" (click)="closeMenu()">Psicoterapeuta</a></li>
-              <li><a routerLink="/disbrigo-pratiche" (click)="closeMenu()">Disbrigo pratiche</a></li>
+              <li><a routerLink="/infermieri" (click)="closeMenu()">-Infermieri</a></li>
+              <li><a routerLink="/fisioterapisti" (click)="closeMenu()">-Fisioterapisti</a></li>
+              <li><a routerLink="/psicologo" (click)="closeMenu()">-Psicologo</a></li>
+              <li><a routerLink="/psicoterapeuta" (click)="closeMenu()">-Psicoterapeuta</a></li>
+              <li><a routerLink="/disbrigo-pratiche" (click)="closeMenu()">-Disbrigo pratiche</a></li>
             </ul>
           </li>
-          <li><a routerLink="/contatti_cooperaritiva-tre-petali" title="Vai alla pagina contatti"
-            aria-label="Vai alla pagina contatti" (click)="closeMenu()">Contatti</a></li>
+       
+      <li><a routerLink="/contatti_cooperaritiva-tre-petali" title="Vai alla pagina contatti"
+          aria-label="Vai alla pagina contatti" (click)="closeMenu()">Contatti</a></li>
     </ul>
 
     <div class="hamburger" (click)="toggleMenu()">

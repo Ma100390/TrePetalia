@@ -14,10 +14,10 @@ import { faCaretDown } from '@fortawesome/free-solid-svg-icons';
 export class CnavbarComponent {
   isDropdownOpen = false;
 
-  toggleDropdown(open: boolean) {
-    this.isDropdownOpen = open;
+  toggleDropdown() {
+    // Inverti lo stato di `isDropdownOpen` quando il mouse entra o esce
+    this.isDropdownOpen = !this.isDropdownOpen;
   }
-
   isMenuOpen = false;
   faCaretDown = faCaretDown;
   toggleMenu() {
