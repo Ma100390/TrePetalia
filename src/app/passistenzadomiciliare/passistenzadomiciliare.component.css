@@ -1,0 +1,66 @@
+/* Sezione Servizi di Assistenza e Supporto Sanitario */
+.projects {
+    background-color: #f7f9fc;
+    padding: 4rem 1rem;
+    text-align: center;
+}
+
+.projects .container3 {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.projects h2 {
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 2rem;
+}
+
+.projects p {
+    font-size: 1.1rem;
+    color: #777;
+    line-height: 1.6;
+    margin-bottom: 3rem;
+}
+
+.project-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 2rem;
+    justify-items: center;
+}
+
+.project-item {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+.project-item h3 {
+    font-size: 1.6rem;
+    color: #2e3b47;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.project-item p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+.project-item strong {
+    font-weight: bold;
+    color: #6a94ff;
+}

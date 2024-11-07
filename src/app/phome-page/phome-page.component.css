@@ -1,0 +1,305 @@
+/* background: url('/TrePetalia/assets/porto2.webp') no-repeat center center / cover; 
+, url('/TrePetalia/assets/porto2.webp') center/cover no-repeat;*/
+
+main {
+
+    color: #333;
+    background-color: #f9f9f9;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Sezione Hero */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(rgb(81 75 80), rgba(180, 177, 177, 1));
+    color: #fff;
+    /* height: 100vh; */
+    text-align: center;
+    padding: 1rem 1rem;
+    height: 100vh;
+}
+
+.hero-content {
+    max-width: 800px;
+
+}
+
+/* Titolo Hero */
+.hero-content h1 {
+    font-size: 2.8rem;
+    font-weight: 100;
+    margin-bottom: 1rem;
+    font-family: "Kanit", sans-serif;
+
+}
+
+.hero-content p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    line-height: 1.8;
+    font-family: 'Poppins', sans-serif;
+}
+
+.hero-content strong {
+    color: #ffdd57;
+    /* Evidenzia le parole chiave */
+}
+
+/* Bottoni della Hero */
+.hero-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.hero-buttons .button {
+    background-color: #6a94ff;
+    color: #fff;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.hero-buttons .button:hover {
+    background-color: #5378d0;
+}
+
+.about {
+
+    padding: 4rem 1rem;
+    text-align: center;
+}
+
+.about .container1 {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    background: #82a8f5;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fdfdfd;
+    margin-bottom: 1.5rem;
+}
+
+.about p {
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #fcf8f8;
+    font-family: "Poppins", sans-serif;
+    line-height: 1.8;
+    margin-bottom: 0;
+}
+
+.about strong {
+    color: #ffdd57;
+}
+
+/* Sezione Il Nostro Team di Professionisti */
+.section-nostro-team {
+    padding: 4rem 1rem;
+    background-color: #f4f7fc;
+    text-align: center;
+}
+
+.section-nostro-team h2 {
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: #2e3b47;
+    margin-bottom: 1rem;
+}
+
+.section-nostro-team p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.section-nostro-team p:first-child {
+    font-style: italic;
+    margin-bottom: 2rem;
+}
+
+
+/* Sezione Contatti e Orari di Apertura */
+.section-contatti {
+    padding: 4rem 1rem;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.section-contatti h2 {
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: #2e3b47;
+    margin-bottom: 1.5rem;
+}
+
+.section-contatti p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.8;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.address a {
+    color: #6a94ff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.address a:hover {
+    text-decoration: underline;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #6a94ff;
+    color: white;
+    padding: 0.8rem 2rem;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    margin-top: 1rem;
+    text-decoration: none;
+}
+
+.cta-button:hover {
+    background-color: #4c74e7;
+}
+
+span.petali {
+    font-size: 3rem;
+    color: #2155b4cb;
+    letter-spacing: 2px;
+    padding: 0.3rem 0rem;
+    transition: all 0.3s ease;
+    font-family: "Dancing Script";
+}
+
+span.petali:hover {
+    background-color: #6a94ff;
+    color: white;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+ 
+
+    .section-contatti h2,
+    .section-contatto h2 {
+        font-size: 2rem;
+    }
+
+    .section-contatti p,
+    .section-contatto p {
+        font-size: 1rem;
+    }
+
+    .cta-button {
+        font-size: 1rem;
+        padding: 0.6rem 1.5rem;
+    }
+
+    .section-nostro-team h2,
+    .section-faq h2 {
+        font-size: 2rem;
+    }
+
+    .section-nostro-team p,
+    .section-faq li {
+        font-size: 1rem;
+    }
+
+    .section-nostro-team p:first-child {
+        font-size: 1.1rem;
+    }
+
+    .section-galleria h2 {
+        font-size: 2rem;
+    }
+
+    .section-galleria p {
+        font-size: 1rem;
+    }
+
+    .galleria-foto {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+
+    .section-nutrizione h2,
+    .section-storia h2 {
+        font-size: 2rem;
+    }
+
+    .section-nutrizione p,
+    .section-storia p {
+        font-size: 1rem;
+    }
+
+    .service-card h3 {
+        font-size: 1.4rem;
+    }
+
+    .service-card p,
+    .service-card ul li {
+        font-size: 1rem;
+    }
+
+    .services h2 {
+        font-size: 1.8rem;
+    }
+
+    .hero-content h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+
+    .hero-buttons .button {
+        margin-top: 0.5rem;
+
+    }
+
+    .about h2,
+    .about2 h2 {
+        font-size: 1.6rem;
+    }
+
+    .about p,
+    .about2 p {
+        font-size: 1rem;
+    }
+
+    .project-item h3 {
+        font-size: 1.4rem;
+    }
+
+    .project-item p {
+        font-size: 1rem;
+    }
+
+    .projects h2 {
+        font-size: 1.8rem;
+    }
+}
