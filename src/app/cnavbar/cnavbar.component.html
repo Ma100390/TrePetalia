@@ -22,13 +22,12 @@
           
             <!-- Lista dei servizi, mostrata solo se 'isDropdownOpen' è true -->
             <ul *ngIf="isDropdownOpen" class="dropdown-menu">
-              <li><a routerLink="/infermieri" (click)="closeMenu()">-Infermieri</a></li>
-              <li><a routerLink="/fisioterapisti" (click)="closeMenu()">-Fisioterapisti</a></li>
-              <li><a routerLink="/psicologo" (click)="closeMenu()">-Psicologo</a></li>
-              <li><a routerLink="/psicoterapeuta" (click)="closeMenu()">-Psicoterapeuta</a></li>
-              <li><a routerLink="/disbrigo-pratiche" (click)="closeMenu()">-Disbrigo pratiche</a></li>
+              <li><a [routerLink]="['/servizio', 'Infermieri']" (click)="closeMenu()" (click)="toggleDropdown()">-Infermieri</a></li>
+              <li><a [routerLink]="['/servizio', 'Fisioterapisti']" (click)="closeMenu()" (click)="toggleDropdown()">-Fisioterapisti</a></li>
+              <li><a [routerLink]="['/servizio', 'Psicologo']" (click)="closeMenu()" (click)="toggleDropdown()">-Psicologo</a></li>
+              <li><a [routerLink]="['/servizio', 'Psicoterapeuta']" (click)="closeMenu()" (click)="toggleDropdown()">-Psicoterapeuta</a></li>
+              <li><a [routerLink]="['/servizio', 'Disbrigo-pratiche']" (click)="closeMenu()" (click)="toggleDropdown()">-Disbrigo pratiche</a></li>
             </ul>
-          </li>
        
       <li><a routerLink="/contatti_cooperaritiva-tre-petali" title="Vai alla pagina contatti"
           aria-label="Vai alla pagina contatti" (click)="closeMenu()">Contatti</a></li>

@@ -15,7 +15,6 @@ export class CnavbarComponent {
   isDropdownOpen = false;
 
   toggleDropdown() {
-    // Inverti lo stato di `isDropdownOpen` quando il mouse entra o esce
     this.isDropdownOpen = !this.isDropdownOpen;
   }
   isMenuOpen = false;

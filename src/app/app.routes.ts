@@ -4,6 +4,8 @@ import { PstrutturaComponent } from './pstruttura/pstruttura.component';
 import { PassistenzadomiciliareComponent } from './passistenzadomiciliare/passistenzadomiciliare.component';
 import { PcontattiComponent } from './pcontatti/pcontatti.component';
 import { PaccompagnamentoComponent } from './paccompagnamento/paccompagnamento.component';
+import { PaltriserviziComponent } from './paltriservizi/paltriservizi.component';
+import { PserviziComponent } from './pservizi/pservizi.component';
 
 export const routes: Routes = [
     {
@@ -26,5 +28,9 @@ export const routes: Routes = [
         path: 'contatti_cooperaritiva-tre-petali',
         component: PcontattiComponent
       },
-      
+      {
+        path: 'servizi',
+        component: PserviziComponent
+      },
+      { path: 'servizio/:servizio', component: PaltriserviziComponent },
 ];

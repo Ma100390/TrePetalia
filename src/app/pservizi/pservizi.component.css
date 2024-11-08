@@ -1,0 +1,81 @@
+.services-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    margin: 20px 0;
+  }
+  
+  .services-table th,
+  .services-table td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  .services-table th {
+    background-color: #007bff;
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  .services-table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .service-icon {
+    margin-right: 10px;
+    color: #007bff;
+    font-size: 20px;
+    vertical-align: middle;
+  }
+  .hero-content {
+    margin: 0 auto;
+}
+  /* Stile per dispositivi mobili */
+@media (max-width: 768px) {
+    .services-table,
+    .services-table tbody,
+    .services-table tr,
+    .services-table td {
+      display: block;
+      width: 100%;
+    }
+  
+    /* Nascondi le intestazioni su mobile */
+    .services-table thead {
+      display: none;
+    }
+  
+    /* Ogni riga diventa un blocco separato */
+    .services-table tr {
+      margin-bottom: 15px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      padding: 10px;
+      background-color: #fff;
+    }
+  
+    /* Visualizzazione del label delle colonne */
+    .services-table td {
+      position: relative;
+      padding-left: 50%;
+      text-align: left;
+      border: none;
+    }
+  
+    .services-table td::before {
+      content: attr(data-label);
+      position: absolute;
+      left: 15px;
+      font-weight: bold;
+      color: #007bff;
+      font-size: 14px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  
+    .service-icon {
+      font-size: 18px;
+      margin-right: 8px;
+    }
+  }

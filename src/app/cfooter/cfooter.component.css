@@ -1,0 +1,92 @@
+/* Footer Container */
+.footer {
+  background: linear-gradient(rgba(180, 177, 177, 1),rgb(81 75 80) );
+  color: #fff;
+  padding: 40px 20px;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Contenitore centrale con larghezza massima */
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Allineamento e margini per ogni sezione */
+.footer-left,
+.footer-center,
+.footer-right {
+  flex: 1;
+  padding: 10px;
+  margin: 5px;
+}
+
+/* Sezione sinistra (copyright) */
+.footer-left p {
+  font-size: 14px;
+}
+
+/* Sezione centrale (social links) */
+.footer-center p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social-icon {
+  width: 30px;
+  height: 30px;
+  color: white; /* Colore bianco per le icone */
+  transition: transform 0.3s ease-in-out;
+}
+
+.social-icon:hover {
+  transform: scale(1.1);
+}
+
+/* Sezione destra (contatti) */
+.footer-right p {
+  font-size: 14px;
+}
+
+.email-link {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.email-link:hover {
+  color: #ffd700; /* Colore dorato al passaggio del mouse */
+}
+.footer-legal{
+  text-align: left;
+}
+/* Media query per dispositivi mobili */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-left, .footer-center, .footer-right {
+    flex: 1 0 100%;
+    margin-bottom: 20px;
+  }
+
+  .social-links {
+    justify-content: center;
+  }
+  .footer-legal{
+    text-align: center;
+  }
+}
