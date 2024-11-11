@@ -1,56 +1,59 @@
 <main>
-    <section  role="banner">
-        <div class="hero-content">
-            <table class="services-table">
-                <thead>
-                  <tr>
-                    <th>Servizio</th>
-                    <th>Descrizione</th>
-                    <th>Contatto</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <!-- Servizi già presenti -->
-                  <tr>
-                    <td data-label="Servizio"><fa-icon [icon]="faHome" class="service-icon"></fa-icon> Casa di Riposo</td>
-                    <td data-label="Descrizione">Struttura residenziale per anziani, con assistenza 24/7.</td>
-                    <td data-label="Contatto"><a href="tel:+393331234567" class="call-button" aria-label="Chiama Casa di Riposo">Chiama</a></td>
-                  </tr>
-                  <tr>
-                    <td data-label="Servizio"><fa-icon [icon]="faHouseUser" class="service-icon"></fa-icon> Assistenza Domiciliare</td>
-                    <td data-label="Descrizione">Supporto assistenziale e infermieristico a domicilio.</td>
-                    <td data-label="Contatto"><a href="tel:+393331234567" class="call-button" aria-label="Chiama Assistenza Domiciliare">Chiama</a></td>
-                  </tr>
-                  <!-- Nuovi servizi -->
-                  <tr>
-                    <td data-label="Servizio"><fa-icon [icon]="faFileAlt" class="service-icon"></fa-icon> Disbrigo Pratiche</td>
-                    <td data-label="Descrizione">Supporto per gestione documentazione e pratiche amministrative.</td>
-                    <td data-label="Contatto"><a href="tel:+393331234567" class="call-button" aria-label="Chiama per Disbrigo Pratiche">Chiama</a></td>
-                  </tr>
-                  <tr>
-                    <td data-label="Servizio"><fa-icon [icon]="faBrain" class="service-icon"></fa-icon> Psicoterapeuta</td>
-                    <td data-label="Descrizione">Servizio di psicoterapia professionale a supporto del benessere mentale.</td>
-                    <td data-label="Contatto"><a href="tel:+393331234567" class="call-button" aria-label="Chiama Psicoterapeuta">Chiama</a></td>
-                  </tr>
-                  <tr>
-                    <td data-label="Servizio"><fa-icon [icon]="faUserMd" class="service-icon"></fa-icon> Psicologo</td>
-                    <td data-label="Descrizione">Assistenza psicologica per il benessere emotivo e mentale.</td>
-                    <td data-label="Contatto"><a href="tel:+393331234567" class="call-button" aria-label="Chiama Psicologo">Chiama</a></td>
-                  </tr>
-                  <tr>
-                    <td data-label="Servizio"><fa-icon [icon]="faHandsHelping" class="service-icon"></fa-icon> Fisioterapisti</td>
-                    <td data-label="Descrizione">Servizi di fisioterapia personalizzati per migliorare la mobilità e il benessere fisico.</td>
-                    <td data-label="Contatto"><a href="tel:+393331234567" class="call-button" aria-label="Chiama Fisioterapisti">Chiama</a></td>
-                  </tr>
-                  <tr>
-                    <td data-label="Servizio"><fa-icon [icon]="faUserNurse" class="service-icon"></fa-icon> Infermieri</td>
-                    <td data-label="Descrizione">Assistenza infermieristica professionale e domiciliare.</td>
-                    <td data-label="Contatto"><a href="tel:+393331234567" class="call-button" aria-label="Chiama Infermieri">Chiama</a></td>
-                  </tr>
-                </tbody>
-              </table>
-              
+  <section role="banner">
+    <div class="hero-content">
+      <div class="services-grid">
+        <!-- Card per Casa di Riposo -->
+        <div class="card">
+          <div class="card-icon"><fa-icon [icon]="faHome" class="service-icon"></fa-icon></div>
+          <h3 class="card-title">Casa di Riposo</h3>
+          <p class="card-description">Struttura residenziale per anziani, con assistenza 24/7.</p>
+          <a href="tel:+393331234567" class="call-button" aria-label="Chiama Casa di Riposo">Chiama</a>
         </div>
-    </section>
-   
+
+        <!-- Card per Assistenza Domiciliare -->
+        <div class="card">
+          <div class="card-icon"><fa-icon [icon]="faHouseUser" class="service-icon"></fa-icon></div>
+          <h3 class="card-title">Assistenza Domiciliare</h3>
+          <p class="card-description">Supporto assistenziale e infermieristico a domicilio.</p>
+          <a href="tel:+393331234567" class="call-button" aria-label="Chiama Assistenza Domiciliare">Chiama</a>
+        </div>
+
+        <!-- Altre card per i nuovi servizi -->
+        <div class="card">
+          <div class="card-icon"><fa-icon [icon]="faFileAlt" class="service-icon"></fa-icon></div>
+          <h3 class="card-title">Disbrigo Pratiche</h3>
+          <p class="card-description">Supporto per gestione documentazione e pratiche amministrative.</p>
+          <a href="tel:+393331234567" class="call-button" aria-label="Chiama per Disbrigo Pratiche">Chiama</a>
+        </div>
+
+        <div class="card">
+          <div class="card-icon"><fa-icon [icon]="faBrain" class="service-icon"></fa-icon></div>
+          <h3 class="card-title">Psicoterapeuta</h3>
+          <p class="card-description">Servizio di psicoterapia professionale a supporto del benessere mentale.</p>
+          <a href="tel:+393331234567" class="call-button" aria-label="Chiama Psicoterapeuta">Chiama</a>
+        </div>
+
+        <div class="card">
+          <div class="card-icon"><fa-icon [icon]="faUserMd" class="service-icon"></fa-icon></div>
+          <h3 class="card-title">Psicologo</h3>
+          <p class="card-description">Assistenza psicologica per il benessere emotivo e mentale.</p>
+          <a href="tel:+393331234567" class="call-button" aria-label="Chiama Psicologo">Chiama</a>
+        </div>
+
+        <div class="card">
+          <div class="card-icon"><fa-icon [icon]="faHandsHelping" class="service-icon"></fa-icon></div>
+          <h3 class="card-title">Fisioterapisti</h3>
+          <p class="card-description">Servizi di fisioterapia personalizzati per migliorare la mobilità e il benessere fisico.</p>
+          <a href="tel:+393331234567" class="call-button" aria-label="Chiama Fisioterapisti">Chiama</a>
+        </div>
+
+        <div class="card">
+          <div class="card-icon"><fa-icon [icon]="faUserNurse" class="service-icon"></fa-icon></div>
+          <h3 class="card-title">Infermieri</h3>
+          <p class="card-description">Assistenza infermieristica professionale e domiciliare.</p>
+          <a href="tel:+393331234567" class="call-button" aria-label="Chiama Infermieri">Chiama</a>
+        </div>
+      </div>
+    </div>
+  </section>
 </main>

@@ -1,81 +1,74 @@
-.services-table {
-    width: 100%;
-    border-collapse: collapse;
-    font-family: Arial, sans-serif;
-    margin: 20px 0;
-  }
-  
-  .services-table th,
-  .services-table td {
-    padding: 12px 15px;
-    border: 1px solid #ddd;
-    text-align: left;
-  }
-  
-  .services-table th {
-    background-color: #007bff;
-    color: #fff;
-    font-weight: bold;
-  }
-  
-  .services-table tbody tr:nth-child(even) {
-    background-color: #f2f2f2;
-  }
-  
-  .service-icon {
-    margin-right: 10px;
-    color: #007bff;
-    font-size: 20px;
-    vertical-align: middle;
-  }
-  .hero-content {
-    margin: 0 auto;
+main{
+  padding: 2%;
 }
-  /* Stile per dispositivi mobili */
+.hero-content {
+  margin: 0 auto;
+}
+
+.services-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  width: 250px;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-icon {
+  font-size: 36px;
+  color: #007bff;
+  margin-bottom: 15px;
+}
+
+.card-title {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.card-description {
+  font-size: 0.9em;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.call-button {
+  display: inline-block;
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.call-button:hover {
+  background-color: #0056b3;
+}
+
+/* Stile per dispositivi mobili */
 @media (max-width: 768px) {
-    .services-table,
-    .services-table tbody,
-    .services-table tr,
-    .services-table td {
-      display: block;
-      width: 100%;
-    }
-  
-    /* Nascondi le intestazioni su mobile */
-    .services-table thead {
-      display: none;
-    }
-  
-    /* Ogni riga diventa un blocco separato */
-    .services-table tr {
-      margin-bottom: 15px;
-      border: 1px solid #ddd;
-      border-radius: 5px;
-      padding: 10px;
-      background-color: #fff;
-    }
-  
-    /* Visualizzazione del label delle colonne */
-    .services-table td {
-      position: relative;
-      padding-left: 50%;
-      text-align: left;
-      border: none;
-    }
-  
-    .services-table td::before {
-      content: attr(data-label);
-      position: absolute;
-      left: 15px;
-      font-weight: bold;
-      color: #007bff;
-      font-size: 14px;
-      top: 50%;
-      transform: translateY(-50%);
-    }
-  
-    .service-icon {
-      font-size: 18px;
-      margin-right: 8px;
-    }
+  .services-grid {
+    display: block;
+    width: 100%;
   }
+
+  .card {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+}

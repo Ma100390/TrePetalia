@@ -6,7 +6,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 @Component({
   selector: 'app-phome-page',
   standalone: true,
-  imports: [PhomePageComponent,CnavbarComponent,RouterOutlet,FontAwesomeModule,RouterModule],
+  imports: [CnavbarComponent,RouterOutlet,FontAwesomeModule,RouterModule],
   templateUrl: './phome-page.component.html',
   styleUrl: './phome-page.component.css'
 })

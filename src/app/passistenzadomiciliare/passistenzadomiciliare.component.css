@@ -1,5 +1,5 @@
 /* Sezione Servizi di Assistenza e Supporto Sanitario */
-.projects {
+/* .projects {
     background-color: #f7f9fc;
     padding: 4rem 1rem;
     text-align: center;
@@ -63,4 +63,146 @@
 .project-item strong {
     font-weight: bold;
     color: #6a94ff;
+} */
+ /* Sezione Principale */
+#projects {
+    padding: 40px 0;
+    background-color: #f8f9fa; /* Colore di sfondo leggero */
 }
+
+.container3 {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Titolo della Sezione */
+#projects h2 {
+    font-size: 2em;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Testo introduttivo */
+#projects p {
+    font-size: 1.1em;
+    color: #666;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* Lista dei progetti */
+.project-list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* Stile degli Articoli */
+.project-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project-item h3 {
+    font-size: 1.5em;
+    color: #007bff; /* Colore primario per i titoli */
+    margin-bottom: 10px;
+}
+
+.project-item p {
+    font-size: 1em;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+/* Lista puntata interna */
+.project-item ul {
+    padding-left: 20px;
+    margin: 10px 0;
+}
+
+.project-item ul li {
+    font-size: 1em;
+    color: #444;
+    line-height: 1.5;
+}
+
+/* Media Query per Responsività */
+@media (min-width: 768px) {
+    .project-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .project-item {
+        width: calc(50% - 20px); /* Due colonne */
+    }
+}
+
+@media (min-width: 1024px) {
+    .project-item {
+        width: calc(33.33% - 20px); /* Tre colonne su schermi più grandi */
+    }
+}
+.project-item {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project-image {
+    margin-bottom: 15px;
+    border-radius: 8px;
+    overflow: hidden; /* per i bordi arrotondati */
+}
+
+.project-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover; /* adatta l’immagine al contenitore */
+    border-radius: 8px;
+}
+
+.project-item h3 {
+    font-size: 1.5em;
+    color: #007bff; /* Colore primario per i titoli */
+    margin-bottom: 10px;
+}
+
+.project-item p, .project-item ul {
+    font-size: 1em;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+/* Responsività */
+@media (min-width: 768px) {
+    .project-item {
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .project-image {
+        flex: 0 0 200px; /* Definisce una larghezza per l’immagine */
+    }
+
+    .project-image img {
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .project-item h3 {
+        margin-top: 0;
+    }
+}
+
