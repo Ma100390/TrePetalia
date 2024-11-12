@@ -49,11 +49,11 @@ header {
 .dropdown-menu {
     display: block;
     position: absolute;
-    background-color: rgb(81 75 80);
+    background: #112e67;;
     padding: 0;
     margin: 0;
     list-style: none;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  
 }
 
 .dropdown-menu li {
@@ -62,13 +62,13 @@ header {
 
 .dropdown-menu li a {
     text-decoration: none;
-    color: #333;
+  
     display: block;
     padding: 3%;
 }
 
 .dropdown-menu li a:hover {
-    background-color: #f0f0f0;
+    background-color: #0f6da3;
 
 }
 
@@ -85,7 +85,8 @@ header {
     font-size: 1rem;
     font-family: 'Poppins', sans-serif;
     font-weight: 200;
-    color: #82a8f5;
+    color: #f8fafc;
+    display: contents;
 }
 .navbar .nav-links span {
 
@@ -163,6 +164,9 @@ header {
 }
 
 @media (max-width: 30em) {
+    .navbar .nav-links a {
+        color: #82a8f5;
+    }
     .dropdown-menu li a {
         display: ruby;
         /* Riduci il padding interno del link */

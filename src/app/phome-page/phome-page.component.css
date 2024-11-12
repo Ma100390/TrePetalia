@@ -30,7 +30,7 @@
 
 .sede-image {
     max-width: 400px; /* Dimensione regolabile */
-    width: 100%;
+    width: 75%;
     height: auto;
     
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
@@ -40,6 +40,7 @@
 .about h2 {
     font-size: 2rem;
     font-weight: bold;
+    font-family: "Kanit", sans-serif;
     color: #fdfdfd;
     margin-bottom: 1.5rem;
 }
@@ -71,7 +72,8 @@ img{
     margin: 1%;
 }
 .section-nostro-team h2 {
-    font-size: 2.4rem;
+    font-size: 2rem;
+    font-family: "Kanit", sans-serif;
     font-weight: bold;
     color: #ffffff;
     margin-bottom: 1rem;
@@ -96,13 +98,15 @@ img{
 /* Sezione Contatti e Orari di Apertura */
 .section-contatti {
     padding: 4rem 1rem;
-    background: linear-gradient(#82a8f5, rgb(180 177 177 / 0%));
+    background: linear-gradient(rgb(180 177 177 / 0%),#82a8f5 );
     text-align: center;
 }
 
 .section-contatti h2 {
-    font-size: 2.4rem;
-    font-weight: bold;
+    
+    font-weight: 400;
+    margin-bottom: 1rem;
+    font-family: "Kanit", sans-serif;
     color: #2e3b47;
     margin-bottom: 1.5rem;
 }
@@ -128,13 +132,15 @@ img{
 
 .cta-button {
     display: inline-block;
-    background-color: #6a94ff;
-    color: white;
-    padding: 0.8rem 2rem;
+    background-color:#112e67;
+    color: #ffffff;
+    padding: 0.8rem 1.5rem;
     border-radius: 5px;
-    font-size: 1.1rem;
-    margin-top: 1rem;
     text-decoration: none;
+   
+    transition: background-color 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+    
 }
 
 .cta-button:hover {
@@ -166,6 +172,7 @@ span.petali:hover {
 .section-storia h2 {
     font-size: 2.4rem;
     font-weight: bold;
+    font-family: "Kanit", sans-serif;
     color: #2e3b47;
     margin-bottom: 1rem;
 }

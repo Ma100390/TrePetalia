@@ -12,10 +12,11 @@
   }
   /* Sezione principale*/
   main {
-    color: #333;
-    background-color: #f9f9f9;
+ 
+  
     line-height: 1.6;
-    margin: 0;
+    max-width: 1200px;
+    margin: 0 auto;
     padding: 0;
 }
 
@@ -24,7 +25,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(#82a8f5, rgb(180 177 177 / 0%));
+    background: linear-gradient(rgb(180 177 177 / 0%),#82a8f5 );
     color: #fff;
 
     text-align: center;
@@ -89,7 +90,7 @@
 }
 
 .hero-buttons .button {
-    background-color: #6a94ff;
+    background-color:#112e67;
     color: #ffffff;
     padding: 0.8rem 1.5rem;
     border-radius: 5px;
