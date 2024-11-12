@@ -6,7 +6,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 2rem;
+    margin: 1rem;
+    border-radius: 16px;
     background: #82a8f5;
     gap: 2rem; /* Spazio tra il testo e l'immagine */
     flex-wrap: wrap; /* Assicura che gli elementi si dispongano su più righe su schermi piccoli */
@@ -44,21 +45,26 @@
 
 .about p {
     font-size: 1.1rem;
-    font-weight: 400;
+    font-weight: 300;
     color: #fcf8f8;
     font-family: "Poppins", sans-serif;
     line-height: 1.8;
     margin-bottom: 0;
 }
 
-.about strong {
-    color: #ffdd57;
+ strong {
+    color: #e7c94f; 
+    text-shadow: 
+    -1px -1px 0 #fffbfb, /* Ombra in alto a sinistra */
+     1px -1px 0 #fffbfb, /* Ombra in alto a destra */
+    -1px  1px 0 #fffbfb, /* Ombra in basso a sinistra */
+     1px  1px 0 #fffbfb; /* Ombra in basso a destra */
 }
 
 /* Sezione Il Nostro Team di Professionisti */
 .section-nostro-team {
     padding: 4rem 1rem;
-    background: linear-gradient(rgba(180, 177, 177, 1),rgb(81 75 80) );
+    background: linear-gradient(#82a8f5, rgb(180 177 177 / 0%));
     text-align: center;
 }
 img{
@@ -75,10 +81,12 @@ img{
 
 .section-nostro-team p {
     font-size: 1.1rem;
+    margin: 10% auto;
     color: #fffdfd;
     line-height: 1.6;
+    font-family: "Poppins", sans-serif;
     max-width: 900px;
-    margin: 0 auto;
+  
 }
 
 .section-nostro-team p:first-child {
@@ -107,6 +115,7 @@ img{
     line-height: 1.8;
     max-width: 900px;
     margin: 0 auto;
+    font-family: "Poppins", sans-serif;
 }
 
 .address a {
@@ -177,7 +186,8 @@ span.petali:hover {
 }
 @media (max-width: 768px) {
  img{
-    width: 100%;
+    width: 80%;
+    height: 230px;
  }
  .sede-image {
     
