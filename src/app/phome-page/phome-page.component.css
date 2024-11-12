@@ -8,7 +8,7 @@
     justify-content: center;
     margin: 1rem;
     border-radius: 16px;
-    background: #82a8f5;
+    background: #112e67;
     gap: 2rem; /* Spazio tra il testo e l'immagine */
     flex-wrap: wrap; /* Assicura che gli elementi si dispongano su più righe su schermi piccoli */
 }
@@ -53,12 +53,8 @@
 }
 
  strong {
-    color: #e7c94f; 
-    text-shadow: 
-    -1px -1px 0 #fffbfb, /* Ombra in alto a sinistra */
-     1px -1px 0 #fffbfb, /* Ombra in alto a destra */
-    -1px  1px 0 #fffbfb, /* Ombra in basso a sinistra */
-     1px  1px 0 #fffbfb; /* Ombra in basso a destra */
+    color: #f5f4ee; 
+
 }
 
 /* Sezione Il Nostro Team di Professionisti */
