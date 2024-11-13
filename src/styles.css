@@ -41,7 +41,7 @@
 
 .hero-content h1 {
   font-size: 2.8rem;
-  font-weight: 200;
+  font-weight: 400;
   margin-bottom: 1rem;
   font-family: "Kanit", sans-serif;
  
@@ -62,7 +62,7 @@
   100% {
     opacity: 1;
     transform: translateY(0);
-    color: #432572;
+    color: #9b942e;
   }
 }
 
@@ -72,7 +72,7 @@
     margin-bottom: 2rem;
     line-height: 1.8;
     font-family: 'Poppins', sans-serif;
-    color: #5e5d5a;
+    color: #131312;
 }
 
 .hero-content strong {
@@ -142,8 +142,8 @@
   border-left: 3px solid #6a94ff;
 }
 .section-contatti {
-  padding: 4rem 1rem;
-  background: linear-gradient(rgb(180 177 177 / 0%),#82a8f5 );
+  padding: 4rem 2rem;
+
   text-align: center;
 }
 
@@ -209,14 +209,14 @@ img{
   font-size: 2rem;
   font-family: "Kanit", sans-serif;
   font-weight: bold;
-  color: #ffffff;
+  color: #9b942e;
   margin-bottom: 1rem;
 }
 
 .section-nostro-team p {
   font-size: 1.1rem;
   margin: 3% auto;
-  color: #5e5959;
+  color: #0a0a0a;
   line-height: 1.6;
   font-family: "Poppins", sans-serif;
   max-width: 900px;
