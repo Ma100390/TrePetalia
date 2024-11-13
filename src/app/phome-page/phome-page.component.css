@@ -124,3 +124,38 @@ span.petali:hover {
     margin: 1% auto;
 }
 }
+.hero {
+    background-image: linear-gradient(rgb(255 255 255), rgba(255, 248, 248, 0.18)), url('/assets/sfondo.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    padding: 50px 0;
+
+}
+.section-nostro-team{
+    background-image: linear-gradient(rgba(255, 255, 255, 0.158), rgba(255, 248, 248, 0.788)), url('/assets/sfondo.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    padding: 50px 0;
+}
+.section-contatti{
+    background-image: linear-gradient(rgba(255, 255, 255, 0.87), rgba(255, 248, 248, 0.055)), url('/assets/sfondo.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    padding: 50px 0;
+}
+
+.hero-content {
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.2); /* Leggero sfondo trasparente sul contenuto */
+}
+
