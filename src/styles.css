@@ -89,20 +89,6 @@
     margin-top: 1.5rem;
 }
 
-.hero-buttons .button {
-    background-color:#112e67;
-    color: #ffffff;
-    padding: 0.8rem 1.5rem;
-    border-radius: 5px;
-    text-decoration: none;
-   
-    transition: background-color 0.3s ease;
-    font-family: 'Poppins', sans-serif;
-}
-
-.hero-buttons .button:hover {
-    background-color: #5378d0;
-}
 
 /* Sezione FAQ */
 .section-faq {
@@ -155,8 +141,100 @@
   padding-left: 1rem;
   border-left: 3px solid #6a94ff;
 }
+.section-contatti {
+  padding: 4rem 1rem;
+  background: linear-gradient(rgb(180 177 177 / 0%),#82a8f5 );
+  text-align: center;
+}
+
+.section-contatti h2 {
+  
+  font-weight: 400;
+  margin-bottom: 1rem;
+  font-family: "Kanit", sans-serif;
+  color: #2e3b47;
+  margin-bottom: 1.5rem;
+}
+
+.section-contatti p {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.8;
+  max-width: 900px;
+  margin: 0 auto;
+  font-family: "Poppins", sans-serif;
+}
+
+.address a {
+  color: #6a94ff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.address a:hover {
+  text-decoration: underline;
+}
+.cta-button {
+  display: inline-block;
+  background-color:#112e67;
+  color: #ffffff;
+  padding: 0.8rem 1.5rem;
+  border-radius: 5px;
+  text-decoration: none;
+ 
+  transition: background-color 0.3s ease;
+  font-family: 'Poppins', sans-serif;
+  
+}
+
+.cta-button:hover {
+  background-color: #4c74e7;
+}
+
+
+
+/* Sezione Il Nostro Team di Professionisti */
+.section-nostro-team {
+  padding: 4rem 1rem;
+  background: linear-gradient(#82a8f5, rgb(180 177 177 / 0%));
+  text-align: center;
+}
+img{
+  width: 25%;
+  height: 250px;
+  border-radius: 16px;
+  margin: 1%;
+}
+.section-nostro-team h2 {
+  font-size: 2rem;
+  font-family: "Kanit", sans-serif;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+.section-nostro-team p {
+  font-size: 1.1rem;
+  margin: 3% auto;
+  color: #5e5959;
+  line-height: 1.6;
+  font-family: "Poppins", sans-serif;
+  max-width: 900px;
+
+}
+
+.section-nostro-team p:first-child {
+  font-style: italic;
+  margin-bottom: 2rem;
+}
+
+
 @media (max-width: 768px) {
 .hero-content h1 {
   font-size: 2rem;
+}
+img{
+  width: 80%;
+  height: 230px;
 }
 }
