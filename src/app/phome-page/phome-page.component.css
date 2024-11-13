@@ -125,7 +125,7 @@ span.petali:hover {
 }
 }
 .hero {
-    background-image: linear-gradient(rgb(255 255 255), rgba(255, 248, 248, 0.18)), url('/assets/sfondo.webp');
+    background-image: linear-gradient(rgb(255 255 255), rgba(255, 248, 248, 0.18)), url('https://ma100390.github.io/TrePetalia/assets/sfondo.webp');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -134,7 +134,7 @@ span.petali:hover {
 
 }
 .section-nostro-team{
-    background-image: linear-gradient(rgba(255, 255, 255, 0.158), rgba(255, 248, 248, 0.788)), url('/assets/sfondo.webp');
+    background-image: linear-gradient(rgba(255, 255, 255, 0.158), rgba(255, 248, 248, 0.788)), url('https://ma100390.github.io/TrePetalia/assets/sfondo.webp');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -142,7 +142,7 @@ span.petali:hover {
     padding: 50px 0;
 }
 .section-contatti{
-    background-image: linear-gradient(rgba(255, 255, 255, 0.87), rgba(255, 248, 248, 0.055)), url('/assets/sfondo.webp');
+    background-image: linear-gradient(rgba(255, 255, 255, 0.87), rgba(255, 248, 248, 0.055)), url('https://ma100390.github.io/TrePetalia/assets/sfondo.webp');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
