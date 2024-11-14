@@ -2,64 +2,6 @@
 , url('/TrePetalia/assets/porto2.webp') center/cover no-repeat;*/
 
 
-.about-content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    justify-content: space-around;
-    margin: 6rem;
-    border-radius: 16px;
-    background: #112e67;
-    gap: 2rem; /* Spazio tra il testo e l'immagine */
-    flex-wrap: wrap; /* Assicura che gli elementi si dispongano su più righe su schermi piccoli */
-}
-
-.container1 {
-    max-width: 600px; /* Dimensione regolabile */
-    padding: 2rem;
-
-    
-   
-}
-
-.image-container {
-    
-    flex: 1;
-    text-align: center;
-}
-
-.sede-image {
-    max-width: 400px; /* Dimensione regolabile */
-    width: 75%;
-    height: auto;
-    
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-
-.about h2 {
-    font-size: 2rem;
-    font-weight: bold;
-    font-family: "Kanit", sans-serif;
-    color: #fdfdfd;
-    margin-bottom: 1.5rem;
-}
-
-.about p {
-    font-size: 1.1rem;
-    font-weight: 300;
-    color: #fcf8f8;
-    font-family: "Poppins", sans-serif;
-    line-height: 1.8;
-    margin-bottom: 0;
-}
-.hero-content strong {
-    color: #796f35;
-}
- strong {
-    color: #c2af46;
-
-}
 
 
 /* Sezione Contatti e Orari di Apertura */
@@ -118,32 +60,14 @@ span.petali:hover {
 .image-container {
     padding-bottom: 2rem;
 }
-.about-content {
-    margin: 1rem;
-}
+
 .section-nostro-team p {
 
     margin: 1% auto;
 }
 }
-.hero {
-    background-image: linear-gradient(rgb(255 255 255), rgba(255, 248, 248, 0.18)), url('https://ma100390.github.io/TrePetalia/assets/sfondo.webp');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    color: white;
-    padding: 50px 0;
 
-}
 
-.section-nostro-team{
-    background-image: linear-gradient(rgb(255 255 255 / 90%), rgba(255, 248, 248, 0.788)), url('https://ma100390.github.io/TrePetalia/assets/sfondo.webp');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    color: white;
-    padding: 50px 0;
-}
 
 
 .hero-content {
