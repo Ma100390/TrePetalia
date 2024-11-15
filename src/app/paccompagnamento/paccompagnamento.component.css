@@ -1,66 +1,131 @@
-/* Sezione Servizi di Assistenza e Supporto Sanitario */
-.projects {
-    background-color: #f7f9fc;
-    padding: 4rem 1rem;
-    text-align: center;
-}
 
-.projects .container3 {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 2rem;
-}
+  
+  /* Sezione dei Servizi */
+  #i-nostri-servizi {
+    padding: 60px 0;
+    background-color: #fff;
+  }
+  
 
-.projects h2 {
-    font-size: 2.4rem;
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 2rem;
-}
 
-.projects p {
-    font-size: 1.1rem;
-    color: #777;
-    line-height: 1.6;
-    margin-bottom: 3rem;
-}
 
-.project-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 2rem;
-    justify-items: center;
-}
-
-.project-item {
-    background-color: #ffffff;
-    padding: 2rem;
-    border-radius: 8px;
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
-    width: 100%;
+  
+  /* Icone */
+  .service-icon {
+    font-size: 2rem;
+    color: #646060;
+    margin-bottom: 15px;
+  }
+  
+  /* Titoli dei servizi */
+  .service-item h3 {
+    font-size: 1.3rem;
+    font-weight: 400;
+  
+    font-family: "Kanit", sans-serif;
+    color: #c2af46;
+    margin-bottom: 15px;
+  }
+  
+  /* Descrizioni dei servizi */
+  .service-item p {
+    font-size: 1rem;
+    color: #6b6868;
     text-align: left;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.project-item:hover {
-    transform: translateY(-10px);
-    box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.15);
-}
-
-.project-item h3 {
-    font-size: 1.6rem;
-    color: #2e3b47;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 20px;
+    line-height: 1.5;
+  }
+  
+  /* Pulsante di contatto (opzionale) */
+  .service-item .btn {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
     font-weight: bold;
-    margin-bottom: 1rem;
+    transition: background-color 0.3s;
+  }
+  
+  .service-item .btn:hover {
+    background-color: #45a049;
+  }
+  
+
+  .service-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); /* Responsivo */
+    gap: 20px; /* Spaziatura tra gli elementi */
+    padding: 160px; /* Spaziatura interna */
+    margin: 0 auto; /* Centra la griglia */
+    max-width: 1200px; /* Limita la larghezza per schermi grandi */
 }
 
-.project-item p {
-    font-size: 1.1rem;
-    color: #555;
-    line-height: 1.6;
+.service-item {
+    background: #fff; /* Sfondo neutro */
+    border: 1px solid #ddd; /* Bordo per evidenziare le card */
+    border-radius: 10px; /* Angoli arrotondati */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Aggiunge profondità */
+    padding: 8%; /* Spaziatura interna delle card */
+    text-align: center; /* Allinea il contenuto al centro */
+    transition: transform 0.3s, box-shadow 0.3s; /* Aggiunge animazioni */
 }
 
-.project-item strong {
-    font-weight: bold;
-    color: #6a94ff;
+.service-item:hover {
+    transform: translateY(-5px); /* Leggero sollevamento al passaggio del mouse */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15); /* Ombra più intensa */
+}
+.titolo-contenitore{
+  font-size: 2rem;
+  font-weight: 400;
+width: 60%;
+margin: 0 auto;
+  font-family: "Kanit", sans-serif;
+  color: #f8f8f8;
+  margin-bottom: 15px;
+  padding-top: 10%;
+}
+.container{
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+/* Media query per schermi piccoli */
+@media (max-width: 480px) {
+    .service-list {
+        grid-template-columns: 1fr; /* Una colonna singola per schermi stretti */
+        gap: 10px; /* Riduce la spaziatura */
+        padding: 20px;
+    }
+    .titolo-contenitore{
+      font-size: 2rem;
+      font-weight: 400;
+      margin: 0;
+      font-family: "Kanit", sans-serif;
+      color: #f8f8f8;
+      margin-bottom: 15px;
+      padding-top: 10%;
+      width: 100%;
+    }
+   
+}
+
+/* Media query per schermi grandi */
+@media (min-width: 1200px) {
+    .service-list {
+        gap: 30px; /* Maggiore spaziatura tra gli elementi */
+        
+  
+    }
+
+}
+
+.container{
+  background: linear-gradient(#82a8f5, rgb(180 177 177 / 0%));
+  text-align: center;
+  margin: 5% auto;
+}
+.section-contatti{
+  background-color: #f9e9e900;
 }

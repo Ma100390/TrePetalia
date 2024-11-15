@@ -1,96 +1,111 @@
 <main>
     <section class="hero" role="banner">
         <div class="hero-content">
-            <h1>Accompagnamento in strutture per Anziani in provincia di Lecce</h1>
-            <p>La cooperativa <strong>3 Petali</strong> offre servizi di <strong>accompagnamento</strong> sicuri e
-                personalizzati per anziani e persone con difficoltà di mobilità, per facilitare l'accesso a strutture
-                sanitarie, residenze e ospedali nella provincia di Lecce.</p>
+            <h1>Servizio di trasporto e accompagnamento assistito a Lecce per anziani e disabili</h1>
+            <p>
+                Offriamo un servizio di trasporto assistito per anziani e persone non autosufficienti,
+                garantendo supporto affidabile e professionale in ogni spostamento.
+            </p>
             <div class="hero-buttons">
-                <a routerLink="/servizi" class="button" aria-label="Scopri i nostri servizi di accompagnamento">Scopri i
-                    nostri servizi</a>
-                <a href="#contact" class="button" aria-label="Contattaci per maggiori informazioni">Contattaci</a>
+                <a href="#contact" class="cta-button" aria-label="Contattaci per maggiori informazioni">Richiedi
+                    Informazioni</a>
+            </div>
+        </div>
+    </section>
+    <section id="about" class="about">
+        <div class="about-content">
+            <div class="container1">
+                <h2>Cos'è il servizio di accompagnamento assistito per anziani e disabili?</h2>
+                <p>
+                    Il nostro servizio è pensato per chi necessita di un accompagnamento sicuro e
+                    assistito verso ospedali, ambulatori o luoghi di aggregazione sociale.
+                    Offriamo supporto per visite mediche, esami diagnostici, dimissioni ospedaliere
+                    e altre necessità quotidiane.
+                </p>
+            </div>
+            <div class="image-container">
+                <img src="/assets/porto1.webp" class="sede-image" alt="Laboratori Creativi" />
             </div>
         </div>
     </section>
 
-    <section id="projects" class="projects">
-        <div class="container3">
-            <h2>Servizi di Accompagnamento Personalizzati</h2>
-            <p>La cooperativa <strong>3 Petali</strong> offre un servizio di accompagnamento per anziani e persone con
-                disabilità, garantendo un trasporto sicuro, confortevole e discreto verso le strutture sanitarie e le
-                case di riposo della provincia di Lecce.</p>
+    <section id="services" class="section-card">
+        <div class="container">
+            <h2 class="titolo-contenitore">Servizi di trasporto e accompagnamento assistito per anziani e disabili a Lecce</h2>
+            <ul class="service-list">
+                <!-- Accompagnamento per visite mediche -->
+                <li class="service-item">
+                    <fa-icon [icon]="faStethoscope" class="service-icon"></fa-icon>
+                    <h3>Accompagnamento assistito per visite mediche, prelievi e analisi diagnostiche a Lecce</h3>
+                    <p>
+                        Servizio di trasporto dedicato a chi deve recarsi in ospedale, ambulatorio
+                        o presso centri diagnostici, garantendo assistenza completa.
+                    </p>
+                </li>
+                <!-- Accompagnamento a eventi e luoghi di aggregazione -->
+                <li class="service-item">
+                    <fa-icon [icon]="faUsers" class="service-icon"></fa-icon>
+                    <h3>Trasporto e accompagnamento per anziani a eventi sociali e cerimonie</h3>
+                    <p>
+                        Supportiamo gli anziani nell'accompagnamento a cerimonie, eventi
+                        o incontri sociali, promuovendo la socialità in sicurezza.
+                    </p>
+                </li>
 
-            <div class="project-list">
-                <article class="project-item">
-                    <h3>Accompagnamento a Strutture Sanitarie</h3>
-                    <p>Offriamo un servizio di <strong>accompagnamento verso ospedali</strong> e cliniche, assistendo i
-                        nostri utenti nel percorso, con personale qualificato che garantisce comfort e sicurezza durante
-                        il trasporto.</p>
-                </article>
-                <article class="project-item">
-                    <h3>Trasporto verso Residenze per Anziani</h3>
-                    <p>Assicuriamo un servizio di trasporto <strong>verso case di riposo</strong> e strutture
-                        residenziali, con assistenza personalizzata per le persone anziane che necessitano di
-                        accompagnamento a lungo termine.</p>
-                </article>
-                <article class="project-item">
-                    <h3>Accompagnamento per Visite Mediche</h3>
-                    <p>La cooperativa offre anche servizi di <strong>accompagnamento per visite mediche</strong>, per
-                        permettere agli anziani di ricevere le cure necessarie senza preoccupazioni, con supporto
-                        durante il percorso e attesa.</p>
-                </article>
-                <article class="project-item">
-                    <h3>Supporto durante la Degenza</h3>
-                    <p>Offriamo accompagnamento e supporto durante la <strong>degenza ospedaliera</strong>, per
-                        assicurare che i nostri utenti ricevano l'assistenza necessaria sia in ospedale che nelle
-                        strutture di recupero.</p>
-                </article>
-            </div>
+
+                <!-- Ritorno a casa post dimissioni -->
+                <li class="service-item">
+                    <fa-icon [icon]="faHome" class="service-icon"></fa-icon>
+                    <h3>Accompagnamento per il ritorno a casa dopo dimissioni ospedaliere da Lecce o Copertino</h3>
+                    <p>
+                        Dopo le dimissioni dall'ospedale, offriamo un trasporto sicuro e assistito
+                        per il rientro a casa, con mezzi attrezzati per persone non autosufficienti.
+                    </p>
+                </li>
+                <!-- Trasporto assistito -->
+                <li class="service-item">
+                    <fa-icon [icon]="faCarSide" class="service-icon"></fa-icon>
+                    <h3>Servizio di trasporto assistito con veicoli attrezzati per disabili e anziani</h3>
+                    <p>
+                        Disponiamo di veicoli attrezzati per il trasporto di disabili e anziani,
+                        con operatori qualificati che garantiscono trasferimenti confortevoli e sicuri.
+                    </p>
+                </li>
+            </ul>
         </div>
     </section>
+
     <section id="faq" class="section-faq">
-        <h2>Domande Frequenti (FAQ)</h2>
+        <h2>FAQ: Risposte sul nostro servizio di trasporto e accompagnamento a Lecce</h2>
         <ul class="faq-list">
-            <li class="faq-item">
-                <strong>
-                    Quali servizi offre la cooperativa 3 Petali per gli anziani?
-                </strong>
-                <p>Offriamo servizi di assistenza domiciliare, supporto infermieristico, assistenza ospedaliera e
-                    trasporto verso strutture sanitarie e case di riposo nella provincia di Lecce.</p>
-            </li>
-
-            <li class="faq-item">
-                <strong>
-                    Come posso richiedere un servizio di accompagnamento?
-                </strong>
-                <p>Puoi richiedere il nostro servizio di accompagnamento tramite il modulo di contatto sul sito o
-                    telefonando direttamente al nostro numero di assistenza clienti.</p>
-            </li>
-
-            <li class="faq-item">
-                <strong>
-                    Quanto costa il servizio di assistenza domiciliare?
-                </strong>
-                <p>Il costo del servizio dipende dalle necessità specifiche dell'utente. Ti invitiamo a contattarci per
-                    un preventivo personalizzato in base alla situazione.</p>
-            </li>
-
-            <li class="faq-item">
-                <strong>
-                    Come posso diventare un assistente presso 3 Petali?
-                </strong>
-                <p>Per diventare un assistente presso la nostra cooperativa, puoi inviarci il tuo curriculum tramite il
-                    modulo di candidatura nella sezione "Lavora con noi" del nostro sito.</p>
-            </li>
-
-            <li class="faq-item">
-                <strong>
-                    In quali aree della provincia di Lecce offrite i vostri servizi?
-                </strong>
-                <p>Offriamo i nostri servizi in tutta la provincia di Lecce, con particolare attenzione alle zone rurali
-                    e ai centri abitati minori.</p>
-            </li>
+          <li class="faq-item" *ngFor="let question of questions; let i = index">
+            <button 
+              class="faq-question" 
+              [ngClass]="{'open': question.showAnswer}" 
+              (click)="toggleAnswer(i)">
+              <h3>{{ question.question }}</h3>
+            </button>
+            <p *ngIf="question.showAnswer" class="faq-answer">
+              {{ question.answer }}
+            </p>
+          </li>
         </ul>
-    </section>
 
+      </section>
+      <section id="contatti" class="section-contatti">
+        <h2>Contatti e Orari di Apertura della Casa di Riposo a Lecce</h2>
+        <p>
+            Se hai domande o desideri visitare la Casa di Riposo 3 Petali, contattaci. Siamo aperti dal
+            lunedì alla domenica, dalle 9:00 alle 18:00.
+        </p>
+        <address>
+            <p>Email: <a href="mailto:info@3petali.it">info3petali.it</a></p>
+            <p>Telefono: <a href="tel:+390000000000">+39 000 000 000</a></p>
+            <p>Indirizzo: Via Esempio 123, Lecce, Italia</p>
+        </address>
+        <div class="hero-buttons">
+            <a href="#richiesta-informazioni" class="cta-button">Richiedi una Visita <fa-icon [icon]="faArrowRight"
+                    class="arrow-icon"></fa-icon></a>
+            </div>
+    </section>
 </main>
