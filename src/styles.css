@@ -39,7 +39,8 @@ main {
 
 .hero-content {
   max-width: 800px;
-
+  text-align: center;
+  margin: 0 auto;
 }
 
 
@@ -127,13 +128,15 @@ main {
   border-radius: 8px;
   border-color: #e8ecf5;
   font-size: 1rem;
-  font-weight: 400;
+
   text-align: left;
   margin: 1% auto;
 
 
 }
-
+.faq-question h3{
+font-weight: 100;
+}
 .faq-list {
   max-width: 600px;
   margin: 0 auto;
@@ -335,6 +338,15 @@ img {
   color: white;
   padding: 50px 0;
 
+}
+.hero3 {
+  background: linear-gradient(#82a8f5, rgb(180 177 177 / 0%));
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  padding: 50px 0;
 }
 
 .hero2 {
