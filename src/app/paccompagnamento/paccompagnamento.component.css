@@ -56,12 +56,13 @@
 
   .service-list {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); /* Responsivo */
-    gap: 20px; /* Spaziatura tra gli elementi */
-    padding: 160px; /* Spaziatura interna */
-    margin: 0 auto; /* Centra la griglia */
-    max-width: 1200px; /* Limita la larghezza per schermi grandi */
+    grid-template-columns: repeat(auto-fill, minmax(40%, 1fr));
+    gap: 20px;
+    padding: 42px;
+    margin: 0 auto;
+    max-width: 1200px;
 }
+
 
 .service-item {
     background: #fff; /* Sfondo neutro */
