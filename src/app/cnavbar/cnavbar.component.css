@@ -88,13 +88,22 @@ header {
     color: #f8fafc;
     display: contents;
 }
+.navbar .nav-links a:hover {
+
+
+    color: #1a72c9;
+   
+}
+.navbar .nav-links span:hover {
+    color: #1a72c9;
+}
 .navbar .nav-links span {
 
     text-decoration: none;
     font-size: 1rem;
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
-    color: #82a8f5;
+    color: #fafafa;
     cursor: pointer;
 }
 .hamburger {

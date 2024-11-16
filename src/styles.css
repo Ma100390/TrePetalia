@@ -340,7 +340,7 @@ img {
 
 }
 .hero3 {
-  background: linear-gradient(#82a8f5, rgb(180 177 177 / 0%));
+  background-image: linear-gradient(rgb(255 255 255 / 0%), rgb(255 248 248 / 0%)), url('https://ma100390.github.io/TrePetalia/assets/sfondo5.webp');
 
   background-size: cover;
   background-position: center;

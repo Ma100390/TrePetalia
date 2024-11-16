@@ -2,106 +2,117 @@
     <section class="hero" role="banner">
         <div class="hero-content">
             <h1>Assistenza per Anziani in provincia di Lecce</h1>
-            <p>Tre Petali è la cooperativa sociale specializzata in <strong>assistenza anziani a domicilio</strong> e
-                <strong>supporto disabili</strong>.
+            <p> Offriamo un servizio di assistenza per anziani e persone non autosufficienti,
+                garantendo supporto affidabile e professionale in ogni ambiente.</p>
             <div class="hero-buttons">
-                <a routerLink="/servizi" class="button" aria-label="Scopri i nostri servizi di assistenza">Scopri i nostri
+                <a routerLink="/servizi" class="button" aria-label="Scopri i nostri servizi di assistenza">Scopri i
+                    nostri
                     servizi</a>
                 <a href="#contact" class="button" aria-label="Contattaci per maggiori informazioni">Contattaci</a>
             </div>
         </div>
     </section>
-    <section id="projects" class="projects">
-        <div class="container3">
-            <h2>Servizi di Assistenza e Supporto Sanitario</h2>
-            <p>La cooperativa <strong>3 Petali</strong> offre una vasta gamma di servizi per il supporto e il benessere
-                di anziani, disabili e persone con necessità di assistenza, garantendo cure personalizzate e un sostegno
-                professionale di alta qualità.</p>
-    
-            <div class="project-list">
-                <article class="project-item">
-                    <div class="project-image">
-                        <img src="path/to/your-image.jpg" alt="Assistenza Domiciliare">
-                    </div>
-                    <h3>Assistenza Domiciliare</h3>
-                    <p>Il servizio di <strong>assistenza domiciliare</strong> consiste in interventi finalizzati a favorire la permanenza dei cittadini nel loro ambiente di vita, evitando l’istituzionalizzazione e consentendo loro una vita di relazione soddisfacente attraverso una serie di prestazioni socio-assistenziali.</p>
-                    <p>L’obiettivo principale è mantenere lo stato di benessere in relazione alle difficoltà derivanti dalla ridotta o compromessa autonomia, offrendo assistenza per la cura della persona e della casa. Il servizio è orientato a:</p>
-                    <ul>
-                        <li>Aiutare la persona anziana nel processo di autonomia.</li>
-                        <li>Fornire sostegno e sollievo alla famiglia, che ha l’onere assistenziale di una persona con ridotta autonomia.</li>
-                        <li>Mantenere l’anziano presso il proprio domicilio, conservandone le abitudini e le relazioni sociali.</li>
-                        <li>Migliorare la qualità della vita degli anziani.</li>
-                        <li>Prevenire e contrastare situazioni di isolamento sociale.</li>
-                    </ul>
-                    <p>I destinatari di questo servizio sono anziani ultrasessantacinquenni non autosufficienti che necessitano di prestazioni a carattere socio-assistenziale.</p>
-                </article>
-    
-                <!-- <article class="project-item">
-                    <h3>Assistenza Sanitaria Domiciliare</h3>
-                    <p>Con il nostro servizio di <strong>assistenza sanitaria domiciliare</strong>, offriamo cure
-                        mediche a domicilio, supporto medico continuo e assistenza nelle terapie, per garantire la
-                        salute dei nostri utenti nel comfort della propria abitazione.</p>
-                </article>
-    
-                <article class="project-item">
-                    <h3>Assistenza Ospedaliera</h3>
-                    <p>Offriamo anche <strong>assistenza ospedaliera</strong>, accompagnando e supportando i pazienti
-                        durante la degenza ospedaliera con assistenti qualificati e infermieri, per agevolare il
-                        recupero e fornire un aiuto professionale in ogni momento.</p>
-                </article>
-    
-                <article class="project-item">
-                    <h3>Assistenza Infermieristica</h3>
-                    <p>Il nostro team di <strong>infermieri professionisti</strong> fornisce <strong>assistenza
-                            infermieristica domiciliare</strong>, comprendendo medicazioni, gestione delle terapie e
-                        monitoraggio delle condizioni di salute, per offrire un supporto completo e di qualità a chi ne
-                        ha bisogno.</p>
-                </article> -->
+    <section id="about" class="about">
+        <div class="about-content">
+            <div class="container1">
+                <h2>Cos'è il servizio di assistenza domiciliare per anziani e disabili?</h2>
+                <p>L'assistenza domiciliare per persone anziane e con difficoltà motorie o cognitive è un servizio
+                    dedicato
+                    che fornisce supporto personalizzato per gestire le attività quotidiane nel comfort della propria
+                    casa.
+                </p>
+            </div>
+            <div class="image-container">
+                <img src="https://ma100390.github.io/TrePetalia/assets/porto1.webp" class="sede-image"
+                    alt="Laboratori Creativi" />
             </div>
         </div>
     </section>
+
+    <section id="services" class="section-card">
+        <div class="container">
+            <h2 class="titolo-contenitore">Servizi di Assistenza Domiciliare per anziani e disabili in provincia Lecce
+            </h2>
+            <ul class="service-list">
+                <li class="service-item">
+                    <fa-icon [icon]="faUserCheck" class="service-icon"></fa-icon>
+                    <h3>Aiutare la persona anziana nel processo di autonomia.</h3>
+                    <p>
+                        Offriamo supporto per l'igiene personale (bagno assistito, vestizione) e l'assistenza nella
+                        mobilità. In questo modo, aiutiamo la persona anziana a mantenere la propria indipendenza nelle
+                        attività quotidiane.
+                    </p>
+                </li>
+                <li class="service-item">
+                    <fa-icon [icon]="fausers" class="service-icon"></fa-icon>
+                    <h3><i class="fas fa-users"></i> Prevenire e contrastare situazioni di isolamento sociale.</h3>
+                    <p>
+                        Promuoviamo la socializzazione e il coinvolgimento, offrendo supporto psicologico e assistenza
+                        nelle relazioni sociali, in modo da ridurre il rischio di solitudine e isolamento.
+                    </p>
+                </li>
+                <li class="service-item">
+                    <fa-icon [icon]="fahandshelping" class="service-icon"></fa-icon>
+                    <h3><i class="fas fa-hands-helping"></i> Fornire sostegno e sollievo alla famiglia, che ha l’onere
+                        assistenziale di una persona con ridotta autonomia.</h3>
+                    <p>
+                        Offriamo un supporto pratico e emotivo alla famiglia, includendo attività come la
+                        somministrazione di farmaci, medicazioni e supporto nelle necessità quotidiane, come cucinare,
+                        fare la spesa e pulire.
+                    </p>
+                </li>
+                <li class="service-item">
+                    <fa-icon [icon]="faHome" class="service-icon"></fa-icon>
+                    <h3><i class="fas fa-home"></i> Mantenere l’anziano presso il proprio domicilio, conservandone le
+                        abitudini e le relazioni sociali.</h3>
+                    <p>
+                        Ci occupiamo di supportare l'anziano con l'assistenza domiciliare, garantendo il mantenimento
+                        delle sue abitudini e relazioni sociali, in un ambiente che conosce e si sente sicuro.
+                    </p>
+                </li>
+                <li class="service-item">
+                    <fa-icon [icon]="faHeart" class="service-icon"></fa-icon>
+                    <h3>Migliorare la qualità della vita degli anziani.</h3>
+                    <p>
+                        Offriamo servizi di fisioterapia e riabilitazione, oltre a fornire il supporto necessario per
+                        migliorare la qualità della vita, favorendo l'autosufficienza e la mobilità nella vita
+                        quotidiana.
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+
+
     <section id="faq" class="section-faq">
-        <h2>Domande Frequenti (FAQ)</h2>
-        <div class="faq-list">
-            <li><strong>Quali tipi di assistenza offre la Casa di Riposo 3 Petali per anziani e persone non
-                        autosufficienti?</strong>
-                <p>La nostra struttura offre un'ampia gamma di servizi per garantire il benessere e la qualità della
-                    vita dei nostri ospiti. Disponiamo di assistenza infermieristica 24/7, supporto per le attività
-                    quotidiane, programmi di riabilitazione fisioterapica, supporto psicologico personalizzato e
-                    attività ricreative e sociali per mantenere attivo il legame con la comunità.</p>
-                </li>
+        <h2>FAQ: Risposte sul nostro servizio di assistenza domiciliare a Lecce</h2>
+        <ul class="faq-list">
+            <li class="faq-item" *ngFor="let question of questions; let i = index">
+                <button class="faq-question" [ngClass]="{'open': question.showAnswer}" (click)="toggleAnswer(i)">
+                    <h3>{{ question.question }}</h3>
+                </button>
+                <p *ngIf="question.showAnswer" class="faq-answer">
+                    {{ question.answer }}
+                </p>
+            </li>
+        </ul>
 
-            <li><strong>Come posso prenotare una visita per conoscere i nostri servizi da vicino?</strong>
-               
-                <p>Siamo sempre aperti e felici di accogliere visite su appuntamento. Basta contattarci telefonicamente
-                    o via email per prenotare una visita guidata alla nostra struttura. Durante il tour, avrai modo di
-                    conoscere il nostro staff e di vedere le nostre aree comuni, le stanze degli ospiti e i nostri spazi
-                    dedicati alle attività ricreative.</p>
-                </li>
-
-            <li><strong>Qual è il costo dei servizi e come posso ricevere un preventivo
-                        personalizzato?</strong>
-                <p>I costi dei nostri servizi variano in base alle esigenze specifiche di ciascun ospite e alla durata
-                    del soggiorno. Per offrire una stima accurata e un piano di assistenza personalizzato, ti invitiamo
-                    a fissare un colloquio con noi o a richiedere un preventivo senza impegno. Siamo disponibili a
-                    trovare la soluzione più adatta alle tue necessità.</p>
-                </li>
-
-            <li><strong>Quali attività ricreative offrite per favorire il benessere degli ospiti?</strong>
-             
-                <p>Oltre alla cura medica e assistenziale, ci impegniamo a garantire una vita attiva e stimolante per i
-                    nostri ospiti. Organizziamo attività come laboratori creativi, corsi di ginnastica dolce, momenti di
-                    socializzazione, passeggiate all’aperto e letture collettive. Il nostro obiettivo è mantenere vive
-                    le passioni e interessi di ciascun ospite.</p>
-                </li>
-
-            <li><strong>È possibile avere diete personalizzate o piani nutrizionali specifici?</strong>
-               
-                <p>Assolutamente sì. Collaboriamo con nutrizionisti per creare piani alimentari su misura che rispettino
-                    le condizioni di salute e le preferenze personali di ogni ospite. Offriamo opzioni per diete
-                    speciali, come diete ipocaloriche, per diabetici, e a basso contenuto di sodio, per favorire il
-                    benessere dei nostri ospiti.</p>
-                </li>
+    </section>
+    <section id="contatti" class="section-contatti">
+        <h2>Contatti e Orari di Apertura della Cooperativa Sociale Tre Petali in Provincia di Lecce</h2>
+        <p>
+            Se hai domande sul Servizio di Assistenza Domiciliare Tre Petali, contattaci. Siamo aperti dal
+            lunedì al Venerdi, dalle 9:00 alle 18:00.
+        </p>
+        <address>
+            <p>Email: <a href="mailto:info@3petali.it">info3petali.it</a></p>
+            <p>Telefono: <a href="tel:+390000000000">+39 000 000 000</a></p>
+            <p>Indirizzo: Via Esempio 123, Lecce, Italia</p>
+        </address>
+        <div class="hero-buttons">
+            <a href="#richiesta-informazioni" class="cta-button">Richiedi una Visita <fa-icon [icon]="faArrowRight"
+                    class="arrow-icon"></fa-icon></a>
         </div>
     </section>
 </main>
