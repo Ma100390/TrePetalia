@@ -1,9 +1,31 @@
 /* You can add global styles to this file, and also import other style files */
 @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Pacifico&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Pacifico&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+@font-face {
+  font-family: 'MyFont';
+  src: url('assets/font/FuturaBold.otf') format('opentype');
+
+}
+
+@font-face {
+  font-family: 'MyFont2';
+  src: url('assets/font/Poppins-Black.ttf') format('truetype');
+
+
+}
+.titolo1{
+  font-family: "Roboto Mono", serif;
+  font-weight: 400;
+  letter-spacing: -3px;
+}
+.titolo2{
+  font-family: 'MyFont2', Arial, sans-serif;
+}
 
 * {
   margin: 0;
@@ -17,7 +39,7 @@ main {
 
 
   line-height: 1.6;
-  max-width: 1200px;
+  max-width: 1500px;
   margin: 0 auto;
   padding: 0;
 }
@@ -33,8 +55,8 @@ main {
   text-align: center;
   padding: 1rem 1rem;
   height: 100vh;
-  border-bottom-left-radius: 16px;
-  border-bottom-right-radius: 16px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
 }
 
 .hero-content {
@@ -46,15 +68,9 @@ main {
 
 .hero-content h1 {
   font-size: 2.8rem;
-  font-weight: 400;
   margin-bottom: 1rem;
-  font-family: "Kanit", sans-serif;
-
-  /* Inizia con una posizione bassa e trasparente */
   opacity: 0;
   transform: translateY(20px);
-
-  /* Aggiungi la transizione di animazione */
   animation: fadeInUp 1.5s ease-out forwards;
 }
 
@@ -68,7 +84,7 @@ main {
   100% {
     opacity: 1;
     transform: translateY(0);
-    color: #9b942e;
+    color: #112e67;;
   }
 }
 
@@ -233,33 +249,40 @@ font-weight: 100;
 
 /* Sezione Il Nostro Team di Professionisti */
 .section-nostro-team {
-  padding: 4rem 1rem;
-  background: linear-gradient(#82a8f5, rgb(180 177 177 / 0%));
-  text-align: center;
+  text-align: justify;
+  max-width: 1500px;
+  padding: 15%;
+
+
 }
 
 img {
-  width: 25%;
+  width: 40%;
 
-  border-radius: 16px;
+  border-radius: 8px;
   margin: 1%;
 }
 
 .section-nostro-team h2 {
-  font-size: 2.5rem;
+  font-weight: bold;
   font-family: "Kanit", sans-serif;
-  font-weight: 400;
-  color: #9b942e;
-  margin-bottom: 1rem;
+  color: #112e67;
+  margin-top: 1.5rem;
+}
+.about-content1 h3 {
+  font-weight: bold;
+  font-family: "Kanit", sans-serif;
+  color: #112e67;
+  margin-top: 1.5rem;
 }
 
-.section-nostro-team p {
+.section-nostro-team {
   font-size: 1.1rem;
   margin: 3% auto;
   color: #0a0a0a;
   line-height: 1.6;
   font-family: "Poppins", sans-serif;
-  max-width: 900px;
+
 
 }
 
@@ -274,7 +297,7 @@ img {
   justify-content: center;
 
   margin: 6rem;
-  border-radius: 16px;
+  border-radius: 8px;
   background: #112e67;
   gap: 2rem;
   /* Spazio tra il testo e l'immagine */
@@ -284,13 +307,12 @@ img {
 
 .container1 {
   max-width: 600px;
-  /* Dimensione regolabile */
-  padding: 2rem;
-
-
-
+  padding: 0.5rem;
 }
+.container2 {
 
+  padding: 3rem;
+}
 .image-container {
 
   flex: 1;
@@ -298,13 +320,15 @@ img {
 }
 
 .sede-image {
-  max-width: 400px;
-  /* Dimensione regolabile */
-  width: 75%;
-  height: auto;
 
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 80px;
+    width: 30%;
+    height: auto;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1.5s ease-out forwards;
 }
+
 
 
 .about h2 {
@@ -312,7 +336,7 @@ img {
   font-weight: bold;
   font-family: "Kanit", sans-serif;
   color: #fdfdfd;
-  margin-bottom: 1.5rem;
+
 }
 
 .about p {
@@ -320,15 +344,43 @@ img {
   font-weight: 300;
   color: #fcf8f8;
   font-family: "Poppins", sans-serif;
-  line-height: 1.8;
-  margin-bottom: 0;
+  line-height: 1.4;
+  margin-bottom: 0px;
+  text-align: justify;
+  word-spacing: -1px;
 }
 
+.about1 h2{
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: "Kanit", sans-serif;
+  color: #112e67;;
+  
+  margin-top: 1.5rem;
+}
+.about1 p {
+  font-size: 1.1rem;
+  font-weight: 300;
+  color: #000000;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.8;
+  margin-bottom: 0;
+  text-align: justify;
+}
 .hero-content strong {
   color: #796f35;
 }
 
-
+.about-content1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 6rem;
+  border-radius: 8px;
+  background: #ffffff;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
 
 .hero {
   background-image: linear-gradient(rgb(255 255 255), rgb(255 248 248 / 50%)), url('https://ma100390.github.io/TrePetalia/assets/sfondo.webp');
@@ -358,30 +410,25 @@ img {
 
 }
 
-.section-nostro-team {
-  background-image: linear-gradient(rgb(255 255 255 / 90%), rgba(255, 248, 248, 0.788)), url('https://ma100390.github.io/TrePetalia/assets/sfondo.webp');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  color: white;
-  padding: 50px 0;
-}
+
 
 @media (max-width: 768px) {
   .hero-content h1 {
     font-size: 2rem;
   }
-
   img {
-    width: 80%;
-    height: 230px;
+    width: 98%;
+    height: 320px;
   }
 
+  .about-content1 {
+    margin: 1rem;
+  }
   .about-content {
     margin: 1rem;
   }
   .about h2 {
-    font-size: 1.2rem;
+    font-size: 2rem;
   }
   .section-faq h2 {
     font-weight: 400;
@@ -398,6 +445,7 @@ img {
     display: block;
 
   }
+
 
   .hero2 {
 

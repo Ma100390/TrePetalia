@@ -8,11 +8,10 @@ header {
 
 .navbar {
     display: flex;
-    background: #15274c;
+    background: #ffffff;
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-    padding: 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3); 
     position: relative;
     z-index: 10;
     justify-content: space-around;
@@ -20,9 +19,9 @@ header {
 }
 
 .navbar .logo {
-    font-family: "Dancing Script", cursive;
+    font-family: 'MyFont2', Arial, sans-serif;
     font-weight: bold;
-    color: #ffffff;
+    color: #213766;
     font-size: 2rem;
     text-decoration: none;
 }
@@ -43,13 +42,13 @@ header {
     font-size: inherit;
     padding-left: 5px;
     padding-right: 5px;
-    color: #82a8f5;
+    color: #213766;
 }
 
 .dropdown-menu {
     display: block;
     position: absolute;
-    background: #15274c;
+    background: #ffffff;
     padding: 0;
     margin: 0;
     list-style: none;
@@ -85,7 +84,7 @@ header {
     font-size: 1rem;
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
-    color: #f8fafc;
+    color: #213766;
     display: contents;
 }
 .navbar .nav-links a:hover {
@@ -97,13 +96,19 @@ header {
 .navbar .nav-links span:hover {
     color: #1a72c9;
 }
+.logo{
+    display: flex
+    ;
+        align-items: center;
+        justify-content: space-between;
+}
 .navbar .nav-links span {
 
     text-decoration: none;
     font-size: 1rem;
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
-    color: #fafafa;
+    color: #f29668;
     cursor: pointer;
 }
 .hamburger {
@@ -115,7 +120,7 @@ header {
 .hamburger span {
     width: 1.5625rem;
     height: 0.1875rem;
-    background-color: #f7f7fa;
+    background-color: #101050;
     ;
     margin: 0.25rem;
 }
@@ -174,7 +179,7 @@ header {
 
 @media (max-width: 30em) {
     .navbar .nav-links a {
-        color: #82a8f5;
+        color: #213766;
     }
     .dropdown-menu li a {
         display: ruby;
@@ -182,7 +187,7 @@ header {
     }
     .navbar .nav-links li{
         margin: 2%;
-      
+        color: #213766;
     }
     /* Adatta per schermi più piccoli come smartphone in modalità verticale */
     .nav-links {
