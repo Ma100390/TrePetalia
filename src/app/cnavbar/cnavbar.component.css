@@ -5,7 +5,9 @@ header {
 
 }
 
-
+.sede-image{
+    width: 20%;
+}
 .navbar {
     display: flex;
     background: #ffffff;
@@ -97,10 +99,9 @@ header {
     color: #1a72c9;
 }
 .logo{
-    display: flex
-    ;
+    display: flex;
         align-items: center;
-        justify-content: space-between;
+    
 }
 .navbar .nav-links span {
 
@@ -143,7 +144,10 @@ header {
         opacity: 0;
         visibility: hidden;
     }
-
+    .logo{
+     
+        justify-content: flex-start;
+    }
  
 
     .hamburger {
