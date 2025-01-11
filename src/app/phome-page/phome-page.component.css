@@ -32,9 +32,7 @@ ul li{
     word-spacing: -1px;
    
 }
-.container2 {
-    padding: 1rem;
-}
+
 .container1 {
     max-width: 410px;
 }
@@ -64,7 +62,10 @@ ul li{
     color: #2e3b47;
     margin-bottom: 1rem;
 }
-
+.sedeimage{
+    width: 100%;
+    border-radius: 5%;
+}
 .section-storia p {
     font-size: 1.1rem;
     color: #555;
@@ -83,7 +84,10 @@ ul li{
     
     width: 30%;
  }
- 
+ .sede-image{
+    max-width: 75px;
+    width: 20%;
+  }
 .image-container {
     padding-bottom: 2rem;
 }
@@ -92,8 +96,9 @@ ul li{
 
     margin: 1% auto;
 }
-.container2 {
-    padding: 0.5rem;
+.sedeimage{
+    width: 100%;
+    border-radius: 5%;
 }
 
 }

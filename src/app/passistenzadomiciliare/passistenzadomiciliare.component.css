@@ -125,8 +125,13 @@ a{
     .sede-image2{
       width: 100%;
   }
-   
+  .container1{
+    padding: 1rem;
+  }
+ 
 }
+   
+
 
 /* Media query per schermi grandi */
 @media (min-width: 1200px) {
