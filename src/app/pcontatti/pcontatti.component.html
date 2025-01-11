@@ -1,33 +1,59 @@
 <main>
-    <section class="hero" role="banner">
-      <div class="hero-content">
-        <h1>Tre Petali Cooperativa Sociale</h1>
-        <p>Siamo qui per offrirti tutte le informazioni necessarie e aiutarti a prendere la decisione migliore.</p>
-        <div class="hero-buttons">
-          <!-- Pulsante Email con icona -->
-          <a href="mailto:info@3petali.com" class="button" aria-label="Contattaci tramite Email">
-            <fa-icon [icon]="faEnvelope" class="button-icon"></fa-icon> Email
-          </a>
-          <!-- Pulsante Telefono con icona -->
-          <a href="tel:+39123456789" class="button" aria-label="Contattaci tramite Telefono">
-            <fa-icon [icon]="faPhone" class="button-icon"></fa-icon> Telefono
-          </a>
-        </div>
+  <section class="hero" role="banner">
+    <div class="hero-content">
+      <div class="disposizione">
+        <img src="https://ma100390.github.io/TrePetalia/assets/prova2.svg" class="sede-image"
+          alt="Laboratori Creativi" />
+        <h1>
+          <span class="titolo2">tre petali</span><br>
+          <span class="titolo1">COOPERATIVA SOCIALE</span>
+        </h1>
       </div>
-    </section>
-    <section id="about" class="about">
-      <div class="about-content">
-          <div class="container1">
-              <h2>La Sede in provincia di Lecce</h2>
-              <p>La nostra sede principale di <strong>Tre Petali - Assistenza anziani e disabili</strong> si trova in
-                  provincia di Lecce, un luogo facilmente accessibile e pensato per offrire supporto di alta qualità e
-                  assistenza personalizzata per ogni necessità.</p>
-          </div>
-          <div class="image-container">
-              <img src="https://ma100390.github.io/TrePetalia/assets/sede.webp" 
-                  alt="Laboratori Creativi" />
-          </div>
+
+      <p><strong>Contatti</strong></p>
+      <p>Siamo qui per offrirti tutte le informazioni necessarie e aiutarti a prendere la decisione migliore.</p>
+
+      <div class="hero-buttons">
+        <!-- Pulsante Email con icona -->
+        <a href="mailto:info@3petali.com" class="button" aria-label="Contattaci tramite Email">
+          <fa-icon [icon]="faEnvelope" class="button-icon"></fa-icon> Email
+        </a>
+        <!-- Pulsante Telefono con icona -->
+        <a href="tel:+39123456789" class="button" aria-label="Contattaci tramite Telefono">
+          <fa-icon [icon]="faPhone" class="button-icon"></fa-icon> Telefono
+        </a>
       </div>
+    </div>
   </section>
-  </main>
-  
+
+  <section class="contatti-container">
+    <h1>Contattaci</h1>
+    <div class="sedi-list">
+      <div *ngFor="let sede of sedi" class="sede-card">
+        <h2>{{ sede.nome }}</h2>
+        <p>
+          <fa-icon [icon]="faMapMarkerAlt"></fa-icon> {{ sede.indirizzo }}
+
+        </p>
+        <p>
+          <fa-icon [icon]="faPhone"></fa-icon> {{ sede.telefono }}
+        </p>
+        <p>
+          <fa-icon [icon]="faEnvelope"></fa-icon> {{ sede.email }}
+        </p>
+
+      </div>
+    </div>
+    <div class="footer-left">
+      <section class="footer-legal">
+        <p><strong>Iscrizione presso il registro delle imprese di Lecce</strong></p>
+         <p><strong>Partita Iva:</strong> 04859100754</p>
+        <p><strong>Numero R.E.A.:</strong> 323811</p>
+        <p><strong>Iscrizione Albo Cooperative e Mutualità Prevalente:</strong> C121127</p>
+        <p><strong>Sede legale:</strong> Via Vescovo Verrienti, 2, 73010 Veglie (LE) – 73010</p>
+      </section>
+     
+    </div>
+  </section>
+ 
+</main>

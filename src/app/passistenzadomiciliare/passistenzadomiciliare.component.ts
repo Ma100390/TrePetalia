@@ -25,7 +25,7 @@ export class PassistenzadomiciliareComponent {
     },
     {
       question: 'Come posso richiedere il servizio di assistenza domiciliare?',
-      answer: 'Puoi richiedere il servizio contattandoci telefonicamente o compilando il modulo di richiesta sul nostro sito web. Dopo una valutazione delle necessità, organizzeremo il piano di assistenza personalizzato.',
+      answer: 'Puoi richiedere il servizio contattandoci telefonicamente. Dopo una valutazione delle necessità, organizzeremo il piano di assistenza personalizzato.',
       showAnswer: false
     },
     {
@@ -34,8 +34,8 @@ export class PassistenzadomiciliareComponent {
       showAnswer: false
     },
     {
-      question: 'Il servizio di assistenza domiciliare è disponibile 24 ore su 24?',
-      answer: 'Sì, offriamo assistenza domiciliare 24 ore su 24, anche nei giorni festivi. Puoi scegliere tra diversi tipi di assistenza in base alle tue necessità, inclusa la presenza di un operatore a tempo pieno o part-time.',
+      question: 'Il servizio di assistenza domiciliare può essere finanziato?',
+      answer: 'Sì, utilizzando i buoni servizio della regione Puglia. Buoni Servizio si uniscono nell’ambito delle politiche di welfare regionale per promuovere l’inclusione sociale e migliorare la qualità della vita degli utenti e dei loro caregiver.',
       showAnswer: false
     },
     {

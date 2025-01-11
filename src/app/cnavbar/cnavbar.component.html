@@ -1,9 +1,10 @@
 <header>
   <nav class="navbar">
-    <div class="logo">  <img src="https://ma100390.github.io/TrePetalia/assets/prova2.svg" class="sede-image"
-      alt="Laboratori Creativi" />
-      <a routerLink="/" title="Vai alla pagina Home" aria-label="Vai alla pagina Home" class="logo">tre petali</a></div>
-  
+    <div class="logo"> <img src="https://ma100390.github.io/TrePetalia/assets/prova2.svg" class="sede-image"
+        alt="Laboratori Creativi" />
+      <a routerLink="/" title="Vai alla pagina Home" aria-label="Vai alla pagina Home" class="logo">tre petali</a>
+    </div>
+
 
     <ul class="nav-links" [class.active]="isMenuOpen">
       <li><a routerLink="/" title="Vai alla pagina Home" aria-label="Vai alla pagina Home"
@@ -17,21 +18,26 @@
       <li><a routerLink="/accompagnamento-strutture-lecce" title="Vai alla pagina contatti"
           aria-label="Vai alla pagina contatti" (click)="closeMenu()">Accompagnamento</a></li>
 
-          <li >
-            <span (click)="toggleDropdown()" title="Vai alla pagina dei servizi" aria-label="Vai alla pagina dei servizi">
-              Altri Servizi
-              <fa-icon class="after-icon" [icon]="faCaretDown"></fa-icon>
-            </span>
-          
-            <!-- Lista dei servizi, mostrata solo se 'isDropdownOpen' è true -->
-            <ul *ngIf="isDropdownOpen" class="dropdown-menu">
-              <li><a [routerLink]="['/servizio', 'Infermieri']" (click)="closeMenu()" (click)="toggleDropdown()"> Infermieri</a></li>
-              <li><a [routerLink]="['/servizio', 'Fisioterapisti']" (click)="closeMenu()" (click)="toggleDropdown()"> Fisioterapisti</a></li>
-              <li><a [routerLink]="['/servizio', 'Psicologo']" (click)="closeMenu()" (click)="toggleDropdown()"> Psicologo</a></li>
-              <li><a [routerLink]="['/servizio', 'Psicoterapeuta']" (click)="closeMenu()" (click)="toggleDropdown()"> Psicoterapeuta</a></li>
-              <li><a [routerLink]="['/servizio', 'Disbrigo-pratiche']" (click)="closeMenu()" (click)="toggleDropdown()"> Disbrigo pratiche</a></li>
-            </ul>
-       
+
+      <span (click)="toggleDropdown()" title="Vai alla pagina dei servizi" aria-label="Vai alla pagina dei servizi">
+        Altri Servizi
+        <fa-icon class="after-icon" [icon]="faCaretDown"></fa-icon>
+      </span>
+
+      <!-- Lista dei servizi, mostrata solo se 'isDropdownOpen' è true -->
+      <ul *ngIf="isDropdownOpen" class="dropdown-menu">
+        <li><a [routerLink]="['/servizio', 'Infermieri']" (click)="closeMenu()" (click)="toggleDropdown()">
+            Infermieri</a></li>
+        <li><a [routerLink]="['/servizio', 'Fisioterapisti']" (click)="closeMenu()" (click)="toggleDropdown()">
+            Fisioterapisti</a></li>
+        <li><a [routerLink]="['/servizio', 'Psicologo']" (click)="closeMenu()" (click)="toggleDropdown()">
+            Psicologo</a></li>
+        <li><a [routerLink]="['/servizio', 'Psicoterapeuta']" (click)="closeMenu()" (click)="toggleDropdown()">
+            Psicoterapeuta</a></li>
+        <li><a [routerLink]="['/servizio', 'Disbrigo-pratiche']" (click)="closeMenu()" (click)="toggleDropdown()">
+            Disbrigo pratiche</a></li>
+      </ul>
+
       <li><a routerLink="/contatti_cooperaritiva-tre-petali" title="Vai alla pagina contatti"
           aria-label="Vai alla pagina contatti" (click)="closeMenu()">Contatti</a></li>
     </ul>

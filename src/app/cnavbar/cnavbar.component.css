@@ -54,7 +54,8 @@ header {
     padding: 0;
     margin: 0;
     list-style: none;
-  
+    left: 78%;
+    top: 79%;
 }
 
 .dropdown-menu li {
@@ -192,6 +193,7 @@ header {
     .navbar .nav-links li{
         margin: 2%;
         color: #213766;
+        text-align: end;
     }
     /* Adatta per schermi più piccoli come smartphone in modalità verticale */
     .nav-links {
@@ -237,7 +239,7 @@ header {
         justify-content: center;
         align-items: center;
         cursor: pointer;
-
+        margin-right: 5px;
     }
 
     .hamburger div {

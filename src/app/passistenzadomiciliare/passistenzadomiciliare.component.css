@@ -88,6 +88,19 @@ margin: 0 auto;
   margin-bottom: 15px;
   padding-top: 10%;
 }
+.sede-image1{
+  width: 100%;
+}
+.sede-image2{
+  width: 25%;
+}
+.container1{
+  max-width: max-content;
+  padding: 3rem;
+}
+a{
+  text-decoration: none;
+}
 .container{
   border-top-left-radius: 16px;
   border-top-right-radius: 16px;
@@ -109,6 +122,9 @@ margin: 0 auto;
       padding-top: 10%;
       width: 100%;
     }
+    .sede-image2{
+      width: 100%;
+  }
    
 }
 

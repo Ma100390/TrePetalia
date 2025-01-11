@@ -1,2 +1,16 @@
 
-
+.contatti-container {
+    padding: 20px;
+  }
+  .sedi-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .sede-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 15px;
+    width: calc(50% - 20px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }

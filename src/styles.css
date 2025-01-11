@@ -11,7 +11,7 @@
   src: url('assets/font/FuturaBold.otf') format('opentype');
 
 }
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
 @font-face {
   font-family: 'MyFont2';
   src: url('assets/font/Poppins-Black.ttf') format('truetype');
@@ -19,12 +19,19 @@
 
 }
 .titolo1{
+
   font-family: "Roboto Mono", serif;
   font-weight: 400;
   letter-spacing: -3px;
 }
 .titolo2{
-  font-family: 'MyFont2', Arial, sans-serif;
+  font-weight: bold;
+ font-family: 'MyFont2', Arial, sans-serif; 
+}
+.titolo3{
+  font-family: "Roboto Serif", serif;
+  font-weight: bold;
+font-size: 3rem;
 }
 
 * {
@@ -67,7 +74,7 @@ main {
 
 
 .hero-content h1 {
-  font-size: 2.8rem;
+
   margin-bottom: 1rem;
   opacity: 0;
   transform: translateY(20px);
@@ -97,8 +104,30 @@ main {
   color: #131312;
 }
 
-.hero-content strong {
-  color: #ffdd57;
+strong {
+  color: #f29668;
+}
+
+.disposizione {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Allinea verticalmente */
+
+  gap: 20px; /* Spaziatura tra l'immagine e il testo */
+}
+
+.sede-image {
+  width: 100px; /* Dimensiona l'immagine come preferisci */
+  height: auto; /* Mantiene le proporzioni */
+}
+
+.titolo1 {
+  font-size: 1.5rem;
+  font-weight: 100;
+}
+
+.titolo2 {
+  font-size: 3rem;
 
 }
 
@@ -256,12 +285,7 @@ font-weight: 100;
 
 }
 
-img {
-  width: 40%;
 
-  border-radius: 8px;
-  margin: 1%;
-}
 
 .section-nostro-team h2 {
   font-weight: bold;
@@ -355,7 +379,7 @@ img {
   font-weight: bold;
   font-family: "Kanit", sans-serif;
   color: #112e67;;
-  
+
   margin-top: 1.5rem;
 }
 .about1 p {
@@ -367,9 +391,7 @@ img {
   margin-bottom: 0;
   text-align: justify;
 }
-.hero-content strong {
-  color: #796f35;
-}
+
 
 .about-content1 {
   display: flex;
@@ -413,20 +435,36 @@ img {
 
 
 @media (max-width: 768px) {
-  .hero-content h1 {
+  .titolo3{
+
+  font-size: 2.5rem;
+  }
+  .about p{
+    font-size: 1.1rem;
+    font-weight: 300;
+    color: #fcf8f8;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 0px;
+    text-align: justify;
+  }
+  .about-content{
+    margin: 1rem;
+  }
+
+  .sede-image{
+    max-width: 50px;
+    width: 20%;
+  }
+  .about h2 {
     font-size: 2rem;
+    line-height: 1.2;
   }
-  img {
-    width: 98%;
-    height: 320px;
-  }
+
 
   .about-content1 {
     margin: 1rem;
   }
-  .about-content {
-    margin: 1rem;
-  }
+
   .about h2 {
     font-size: 2rem;
   }
