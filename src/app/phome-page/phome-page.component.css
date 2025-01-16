@@ -21,18 +21,9 @@ span.petali:hover {
     color: white;
     cursor: pointer;
 }
-ul li{
-    font-size: 1.1rem;
-    font-weight: 300;
-    color: #fcf8f8;
-    font-family: "Poppins", sans-serif;
-    line-height: 1.4;
-    margin-bottom: 0px;
-    text-align: justify;
-    word-spacing: -1px;
-   
-}
 
+
+  
 .container1 {
     max-width: 410px;
 }
@@ -44,8 +35,24 @@ ul li{
     line-height: 1.8;
    
 }
+.value-item {
+    display: flex;
+    align-items: center; /* Allinea verticalmente l'icona e il testo */
+    margin-bottom: 20px; /* Spazio tra gli item */
+    flex-direction: column;
+}
+
+.value-item fa-icon {
+    min-width: 60px; /* Larghezza minima per ogni icona */
+    margin-right: 12px; /* Distanza tra l'icona e il testo */
+    font-size: 1.5rem; /* Imposta la dimensione dell'icona */
+    color: rgb(255, 255, 255);
+}
+
+
 .immagine1{
     width: 100%;
+    border-radius: 8px;
 }
 /* Sezione Storia */
 .section-storia {
@@ -84,10 +91,7 @@ ul li{
     
     width: 30%;
  }
- .sede-image{
-    max-width: 75px;
-    width: 20%;
-  }
+ 
 .image-container {
     padding-bottom: 2rem;
 }
@@ -106,12 +110,4 @@ ul li{
 
 
 
-.hero-content {
-    max-width: 600px;
-    margin: auto;
-    text-align: center;
-    padding: 20px;
-    border-radius: 8px;
-
-}
 

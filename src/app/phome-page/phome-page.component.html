@@ -7,88 +7,120 @@
                 <h1>
                     <span class="titolo2">tre petali</span> <br>
                     <span class="titolo1">COOPERATIVA SOCIALE</span>
-
                 </h1>
             </div>
-            <p><strong>Tre Petali eroga servizi<br> Socio-sanitari,
-                    Educativi e Riabilitativi</strong>
-            </p>
+            <p>Tre Petali eroga servizi<br> Socio-sanitari, Educativi e Riabilitativi</p>
             <div class="hero-buttons">
-                <a routerLink="/servizi" class="cta-button" aria-label="Scopri i nostri servizi di assistenza">Scopri i
-                    nostri
-                    servizi <fa-icon [icon]="faArrowRight" class="arrow-icon"></fa-icon></a>
+                <a routerLink="/servizi" class="cta-button" aria-label="Scopri i nostri servizi di assistenza"
+                    routerLinkActive="active">Scopri i nostri servizi
+                    <fa-icon [icon]="faArrowRight" class="arrow-icon"></fa-icon>
+                </a>
 
             </div>
+            <a routerLink="/contatti_cooperaritiva-tre-petali" routerLinkActive="active" class="contatti"
+                aria-label="Scopri i nostri servizi di assistenza">Contatti
+                <fa-icon [icon]="faPhone" class="phone-icon"></fa-icon>
 
+            </a>
         </div>
+
+        <!-- Immagine aggiunta come maschera decorativa -->
+        <div class="bottom-mask"></div>
     </section>
+
+
     <section id="about" class="about">
         <div class="about-content">
             <div class="container2">
                 <div class="about-content">
-                    <div class="image-container">
-                        <h2>Chi Siamo</h2>
-                        <p>
-                            La nostra cooperativa sociale è nata con l'obiettivo di offrire <strong>supporto e
-                                assistenza</strong> a persone vulnerabili,
-                            promuovendo l'inclusione sociale e il benessere collettivo. Con un approccio centrato sulla
-                            persona e sul
-                            rispetto dei suoi diritti fondamentali, ci impegniamo ogni giorno per migliorare la qualità
-                            della vita di chi
-                            si trova in condizioni di fragilità, offrendo una vasta gamma di <strong>servizi
-                                socio-sanitari personalizzati</strong>.
-                        </p>
-                        <br>
-                        <p>
-                            Da anni operiamo nel settore, collaborando con enti pubblici e privati, e con una rete di
-                            professionisti altamente
-                            qualificati. La nostra missione è fornire <strong>un’assistenza</strong> che rispetti la
-                            dignità delle persone, favorendo la loro
-                            autonomia e partecipazione attiva alla vita sociale. Ogni servizio è pensato per rispondere
-                            alle specifiche esigenze
-                            dei singoli, attraverso un’attenzione particolare alla persona, al suo contesto familiare e
-                            comunitario.
-                        </p>
-                    </div>
                     <div class="container1">
                         <img class="immagine1" src="https://ma100390.github.io/TrePetalia/assets/porto2.webp"
                             alt="Laboratori Creativi" />
                     </div>
+                    <div class="image-container">
+
+                        <h2>Chi Siamo</h2>
+                        <p>
+                            La nostra cooperativa sociale è nata con l'obiettivo di offrire<a
+                                routerLink="/assistenza-domiciliare-lecce" routerLinkActive="active"
+                                aria-label="Scopri i nostri servizi di assistenza">
+                                assistenza a persone vulnerabili</a>,
+                            promuovendo l'inclusione sociale e il benessere collettivo.<br> Con un approccio centrato
+                            sulla
+                            persona e sul
+                            rispetto dei suoi diritti fondamentali, ci impegniamo ogni giorno per migliorare la qualità
+                            della vita di chi
+                            si trova in condizioni di fragilità, offrendo una vasta gamma di <a routerLink="/servizi"
+                                routerLinkActive="active" aria-label="Scopri i nostri servizi di assistenza">
+                                servizi socio-sanitari personalizzati</a> .
+
+                            <br>
+                        </p>
+                        <h3>Il Nostro Impegno</h3>
+                        <p>
+                            Da anni operiamo nel settore, collaborando con enti pubblici e privati, con una rete di
+                            professionisti altamente
+                            qualificati. La nostra missione è fornire <a routerLink="/assistenza-domiciliare-lecce"
+                                routerLinkActive="active"
+                                aria-label="Scopri i nostri servizi di assistenza">un’assistenzache rispetti la
+                                dignità delle persone</a>, favorendo la loro
+                            autonomia e partecipazione attiva alla vita sociale. Ogni servizio è pensato per rispondere
+                            alle specifiche esigenze
+                            dei singoli, attraverso un’attenzione particolare <strong>alla persona, al suo contesto
+                                familiare e
+                                comunitario</strong>.
+                        </p>
+                    </div>
+
                 </div>
                 <div class="about-content">
+                    <div class="container1">
+                        <img class="immagine1" src="https://ma100390.github.io/TrePetalia/assets/valori.webp" alt="Laboratori Creativi" />
+                    </div>
                     <div class="image-container">
+
                         <h2>I nostri valori</h2>
                         <ul>
-                            <li>
-                                <fa-icon class="after-icon" [icon]="faPeopleArrows"></fa-icon><strong>
-                                    Solidarietà:</strong> lavoriamo per costruire una società più giusta e inclusiva, in
-                                cui ogni individuo possa sentirsi parte integrante.
-
+                            <li class="value-item">
+                                <h3>Solidarietà</h3>
+                                <fa-icon class="after-icon" [icon]="faPeopleArrows"></fa-icon>
+                                <p>Lavoriamo per costruire una società più giusta e inclusiva, in cui ogni
+                                    individuo possa sentirsi parte integrante.</p>
                             </li>
-                            <li>
-                                <fa-icon class="after-icon" [icon]="faBalanceScale"></fa-icon><strong>
-                                    Responsabilità:</strong> ci assumiamo l’impegno di garantire servizi di alta
-                                qualità, nel pieno rispetto delle normative e delle necessità di ogni individuo.
-
+                            <li class="value-item">
+                                <h3>Responsabilità</h3>
+                                <fa-icon class="after-icon" [icon]="faBalanceScale"></fa-icon>
+                                <p>Ci assumiamo l’impegno di garantire servizi di alta qualità, nel
+                                    pieno rispetto delle normative e delle necessità di ogni individuo.</p>
                             </li>
-                            <li>
-                                <fa-icon class="after-icon" [icon]="faLightbulb"></fa-icon><strong>
-                                    Innovazione:</strong> investiamo continuamente in nuove metodologie e tecnologie per
-                                migliorare il supporto che offriamo, con soluzioni sempre più efficaci.
-
+                            <li class="value-item">
+                                <h3>Innovazione</h3>
+                                <fa-icon class="after-icon" [icon]="faLightbulb"></fa-icon>
+                                <p>Investiamo continuamente in nuove metodologie e tecnologie per
+                                    migliorare il supporto che offriamo, con soluzioni sempre più efficaci.</p>
                             </li>
-                            <li>
-                                <fa-icon class="after-icon" [icon]="faHeart"></fa-icon> <strong> Empatia:</strong>
-                                ascoltiamo e rispondiamo ai bisogni di ogni persona con sensibilità e rispetto, per
-                                creare un ambiente di cura e fiducia.
-
+                            <li class="value-item">
+                                <h3>Empatia</h3>
+                                <fa-icon class="after-icon" [icon]="faHeart"></fa-icon>
+                                <p>Ascoltiamo e rispondiamo ai bisogni di ogni persona con sensibilità e
+                                    rispetto, per creare un ambiente di cura e fiducia.</p>
                             </li>
                         </ul>
+
                     </div>
+
+                </div>
+
+                <div class="about-content">
+                    <div class="container1">
+                        <img class="immagine1" src="https://ma100390.github.io/TrePetalia/assets/salute.webp" alt="Laboratori Creativi" />
+                    </div>
+
                     <div class="container1">
                         <h2>Il nostro impegno</h2>
                         <p>
-                            La nostra cooperativa è un punto di riferimento per <strong>famiglie</strong>, pazienti e
+                            La nostra cooperativa è un punto di riferimento per <strong>famiglie</strong>, pazienti
+                            e
                             professionisti che cercano supporto
                             nelle sfide quotidiane della vita, con l’obiettivo di garantire un accompagnamento che
                             favorisca
@@ -97,50 +129,7 @@
                         </p>
                     </div>
                 </div>
-            </div>
 
-        </div>
-
-    </section>
-    <section id="about" class="about1">
-        <div class="about-content1">
-            <div class="container2">
-                <!-- <section id="nostro-team" class="section-nostro-team"> -->
-                <h2>La nostra squadra</h2>
-                <p>
-                    Il cuore della nostra cooperativa è la nostra squadra di professionisti, un gruppo qualificato,
-                    motivato e appassionato che lavora ogni giorno per garantire un servizio di alta qualità alle
-                    persone che si rivolgono a noi. Ogni membro condivide una visione comune: promuovere
-                    <strong>l’inclusione sociale e il benessere attraverso l’ascolto</strong>, il rispetto e il supporto
-                    costante.
-                </p>
-                <p>
-                    La squadra è composta da una varietà di figure professionali, ognuna con competenze specifiche, ma
-                    tutte unite dall'impegno di offrire il massimo sostegno a chi ne ha bisogno. I nostri collaboratori
-                    lavorano in sinergia per rispondere alle esigenze individuali e familiari, assicurando un approccio
-                    personalizzato e integrato.
-                </p>
-                <h3>I Nostri Professionisti:</h3>
-                <ul class="lista">
-                    <li><strong>Assistenti Sociali:</strong> Esperti nell'individuare e valutare i bisogni sociali delle
-                        persone, aiutano a orientare e supportare le famiglie nel percorso di assistenza e integrazione,
-                        offrendo consulenze e mediazioni con i servizi pubblici e privati.</li>
-                    <li><strong>Operatori Socio-Sanitari:</strong> Professionisti formati per fornire assistenza diretta
-                        nelle attività quotidiane, contribuendo al miglioramento delle condizioni di vita degli utenti,
-                        sia a domicilio che in strutture residenziali.</li>
-                    <li><strong>Infermiere e Fisioterapisti:</strong> Offrono cure sanitarie e monitorano la salute
-                        fisica degli assistiti, con un’attenzione particolare alle esigenze dei pazienti fragili e
-                        anziani, garantendo un’assistenza continuativa e professionale.</li>
-                    <li><strong>Psicologi e Psicoterapeuti:</strong> Supportano le persone e le famiglie nel superamento
-                        delle difficoltà emotive, psicologiche e relazionali, con percorsi terapeutici e consulenze
-                        specifiche.</li>
-                    <li><strong>Educatori Professionali:</strong> Contribuiscono alla crescita e al benessere
-                        psicologico e educativo di bambini e adulti in difficoltà, sviluppando progetti di educazione e
-                        integrazione.</li>
-                    <li><strong>Personale Amministrativo e Logistico:</strong> Supporta l’organizzazione e la gestione
-                        dei servizi, assicurando che le risorse vengano utilizzate in modo efficiente e che ogni
-                        processo sia ottimizzato per offrire il miglior servizio possibile.</li>
-                </ul>
                 <div class=" disposizione">
                     <img class="sedeimage" src="https://ma100390.github.io/TrePetalia/assets/presenza2.webp"
                         alt="Laboratori Creativi" />
@@ -150,15 +139,104 @@
                         alt="Laboratori Creativi" />
                 </div>
 
+
+                <div class="image-container">
+                    <h2>I nostri professionisti</h2>
+                    <ul>
+                        <li class="value-item">
+                            <h3>Assistenti Sociali</h3>
+                            <fa-icon class="after-icon" [icon]="faUserGraduate"></fa-icon>
+                            <p> Esperti nell'individuare e valutare i bisogni
+                                sociali delle persone, aiutano a orientare e supportare le famiglie nel percorso di
+                                assistenza e integrazione, offrendo consulenze e mediazioni con i servizi pubblici e
+                                privati.</p>
+                        </li>
+                        <li class="value-item">
+                            <h3>Operatori Socio-Sanitari</h3>
+                            <fa-icon class="after-icon" [icon]="faHeartbeat"></fa-icon>
+                            <p> Professionisti formati per fornire assistenza
+                                diretta nelle attività quotidiane, contribuendo al miglioramento delle condizioni di
+                                vita degli utenti, sia a domicilio che in strutture residenziali.</p>
+                        </li>
+                        <li class="value-item">
+                            <h3>Infermiere e Fisioterapisti</h3>
+                            <fa-icon class="after-icon" [icon]="faStethoscope"></fa-icon>
+                            <p> Offrono cure sanitarie e monitorano la
+                                salute fisica degli assistiti, con un’attenzione particolare alle esigenze dei pazienti
+                                fragili e anziani, garantendo un’assistenza continuativa e professionale.</p>
+                        </li>
+                        <li class="value-item">
+                            <h3>Psicologi e Psicoterapeuti</h3>
+                            <fa-icon class="after-icon" [icon]="faBrain"></fa-icon>
+                            <p> Supportano le persone e le famiglie nel
+                                superamento delle difficoltà emotive, psicologiche e relazionali, con percorsi
+                                terapeutici e consulenze specifiche.</p>
+                        </li>
+                        <li class="value-item">
+                            <h3>Educatori Professionali</h3>
+                            <fa-icon class="after-icon" [icon]="faChalkboardTeacher"></fa-icon>
+                            <p> Contribuiscono alla crescita e al benessere
+                                psicologico e educativo di bambini e adulti in difficoltà, sviluppando progetti di
+                                educazione e integrazione.</p>
+                        </li>
+                        <li class="value-item">
+                            <h3>Personale Amministrativo e Logistico</h3>
+                            <fa-icon class="after-icon" [icon]="faBriefcase"></fa-icon>
+                            <p> Supporta l’organizzazione e la
+                                gestione dei servizi, assicurando che le risorse vengano utilizzate in modo efficiente e
+                                che ogni processo sia ottimizzato per offrire il miglior servizio possibile.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <section id="about" class="about1">
+        <div class="about-content1">
+            <div class="container1">
+                <img class="immagine1" src="https://ma100390.github.io/TrePetalia/assets/squadra.webp" alt="Laboratori Creativi" />
+            </div>
+            <div class="image-container">
+                <!-- <section id="nostro-team" class="section-nostro-team"> -->
+                <h2>La nostra squadra</h2>
                 <p>
-                    La collaborazione tra le diverse figure professionali permette di garantire un approccio globale,
+                    Il cuore della nostra cooperativa è la nostra squadra di professionisti, un gruppo qualificato,
+                    motivato e appassionato che lavora ogni giorno per garantire un servizio di alta qualità alle
+                    persone che si rivolgono a noi. Ogni membro condivide una visione comune: promuovere
+                    <a routerLink="/servizio/Psicologo" routerLinkActive="active"
+                        aria-label="Scopri i nostri servizi di assistenza">l’inclusione sociale e il benessere
+                        attraverso l’ascolto</a>, il rispetto e il supporto
+                    costante.
+
+
+                    La squadra è composta da una varietà di figure professionali, ognuna con competenze specifiche, ma
+                    tutte unite dall'impegno di offrire il massimo sostegno a chi ne ha bisogno. I nostri collaboratori
+                    lavorano in sinergia per rispondere alle esigenze individuali e familiari, assicurando un approccio
+                    <a routerLink="/accompagnamento-strutture-lecce" routerLinkActive="active"
+                        aria-label="Scopri i nostri servizi di assistenza"> personalizzato e integrato</a>.
+
+
+                    La collaborazione tra le diverse figure professionali permette di garantire <a
+                        routerLink="/casa-di-riposo-provincia-di-lecce" routerLinkActive="active"
+                        aria-label="Scopri i nostri servizi di assistenza">un approccio globale</a> ,
                     integrato e mirato per ciascun utente, rispettando la sua unicità e rispondendo tempestivamente alle
-                    sue necessità. La nostra formazione continua, unita alla passione per il nostro lavoro, ci permette
-                    di affrontare ogni sfida con professionalità, empatia e competenza.
+                    sue necessità. La nostra formazione continua, unita alla passione per il nostro lavoro, <strong> ci
+                        permette
+                        di affrontare ogni sfida con professionalità, empatia e competenza</strong>.
                 </p>
             </div>
         </div>
     </section>
+    <div class="hero-buttons">
+        <a routerLink="/servizi" class="cta-button" aria-label="Scopri i nostri servizi di assistenza"
+            routerLinkActive="active">Scopri i nostri servizi
+            <fa-icon [icon]="faArrowRight" class="arrow-icon"></fa-icon>
+        </a>
+
+    </div>
+
     <section id="contatti" class="section-contatti">
         <h2>Contatti e Orari di Apertura della Cooperativa Tre Petali</h2>
         <p>
@@ -170,8 +248,10 @@
             <p>Telefono: <a href="tel:+390000000000">+39 3701255832</a></p>
             <p>Indirizzo: Via Vescovo Verrienti 2, Veglie (LE)</p>
         </address>
-        <div class="hero-buttons">
-            <a href="#richiesta-informazioni" class="cta-button">Contattaci</a>
-        </div>
+        <a routerLink="/contatti_cooperaritiva-tre-petali" routerLinkActive="active" class="contatti"
+            aria-label="Scopri i nostri servizi di assistenza">Contatti
+            <fa-icon [icon]="faPhone" class="phone-icon"></fa-icon>
+
+        </a>
     </section>
 </main>
