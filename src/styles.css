@@ -43,13 +43,13 @@ font-size: 3rem;
 
 /* Sezione principale*/
 main {
-
-
-  line-height: 1.6;
-  max-width: 1500px;
-  margin: 0 auto;
-  padding: 0;
+  max-width: 1920px;  /* Limita la larghezza massima a 1920px */
+  margin: 0 auto;     /* Centra il contenuto */
+  padding: 20px;      /* Spazio interno per evitare che tocchi i bordi */
+  width: 100%;        /* Assicura che si adatti allo schermo */
+  box-sizing: border-box; /* Mantiene i padding dentro il max-width */
 }
+
 
 
 .hero {
@@ -64,18 +64,10 @@ main {
 .hero-content {
   max-width: 800px;
   text-align: center;
-  margin: 0 auto;
+  margin: 1% auto;
   z-index: 3;
 }
 
-
-.hero-content h1 {
-
-  margin-bottom: 1rem;
-  opacity: 0;
-  transform: translateY(20px);
-  animation: fadeInUp 1.5s ease-out forwards;
-}
 
 /* Definizione dell'animazione */
 @keyframes fadeInUp {
@@ -91,9 +83,21 @@ main {
   }
 }
 
+.hero-content h1 {
+  font-size: 5rem;
+  margin-bottom: 2rem;
+  line-height: 1.8;
+  font-family: 'Poppins', sans-serif;
+  color: #ffffff;
+  
+  text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.8), 
+  0px 0px 16px rgb(0, 0, 0);
+
+
+}
 
 .hero-content p {
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin-bottom: 2rem;
   line-height: 1.8;
   font-family: 'Poppins', sans-serif;
@@ -292,12 +296,7 @@ font-weight: 100;
   color: #112e67;
   margin-top: 1.5rem;
 }
-.about-content1 h3 {
-  font-weight: bold;
-  font-family: "Kanit", sans-serif;
-  color: #112e67;
-  margin-top: 1.5rem;
-}
+
 
 .section-nostro-team {
   font-size: 1.1rem;
@@ -314,27 +313,8 @@ font-weight: 100;
   margin-bottom: 2rem;
 }
 
-.about-content {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  margin: 6rem;
-  border-radius: 8px;
-  background: #82a8f5;
-  gap: 2rem;
-  /* Spazio tra il testo e l'immagine */
-  flex-wrap: wrap;
-  /* Assicura che gli elementi si dispongano su più righe su schermi piccoli */
-}
 
 
-
-.image-container {
-
-  flex: 1;
-  text-align: center;
-}
 
 .sede-image {
   max-width: 120px;
@@ -348,77 +328,7 @@ font-weight: 100;
 
 
 
-.about h2 {
-  font-size: 2rem;
-  font-weight: 400;
-  font-family: "Kanit", sans-serif;
-  color: #fdfdfd;
 
-
-}
-.about h3 {
-  font-size: 1.125rem;
-  font-weight: 100;
-  font-family: "Kanit", sans-serif;
-  color: #fdfdfd;
-  text-align: left;
-
-}
-
-.about p {
-  font-size: 1.25rem;
-  font-weight: 300;
-color: #424a4f;
-  font-family: "Kanit", sans-serif;
-  line-height: 1.3;
-  margin-bottom: 0px;
-  text-align: left;
-  word-spacing: -1px;
-}
-
-.about1 h2{
-  font-size: 2rem;
-  font-weight: bold;
-  font-family: "Kanit", sans-serif;
-  color: #112e67;;
-
-}
-.about1 p {
-  font-size: 1.25rem;
-  font-weight: 300;
-color: #424a4f;
-  font-family: "Kanit", sans-serif;
-  line-height: 1.3;
-  margin-bottom: 0px;
-  text-align: left;
-  word-spacing: -1px;
-}
-
-
-.about-content1 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 6rem;
-  border-radius: 8px;
-  background: #ffffff;
-  gap: 2rem;
-  flex-wrap: wrap;
-}
-
-
-.bottom-mask {
-  position: absolute; /* Posiziona l'elemento in relazione al genitore */
-  bottom: 0; /* Allinea alla parte inferiore */
-  left: 0;
-  width: 100%; /* Larghezza piena del contenitore */
-  height: 311px; /* Altezza della maschera */
-  background-image: url('https://ma100390.github.io/TrePetalia/assets/fiorenzo/pan2.webp'); /* Immagine della maschera */
-  background-size: cover; /* Adatta l'immagine al contenitore */
-  background-repeat: no-repeat; /* Evita ripetizioni */
-  background-position: center; /* Centra la maschera */
-  z-index: 2; /* Assicura che stia sopra il contenuto della sezione */
-}
 
 
 
@@ -440,18 +350,7 @@ color: #424a4f;
   height: 28rem;
 
 }
-.bottom-mask {
-  position: absolute;
-  bottom: -7%;
-  left: 0;
-  width: 100%;
-  height: 280px;
-  background-image: url('https://ma100390.github.io/TrePetalia/assets/fiorenzo/pan2.webp');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  z-index: 2;
-}
+
 .contatti{
   display: block;
   padding: 5%;

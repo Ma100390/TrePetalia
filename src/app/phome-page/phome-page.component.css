@@ -1,12 +1,50 @@
 /* background: url('/TrePetalia/assets/porto2.webp') no-repeat center center / cover; 
 , url('/TrePetalia/assets/porto2.webp') center/cover no-repeat;*/
 
+h1 .subtitle {
+    display: block; /* Mette il testo su una nuova riga */
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #ffffff;
+    margin-top: 5px;
+}
 
 
 
-/* Sezione Contatti e Orari di Apertura */
+.grid {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: antiquewhite;
+}
+  
+.grid::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://ma100390.github.io/TrePetalia/assets/fiorenzo/pan2.webp');
+    opacity: 0.2;
+  }
 
-
+.hero {
+    width: 100%;
+    height: 400px;
+    background: linear-gradient(to right, #ff7e5f, #F29479);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .hero::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://ma100390.github.io/TrePetalia/assets/fiorenzo/pan2.webp');
+    opacity: 0.2;
+  }
+  
 span.petali {
     font-size: 3rem;
     color: #2155b4cb;
@@ -24,9 +62,7 @@ span.petali:hover {
 
 
   
-.container1 {
-    max-width: 410px;
-}
+
 .lista li{
     color: rgb(26, 22, 22);
     font-family: "Poppins", sans-serif;
@@ -50,62 +86,304 @@ span.petali:hover {
 }
 
 
-.immagine1{
-    width: 100%;
-    border-radius: 8px;
-}
-/* Sezione Storia */
-.section-storia {
-    background-color: #ffffff;
-    padding: 4rem 1rem;
+
+
+
+
+.card {
+    position: relative;
+    width: 350px;
     text-align: center;
-    color: #333;
-}
-
-.section-storia h2 {
-    font-size: 2.4rem;
-    font-weight: bold;
-    font-family: "Kanit", sans-serif;
-    color: #2e3b47;
-    margin-bottom: 1rem;
-}
-.sedeimage{
+    margin: 5% 2%;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  .immagine1, .sedeimage {
     width: 100%;
-    border-radius: 5%;
-}
-.section-storia p {
-    font-size: 1.1rem;
-    color: #555;
-    line-height: 1.6;
-    max-width: 900px;
-    margin: 0 auto 2rem;
+  
+    height: 100%;
+    object-fit: cover; /* Assicura che l'immagine copra l'area senza distorsioni */
+    border-radius: 8px;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Colore sfondo semitrasparente */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .card:hover .overlay {
+    opacity: 1; /* Mostra l'overlay quando si passa sopra la card */
+  }
+  
+  .overlay span {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+
+    max-width: 800px;
+    margin: 0 auto;
+    gap: 50px;
 }
 
-.section-storia strong {
+h2, h3 {
+    color: #2c3e50;
+    font-family: 'Arial', sans-serif;
+    font-size: 2.8rem;
+    margin-bottom: 5%;
+    text-align: center;
+    
+}
+h2 {
+    font-size: 2.5rem; /* Dimensione del testo */
+    color: #34495e; /* Colore del testo (grigio scuro) */
+    text-align: center; /* Allinea il testo al centro */
+    font-weight: 700; /* Grassetto */
+    letter-spacing: 2px; /* Spaziatura tra le lettere */
+
+    position: relative; /* Necessario per l'effetto di ombra */
+    margin: 40px 0; /* Distanza sopra e sotto */
+    padding: 10px 20px; /* Padding interno per rendere più distanziato */
+    transition: color 0.3s ease, transform 0.3s ease; /* Transizione fluida */
+}
+
+h2::before {
+    content: ''; /* Contenuto vuoto per il pseudo-elemento */
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    height: 5px; /* Altezza della linea */
+    background: #3498db; /* Colore della linea */
+    border-radius: 5px;
+    width: 100%; /* Linea invisibile inizialmente */
+}
+
+
+
+p {
+    font-size: 1.3rem;
+    line-height: 1.6;
+    color: #34495e;
+}
+
+
+
+strong {
     font-weight: bold;
-    color: #6a94ff;
+    color: #e74c3c;
+}
+
+/* Media Queries per dispositivi mobili */
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr; /* Una colonna su schermi piccoli */
+    }
+}
+
+.value-item {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+    color: #2c3e50;
+}
+
+.value-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    background: #ecf0f1; /* Cambia colore dello sfondo al passaggio del mouse */
+}
+
+.value-item h3 {
+    font-size: 1.6em;
+    color: #2c3e50;
+    margin-top: 15px;
+    font-weight: bold;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1); /* Ombra del testo */
+}
+
+.value-item p {
+    font-size: 1em;
+    color: #34495e;
+    margin-top: 10px;
+}
+
+.after-icon {
+    font-size: 40px;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.value-item:hover .after-icon {
+    transform: scale(1.2); /* Aumenta l'icona al passaggio del mouse */
+    color: #3498db; /* Cambia colore dell'icona */
+}
+
+.value-item:nth-child(1) {
+    background: #3498db; /* Colore per il primo valore */
+    color: white;
+}
+
+.value-item:nth-child(2) {
+    background: #e74c3c; /* Colore per il secondo valore */
+    color: white;
+}
+
+.value-item:nth-child(3) {
+    background: #f39c12; /* Colore per il terzo valore */
+    color: white;
+}
+
+.value-item:nth-child(4) {
+    background: #2ecc71; /* Colore per il quarto valore */
+    color: white;
+}
+
+
+.image-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+
+.values-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 30px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.value {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: #2c3e50;
+    text-align: center;
+    max-width: 300px;
+
+        margin: 1%;
+}
+.container1{
+    padding: 10% 1%;
+    background-color: antiquewhite;
+}
+
+.value:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    background-color: #ecf0f1;
+}
+
+.value h3 {
+    font-size: 1.6em;
+    color: #2c3e50;
+    margin-top: 20px;
+    font-weight: bold;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.value p {
+  text-align: left;
+    color: #34495e;
+    margin-top: 15px;
+}
+
+.after-icon {
+    font-size: 40px;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.value:hover .after-icon {
+    transform: scale(1.2);
+    color: #3498db; /* Cambia colore dell'icona al passaggio del mouse */
+}
+
+
+/* Responsivo per schermi piccoli */
+@media (max-width: 1500px) {
+    .image-container{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+    }
 }
 @media (max-width: 768px) {
-
- .sede-image {
+    .values-list {
+        grid-template-columns: 1fr; /* Una colonna su schermi piccoli */
+    }
+  
     
-    width: 30%;
- }
- 
-.image-container {
-    padding-bottom: 2rem;
+    .values-list {
+        grid-template-columns: 1fr;
+    }
+    .sede-image {
+    
+        width: 30%;
+     }
+     .section-nostro-team p {
+
+        margin: 1% auto;
+    }
+    .sedeimage{
+        width: 100%;
+        border-radius: 5%;
+    }
+    .card {
+
+        width: 370px;
+  
+    
+            margin: -3% 2%;
+     
+      }
+      main{
+        padding: 4px;
+      }
+      h1{
+        font-size: 2.5rem;
+      }
+      .hero-buttons {
+        display: flex;
+        flex-direction: column;
+      }
+    
 }
 
-.section-nostro-team p {
 
-    margin: 1% auto;
-}
-.sedeimage{
-    width: 100%;
-    border-radius: 5%;
-}
-
-}
 
 
 
