@@ -6,6 +6,7 @@ import { PcontattiComponent } from './pcontatti/pcontatti.component';
 import { PaccompagnamentoComponent } from './paccompagnamento/paccompagnamento.component';
 import { PaltriserviziComponent } from './paltriservizi/paltriservizi.component';
 import { PserviziComponent } from './pservizi/pservizi.component';
+import { PchisiamoComponent } from './pchisiamo/pchisiamo.component';
 
 export const routes: Routes = [
     {
@@ -15,6 +16,10 @@ export const routes: Routes = [
       {
         path: 'casa-di-riposo-provincia-di-lecce',
         component: PstrutturaComponent
+      },
+      {
+        path: 'chi-siamo-tre-petali-lecce',
+        component: PchisiamoComponent
       },
       {
         path: 'assistenza-domiciliare-lecce',

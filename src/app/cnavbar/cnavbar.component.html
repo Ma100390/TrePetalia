@@ -9,7 +9,8 @@
     <ul class="nav-links" [class.active]="isMenuOpen">
       <li><a routerLink="/" title="Vai alla pagina Home" aria-label="Vai alla pagina Home"
           (click)="closeMenu()">Home</a></li>
-
+      <li><a routerLink="chi-siamo-tre-petali-lecce" (click)="closeMenu()">
+            Chi Siamo</a></li>
       <li><a routerLink="/casa-di-riposo-provincia-di-lecce" title="Vai alla pagina aree intervento"
           aria-label="Vai alla pagina aree intervento" (click)="closeMenu()">Casa di Riposo</a></li>
       <li><a routerLink="/assistenza-domiciliare-lecce" title="Vai alla pagina laboratori creativi"
@@ -26,20 +27,22 @@
 
       <!-- Lista dei servizi, mostrata solo se 'isDropdownOpen' è true -->
       <ul *ngIf="isDropdownOpen" class="dropdown-menu">
+   
         <li><a [routerLink]="['/servizio', 'Infermieri']" (click)="closeMenu()" (click)="toggleDropdown()">
             Infermieri</a></li>
         <li><a [routerLink]="['/servizio', 'Fisioterapisti']" (click)="closeMenu()" (click)="toggleDropdown()">
             Fisioterapisti</a></li>
         <li><a [routerLink]="['/servizio', 'Psicologo']" (click)="closeMenu()" (click)="toggleDropdown()">
-            Psicologo</a></li>
+            Psicologi</a></li>
         <li><a [routerLink]="['/servizio', 'Psicoterapeuta']" (click)="closeMenu()" (click)="toggleDropdown()">
-            Psicoterapeuta</a></li>
+            Psicoterapeuti</a></li>
         <li><a [routerLink]="['/servizio', 'Disbrigo-pratiche']" (click)="closeMenu()" (click)="toggleDropdown()">
             Disbrigo pratiche</a></li>
+            <li><a routerLink="/contatti_cooperaritiva-tre-petali" title="Vai alla pagina contatti"
+              aria-label="Vai alla pagina contatti" (click)="closeMenu()"  (click)="toggleDropdown()">Contatti</a></li>
       </ul>
 
-      <li><a routerLink="/contatti_cooperaritiva-tre-petali" title="Vai alla pagina contatti"
-          aria-label="Vai alla pagina contatti" (click)="closeMenu()">Contatti</a></li>
+
     </ul>
 
     <div class="hamburger" (click)="toggleMenu()">
