@@ -30,11 +30,11 @@ export const routes: Routes = [
         component: PaccompagnamentoComponent
       },
       {
-        path: 'contatti_cooperaritiva-tre-petali',
+        path: 'contatti-cooperaritiva-tre-petali',
         component: PcontattiComponent
       },
       {
-        path: 'servizi',
+        path: 'servizi-per-anziani-lecce',
         component: PserviziComponent
       },
       { path: 'servizio/:servizio', component: PaltriserviziComponent },

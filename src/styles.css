@@ -57,14 +57,14 @@ main {
   background: linear-gradient(rgb(180 177 177 / 0%), #82a8f5);
   color: #fff;
   height: 100vh;
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
 }
 
 .hero-content {
   max-width: 800px;
   text-align: center;
-  margin: 1% auto;
+  margin: 3% auto;
   z-index: 3;
 }
 
@@ -226,39 +226,6 @@ font-weight: 100;
 
 }
 
-.section-contatti {
-  padding: 4rem 2rem;
-
-  text-align: center;
-}
-
-.section-contatti h2 {
-
-  font-weight: 400;
-  margin-bottom: 1rem;
-  font-family: "Kanit", sans-serif;
-  color: #2e3b47;
-  margin-bottom: 1.5rem;
-}
-
-.section-contatti p {
-  font-size: 1.1rem;
-  color: #555;
-  line-height: 1.8;
-  max-width: 900px;
-  margin: 0 auto;
-  font-family: "Poppins", sans-serif;
-}
-
-.address a {
-  color: #6a94ff;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.address a:hover {
-  text-decoration: underline;
-}
 
 .cta-button {
   display: inline-block;
@@ -267,16 +234,16 @@ font-weight: 100;
   padding: 0.5rem 1rem;
   border-radius: 5px;
   text-decoration: none;
-
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, opacity 0.3s ease;
   font-family: 'Poppins', sans-serif;
-
+  margin: 0 auto; /* Centra orizzontalmente */
+  transition: background-color 0.3s;
+  display: block; /* Fa sì che l'elemento diventi un blocco */
+  width: fit-content; 
 }
-
-.cta-button:hover {
+.cta-butto:hover {
   background-color: #4c74e7;
 }
-
 
 
 /* Sezione Il Nostro Team di Professionisti */
@@ -341,14 +308,6 @@ font-weight: 100;
 
 }
 
-.contatti{
-  display: block;
-  padding: 5%;
-  font-size: 1.5rem;
-  font-family: "Poppins", sans-serif;
-  font-weight: bold;
-  color: #070961;
-}
 @media (max-width: 768px) {
   .titolo3{
 

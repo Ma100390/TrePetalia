@@ -1,333 +1,395 @@
-/* background: url('/TrePetalia/assets/porto2.webp') no-repeat center center / cover; 
-, url('/TrePetalia/assets/porto2.webp') center/cover no-repeat;*/
-
-h1 .subtitle {
-    display: block; /* Mette il testo su una nuova riga */
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: #ffffff;
-    margin-top: 5px;
-}
-
-
-
 .grid {
-
- 
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        gap: 20px;
-        padding: 20px;
- 
-        margin: auto;
-    
-    background-color: antiquewhite;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15%, 1fr));
+  margin: auto;
+  background-color: antiquewhite;
 }
-  
+
 .grid::before {
-    content: "";
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    background-image: url('https://ma100390.github.io/TrePetalia/assets/fiorenzo/pan2.webp');
-    opacity: 0.2;
-  }
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-image: url('https://ma100390.github.io/TrePetalia/assets/fiorenzo/pan2.webp');
+  opacity: 0.2;
+}
 
 .hero {
-    width: 100%;
-    height: 400px;
-    background: linear-gradient(to right, #ff7e5f, #F29479);
-    position: relative;
-    overflow: hidden;
-  }
-  
-  .hero::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-image: url('https://ma100390.github.io/TrePetalia/assets/fiorenzo/pan2.webp');
-    opacity: 0.2;
-  }
-  
+  width: 100%;
+  height: 400px;
+  background: linear-gradient(to right, #ff7e5f, #F29479);
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://ma100390.github.io/TrePetalia/assets/fiorenzo/pan2.webp');
+  opacity: 0.2;
+}
+
 span.petali {
-    font-size: 3rem;
-    color: #2155b4cb;
-    letter-spacing: 2px;
-    padding: 0.3rem 0rem;
-    transition: all 0.3s ease;
-    font-family: "Dancing Script";
+  font-size: 3rem;
+  color: #2155b4cb;
+  letter-spacing: 2px;
+  padding: 0.3rem 0rem;
+  transition: all 0.3s ease;
+  font-family: "Dancing Script";
 }
 
 span.petali:hover {
-    background-color: #6a94ff;
-    color: white;
-    cursor: pointer;
+  background-color: #6a94ff;
+  color: white;
+  cursor: pointer;
 }
 
 
-  
 
-.lista li{
-    color: rgb(26, 22, 22);
-    font-family: "Poppins", sans-serif;
-    font-size: 1.1rem;
-    font-weight: 300;
-    line-height: 1.8;
-   
+
+.lista li {
+  color: rgb(26, 22, 22);
+  font-family: "Poppins", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 300;
+  line-height: 1.8;
+
 }
+
 .value-item {
-    display: flex;
-    align-items: center; /* Allinea verticalmente l'icona e il testo */
-    margin-bottom: 20px; /* Spazio tra gli item */
-    flex-direction: column;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  flex-direction: column;
 }
 
 .value-item fa-icon {
-    min-width: 60px; /* Larghezza minima per ogni icona */
-    margin-right: 12px; /* Distanza tra l'icona e il testo */
-    font-size: 1.5rem; /* Imposta la dimensione dell'icona */
-    color: rgb(255, 255, 255);
+  min-width: 60px;
+  margin-right: 12px;
+  font-size: 1.5rem;
+  color: rgb(255, 255, 255);
 }
 
-
-
-
-
+h1 .subtitle {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #ffffff;
+  margin-top: 5px;
+}
 
 .card {
-    position: relative;
-    max-width:  350px;
-    text-align: center;
-    margin: 5% 2%;
-    overflow: hidden;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
-  }
-  
-  .card:hover {
-    transform: scale(1.05);
-  }
-  
-  .immagine1 {
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-    transition: transform 0.3s ease-in-out;
+  position: relative;
+  max-width: 350px;
+  text-align: center;
+ 
+  overflow: hidden;
+ 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  border: 4px solid #F29479; 
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-collapse: collapse;
 }
-  
-  .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Colore sfondo semitrasparente */
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    opacity: 0;
-    flex-direction: column;
-    transition: opacity 0.3s ease;
-  }
-  .overlay1 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Colore sfondo semitrasparente */
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    opacity: 1;
-    flex-direction: column;
-    transition: opacity 0.3s ease;
-  }
-  
-  .card:hover .overlay {
-    opacity: 1; /* Mostra l'overlay quando si passa sopra la card */
-  }
-  
-  .overlay span {
-    font-size: 20px;
-    font-weight: bold;
-    text-align: center;
-    font-family: "Poppins", sans-serif;
-  }
 
-
-h2, h3 {
-    color: #2c3e50;
-    font-family: 'Arial', sans-serif;
-    font-size: 2.8rem;
-    margin-bottom: 5%;
-    text-align: center;
-    
+.card:hover {
+  transform: scale(1.05);
 }
+
+.immagine1 {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  
+  flex-direction: column;
+
+}
+
+.overlay1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 2%;
+  height: 100%;
+  background: #fdf8f726;
+  color: white;
+  display: flex;
+ 
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  flex-direction: column;
+}
+
+.card:hover .overlay {
+  opacity: 1;
+}
+
+.card:hover .overlay .cta-button1 {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.cta-button1 {
+  display: inline-block;
+  background-color: #112e67;
+  color: #ffffff;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, opacity 0.3s ease;
+  font-family: 'Poppins', sans-serif;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.cta-button1:hover {
+  background-color: #4c74e7;
+}
+
+.subtitle {
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+h2,
+h3 {
+  color: #2c3e50;
+  font-family: 'Arial', sans-serif;
+  font-size: 2.8rem;
+  margin-bottom: 5%;
+  text-align: center;
+
+}
+
 h2 {
-    font-size: 2.5rem; /* Dimensione del testo */
-    color: #34495e; /* Colore del testo (grigio scuro) */
-    text-align: center; /* Allinea il testo al centro */
-    font-weight: 700; /* Grassetto */
-    letter-spacing: 2px; /* Spaziatura tra le lettere */
-
-    position: relative; /* Necessario per l'effetto di ombra */
-    margin: 40px 0; /* Distanza sopra e sotto */
-    padding: 10px 20px; /* Padding interno per rendere più distanziato */
-    transition: color 0.3s ease, transform 0.3s ease; /* Transizione fluida */
+  font-size: 2.5rem;
+  color: #34495e;
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: 2px;
+  position: relative;
+  margin: 40px 0;
+  padding: 10px 20px;
+  transition: color 0.3s ease, transform 0.3s ease;
 }
 
 h2::before {
-    content: ''; /* Contenuto vuoto per il pseudo-elemento */
-    position: absolute;
-    bottom: 0px;
-    left: 0;
-    right: 0;
-    height: 5px; /* Altezza della linea */
-    background: #3498db; /* Colore della linea */
-    border-radius: 5px;
-    width: 100%; /* Linea invisibile inizialmente */
+  content: '';
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background: #3498db;
+  border-radius: 5px;
+  width: 100%;
 }
 
-
-
 p {
-    font-size: 1.3rem;
-    line-height: 1.6;
-    color: #34495e;
+  font-size: 1.3rem;
+  line-height: 1.6;
+  color: #34495e;
 }
 
 .value {
-    background: #f9f9f9;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    color: #2c3e50;
-    text-align: center;
-    max-width:300px;
-
-        margin: 1%;
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: #2c3e50;
+  text-align: center;
+  max-width: 300px;
+  margin: 1%;
 }
 
 strong {
-    font-weight: bold;
-    color: #e74c3c;
+  font-weight: bold;
+  color: #e74c3c;
 }
 
-
-.image-container{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    max-width: 1200px;
-    margin: 0 auto;
+.image-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-
-
-
-
-.container1{
-    padding: 2% 20%;
-    background-color: antiquewhite;
+.container1 {
+  padding: 8% 20%;
+  background-color: antiquewhite;
 }
 
 .value:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-    background-color: #ecf0f1;
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  background-color: #ecf0f1;
 }
 
 .value h3 {
-    font-size: 1.6em;
-    color: #2c3e50;
-    margin-top: 20px;
-    font-weight: bold;
-    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+  font-size: 1.6em;
+  color: #2c3e50;
+  margin-top: 20px;
+  font-weight: bold;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
 }
 
 .value p {
   text-align: left;
-    color: #34495e;
-    margin-top: 15px;
+  color: #34495e;
+  margin-top: 15px;
 }
 
 .after-icon {
-    font-size: 40px;
-    margin-bottom: 15px;
-    transition: transform 0.3s ease, color 0.3s ease;
+  font-size: 40px;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .value:hover .after-icon {
-    transform: scale(1.2);
-    color: #3498db; /* Cambia colore dell'icona al passaggio del mouse */
+  transform: scale(1.2);
+  color: #3498db;
 }
 
-
-/* Responsivo per schermi piccoli */
 @media (max-width: 1500px) {
-    .image-container{
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
+  .image-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
 
-    }
-    
-.container1{
-    padding: 2% 10%;
+  .container1 {
+    padding: 5% 0%;
     background-color: antiquewhite;
+  }
 }
 
-}
 @media (max-width: 768px) {
-
-    .container {
-        grid-template-columns: 1fr;
-    }
-    .value {
-    
-        max-width:100%;
-    }
-
-
-
-     .section-nostro-team p {
-
-        margin: 1% auto;
-    }
-    .sedeimage{
-        width: 100%;
-        border-radius: 5%;
-    }
-    .card {
-
-        width: 100%;
+  .container {
+    grid-template-columns: 1fr;
+  }
+  .value {
+    max-width: 100%;
+  }
+  .grid{
   
+      grid-template-columns: repeat(auto-fit, minmax(100%, 1fr)); /* Ogni colonna avrà il 100% della larghezza */
     
-            margin: -3% 0%;
-     
-      }
-      main{
-        padding: 4px;
-      }
-      h1{
-        font-size: 2.5rem;
-      }
-      .hero-buttons {
-        display: flex;
-        flex-direction: column;
-      }
-    
+  }
+  .section-nostro-team p {
+    margin: 1% auto;
+  }
+
+  .sedeimage {
+    width: 100%;
+    border-radius: 5%;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 100%;
+   
+  }
+
+  main {
+    padding: 4px;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-buttons {
+    display: flex;
+    flex-direction: column;
+  }
+
 }
 
 
 
+/* Stile della sezione contatti */
+.section-contatti {
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  color: #555;
+  text-align: center;
+}
+
+/* Stile dell'indirizzo */
+address {
+  font-style: normal;
+  text-align: center;
+}
 
 
 
+a:hover {
+  text-decoration: underline;
+}
 
+/* Icona telefono */
+.phone-icon {
+  margin-left: 8px;
+  vertical-align: middle;
+}
+
+
+
+/* Adattamenti responsive */
+@media (max-width: 768px) {
+  .section-contatti {
+      padding: 30px;
+  }
+
+  h2 {
+      font-size: 1.8rem;
+  }
+
+  p {
+      font-size: 0.9rem;
+  }
+
+  .contatti {
+      width: 100%;
+      justify-content: center;
+  }
+}

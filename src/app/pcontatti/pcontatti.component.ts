@@ -1,12 +1,13 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { RouterModule } from '@angular/router';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 import { faPhone, faEnvelope, faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
 @Component({
   selector: 'app-pcontatti',
   standalone: true,
-  imports: [FontAwesomeModule,CommonModule],
+  imports: [FontAwesomeModule,CommonModule,RouterModule],
   templateUrl: './pcontatti.component.html',
   styleUrl: './pcontatti.component.css'
 })
