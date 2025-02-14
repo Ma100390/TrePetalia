@@ -5,15 +5,16 @@ header {
 
 }
 
-.sede-image{
+.sede-image {
     width: 25%;
 }
+
 .navbar {
     display: flex;
     background: #ffffff;
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.3); 
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
     position: relative;
     z-index: 10;
     justify-content: space-around;
@@ -31,7 +32,12 @@ header {
 .navbar .nav-links {
     list-style: none;
     display: flex;
+    gap: 20px;
     transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.nascondere {
+    display: none;
 }
 
 .after-icon {
@@ -64,7 +70,7 @@ header {
 
 .dropdown-menu li a {
     text-decoration: none;
-  
+
     display: block;
     padding: 3%;
 }
@@ -75,44 +81,47 @@ header {
 }
 
 .navbar .nav-links li {
-    margin-left: 1rem;
-    border-right: 1px solid rgba(255, 255, 255, 0.3);
-    padding-right: 1rem;
-    
+    position: relative;
+
 }
 
 .navbar .nav-links a {
 
     text-decoration: none;
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
     color: #213766;
     display: contents;
 }
+
 .navbar .nav-links a:hover {
 
 
     color: #1a72c9;
-   
+
 }
+
 .navbar .nav-links span:hover {
     color: #1a72c9;
 }
-.logo{
+
+.logo {
     display: flex;
-        align-items: center;
-    
+    align-items: center;
+
 }
+
 .navbar .nav-links span {
 
     text-decoration: none;
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
     color: #f29668;
     cursor: pointer;
 }
+
 .hamburger {
     display: none;
     flex-direction: column;
@@ -145,11 +154,12 @@ header {
         opacity: 0;
         visibility: hidden;
     }
-    .logo{
-     
+
+    .logo {
+
         justify-content: flex-start;
     }
- 
+
 
     .hamburger {
         display: flex;
@@ -186,15 +196,20 @@ header {
     .navbar .nav-links a {
         color: #213766;
     }
+    .nascondere {
+        display: inline;
+    }
     .dropdown-menu li a {
         display: ruby;
         /* Riduci il padding interno del link */
     }
-    .navbar .nav-links li{
+
+    .navbar .nav-links li {
         margin: 2%;
         color: #213766;
         text-align: end;
     }
+
     /* Adatta per schermi più piccoli come smartphone in modalità verticale */
     .nav-links {
         display: flex;
@@ -218,9 +233,10 @@ header {
     .navbar {
         justify-content: space-between
     }
-    span{
+
+    span {
         font-size: 1.75rem;
-        margin: 0.75rem;
+      
     }
 
     .navbar .nav-links a {
@@ -228,7 +244,8 @@ header {
         margin: 0.75rem;
 
     }
-    .navbar .nav-links span {
+
+    .navbar .nav-links {
         font-size: 1.75rem;
         margin: 0.75rem;
     }

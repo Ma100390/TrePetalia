@@ -1,3 +1,4 @@
+
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(15%, 1fr));
@@ -21,7 +22,9 @@
   position: relative;
   overflow: hidden;
 }
-
+.immagineprofessionale{
+  width: 25%;
+}
 .hero::before {
   content: "";
   position: absolute;
@@ -29,7 +32,39 @@
   height: 100%;
   background-image: url('https://ma100390.github.io/TrePetalia/assets/fiorenzo/pan2.webp');
   opacity: 0.2;
+  background-repeat: repeat-x;
+  animation: backgroundMove 45s linear infinite;
 }
+
+@keyframes backgroundMove {
+  0% {
+    background-position: 0 0; /* Inizia dalla posizione iniziale */
+  }
+
+  100% {
+    background-position: 100% 0; /* Si sposta completamente verso destra */
+  }
+}
+
+.hero-buttons1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  gap: 20px; /* Distanza tra immagine e pulsante */
+  padding: 20px;
+  background-color: #f4f4f4; /* Colore di sfondo, puoi personalizzarlo */
+  border-radius: 8px;
+}
+
+.immagineprofessionale {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px; /* Arrotonda gli angoli dell'immagine */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Ombra leggera per dare profondità */
+  transition: transform 0.3s ease-in-out; /* Effetto hover per l'immagine */
+}
+
 
 span.petali {
   font-size: 3rem;
@@ -84,12 +119,12 @@ h1 .subtitle {
   position: relative;
   max-width: 350px;
   text-align: center;
- 
+
   overflow: hidden;
- 
+
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease-in-out;
-  border: 4px solid #F29479; 
+  border: 4px solid #F29479;
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
   border-collapse: collapse;
@@ -118,7 +153,7 @@ h1 .subtitle {
   justify-content: center;
   align-items: center;
   opacity: 0;
-  
+
   flex-direction: column;
 
 }
@@ -133,7 +168,7 @@ h1 .subtitle {
   background: #fdf8f726;
   color: white;
   display: flex;
- 
+
   justify-content: center;
   align-items: center;
   opacity: 1;
@@ -163,6 +198,22 @@ h1 .subtitle {
 }
 
 .cta-button1:hover {
+  background-color: #4c74e7;
+}
+
+.cta-button2 {
+  display: inline-block;
+  background-color: #112e67;
+  color: #ffffff;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, opacity 0.3s ease;
+  font-family: 'Poppins', sans-serif;
+
+}
+
+.cta-button2:hover {
   background-color: #4c74e7;
 }
 
@@ -273,6 +324,245 @@ strong {
   color: #3498db;
 }
 
+
+/* Stile generale */
+.contatti {
+  background-color: #f8f9fa;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+/* Contenitore principale */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Titolo della sezione */
+.section-header h2 {
+  font-size: 36px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.section-header p {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+/* Orari di apertura */
+.orari-container1 {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+}
+
+.orari-container {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+}
+
+.orari-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 auto;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.orari-table th,
+.orari-table td {
+  padding: 12px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+.orari-table th {
+  background-color: #112e67;
+  color: white;
+  font-weight: 700;
+}
+
+.orari-table td {
+  background-color: #f1f1f1;
+}
+
+.orari-table td strong {
+  color: #333;
+}
+
+/* Contatti e mappa */
+.contatti-info {
+  margin-bottom: 40px;
+}
+
+.contatti-info h3,
+.mappa-figure h3 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #007bff;
+  margin-bottom: 20px;
+}
+
+.info {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+  font-size: 18px;
+  color: #333;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.info-item a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.info-item a:hover {
+  color: #0056b3;
+}
+
+.info-item fa-icon {
+  color: #007bff;
+}
+
+.mappa-container {
+  margin-top: 20px;
+  display: flex;
+
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.mappa-figure {
+  position: relative;
+  width: 100%;
+  max-width: 40%;
+  padding: 5%;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  gap: 8%;
+}
+
+.mappa-container img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.mappa-container figcaption {
+
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+  font-style: italic;
+  border-radius: 5px;
+}
+
+/* Call to Action (CTA) */
+.cta-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+
+
+
+/* Media Queries per dispositivi mobili */
+@media (max-width: 768px) {
+  .container {
+    padding: 15px;
+  }
+  .hero-buttons1{
+    align-items:normal;
+    justify-content:flex-end;
+    flex-direction: column;
+  }
+  .section-header h2 {
+    font-size: 28px;
+  }
+
+  .orari-table th,
+  .orari-table td {
+    padding: 10px;
+  }
+
+  .info-item {
+
+    align-items: flex-start;
+  }
+
+  .cta-button {
+    padding: 12px 24px;
+  }
+
+  .mappa-container {
+    flex-direction: column;
+  }
+
+  .mappa-figure {
+
+    max-width: 100%;
+  }
+
+  .mappa-container img {
+    max-width: 100%;
+  }
+}
+
+
+
+
+/* Media query per dispositivi mobili */
+@media (max-width: 768px) {
+  .contatti h2 {
+    font-size: 28px;
+  }
+
+  .orari-container h3 {
+    font-size: 22px;
+  }
+
+  .orari-table th,
+  .orari-table td {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .cta-button {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+
+  .info-item {
+    font-size: 16px;
+  }
+
+  .mappa-container img {
+    max-width: 100%;
+  }
+}
+
+
 @media (max-width: 1500px) {
   .image-container {
     display: flex;
@@ -290,14 +580,18 @@ strong {
   .container {
     grid-template-columns: 1fr;
   }
+
   .value {
     max-width: 100%;
   }
-  .grid{
-  
-      grid-template-columns: repeat(auto-fit, minmax(100%, 1fr)); /* Ogni colonna avrà il 100% della larghezza */
-    
+
+  .grid {
+
+    grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+    /* Ogni colonna avrà il 100% della larghezza */
+
   }
+
   .section-nostro-team p {
     margin: 1% auto;
   }
@@ -310,7 +604,7 @@ strong {
   .card {
     width: 100%;
     max-width: 100%;
-   
+
   }
 
   main {
@@ -324,6 +618,9 @@ strong {
   .hero-buttons {
     display: flex;
     flex-direction: column;
+  }
+  .immagineprofessionale{
+    width: 100%;
   }
 
 }
@@ -377,19 +674,22 @@ a:hover {
 /* Adattamenti responsive */
 @media (max-width: 768px) {
   .section-contatti {
-      padding: 30px;
+    padding: 30px;
   }
 
   h2 {
-      font-size: 1.8rem;
+    font-size: 1.8rem;
   }
 
   p {
-      font-size: 0.9rem;
+    font-size: 0.9rem;
   }
 
   .contatti {
-      width: 100%;
-      justify-content: center;
+    width: 100%;
+    justify-content: center;
   }
 }
+
+
+

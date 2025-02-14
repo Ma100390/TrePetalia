@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 import { ActivatedRoute, RouterModule } from '@angular/router';
-import { faArrowRight, faPhone, faPeopleArrows, faBalanceScale, faLightbulb, faHeart, faUserGraduate, faHeartbeat, faStethoscope, faBrain, faChalkboardTeacher, faBriefcase } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope, faMapMarkerAlt ,faArrowRight, faPhone, faPeopleArrows, faBalanceScale, faLightbulb, faHeart, faUserGraduate, faHeartbeat, faStethoscope, faBrain, faChalkboardTeacher, faBriefcase } from '@fortawesome/free-solid-svg-icons';
 
 
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
@@ -26,4 +26,7 @@ export class PhomePageComponent {
   faBalanceScale = faBalanceScale;
   faLightbulb = faLightbulb;
   faHeart = faHeart;
+  faEnvelope = faEnvelope;
+
+  faMapMarkerAlt = faMapMarkerAlt;
 }
