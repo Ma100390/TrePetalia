@@ -107,7 +107,15 @@
     </div>
     <div class="container1">
         <h2>I nostri professionisti dell'assistenza</h2>
+        <div class="hero-buttons1">
+            <img class="immagineprofessionale2" src="https://ma100390.github.io/TrePetalia/assets/fiorenzo/domande_frequenti-removebg-preview.webp"
+                alt="Laboratori Creativi">
+            <a routerLink="/servizi" class="cta-button2" aria-label="Scopri i nostri servizi di assistenza"
+                routerLinkActive="active">Scopri i nostri servizi
+                <fa-icon [icon]="faArrowRight" class="arrow-icon"></fa-icon>
+            </a>
 
+        </div>
         <ul class="image-container">
             <li class="value">
                 <h3>Assistenti Sociali</h3>
@@ -153,15 +161,7 @@
                     che ogni processo sia ottimizzato per offrire il miglior servizio possibile.</p>
             </li>
         </ul>
-        <div class="hero-buttons1">
-            <img class="immagineprofessionale" src="https://ma100390.github.io/TrePetalia/assets/presentazione.webp"
-            alt="Laboratori Creativi">
-            <a routerLink="/servizi" class="cta-button2" aria-label="Scopri i nostri servizi di assistenza"
-                routerLinkActive="active">Scopri i nostri servizi
-                <fa-icon [icon]="faArrowRight" class="arrow-icon"></fa-icon>
-            </a>
 
-        </div>
     </div>
 
 
@@ -173,83 +173,103 @@
             <!-- Titolo Principale -->
             <header class="section-header">
                 <h2>Contatti e Orari</h2>
-               
             </header>
-
-            <!-- Orari di Apertura -->
-
             <div class="mappa-container">
-              
-                <div class="contatti-info">
-                    <div class="orari-container">
-                        <h3>I Nostri Contatti</h3>
-
-                        <!-- Lista dei contatti -->
-                        <ul class="info">
-                            <li class="info-item">
-                                <fa-icon [icon]="faEnvelope" aria-label="Email"></fa-icon>
-                                <a href="mailto:info@3petali.it">info&#64;trepetali.it</a>
-                            </li>
-                            <li class="info-item">
-                                <fa-icon [icon]="faPhone" aria-label="Telefono"></fa-icon>
-                                <a href="tel:+390000000000">+39 3701255832</a>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <!-- Mappa -->
-
-                    <div class="orari-container1">
-                        <h3>Orari di Apertura</h3>
-                        <table class="orari-table">
-                            <thead>
-                                <tr>
-                                    <th>Giorno</th>
-                                    <th>Orario</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Lunedì - Sabato</td>
-                                    <td><strong>9:00</strong> - <strong>18:00</strong></td>
-                                </tr>
-                                <tr>
-                                    <td>Domenica</td>
-                                    <td>Chiuso</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                
-                </div>
                 <div class="mappa-figure">
                     <h3>Dove Trovarci</h3>
-                <figure >
-                   
-                    <img src="https://ma100390.github.io/TrePetalia/assets/Cattura.PNG" alt="Mappa della sede" width="320" height="200">
-                    <figcaption>
-                        <fa-icon [icon]="faMapMarkerAlt" aria-label="Indirizzo"></fa-icon>
-                        Via Vescovo Verrienti 2, Veglie (LE)
-                    </figcaption>
-                  
-                </figure>
-                <p>Per qualsiasi domanda o per usufruire dei servizi della Cooperativa Sociale Tre Petali, contattaci.
-                </p>
-                <div class="cta-container">
-                    <a routerLink="/contatti_cooperativa-tre-petali" class="cta-button">
-                        Contattaci
-                        <fa-icon [icon]="faPhone" class="phone-icon"></fa-icon>
-                    </a>
+                    <figure>
+
+                        <img class="immagineprofessionale1"
+                            src="https://ma100390.github.io/TrePetalia/assets/Cattura.PNG" alt="Mappa della sede"
+                            width="320" height="200">
+                        <figcaption>
+                            <fa-icon [icon]="faMapMarkerAlt" aria-label="Indirizzo"></fa-icon>
+                            Via Vescovo Verrienti 2, Veglie (LE)
+                        </figcaption>
+
+                    </figure>
+                    <p>Per qualsiasi domanda o per usufruire dei servizi della Cooperativa Sociale Tre Petali,
+                        contattaci.
+                    </p>
+                    <h3>I Nostri Contatti</h3>
+
+                    <!-- Tabella dei contatti -->
+                    <table class="info-table">
+                        <tr>
+                            <th>Tipo</th>
+                            <th>Dettaglio</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <fa-icon [icon]="faEnvelope" aria-label="Email"></fa-icon> Email
+                            </td>
+                            <td>
+                                <a href="mailto:info@3petali.it">info&#64;trepetali.it</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <fa-icon [icon]="faPhone" aria-label="Telefono"></fa-icon> Telefono
+                            </td>
+                            <td>
+                                <a href="tel:+390000000000">+39 3701255832</a>
+                            </td>
+                        </tr>
+                    </table>
+                    <div class="cta-container">
+                        <a routerLink="/contatti_cooperativa-tre-petali" class="cta-button">
+                            Contattaci
+                            <fa-icon [icon]="faPhone" class="phone-icon"></fa-icon>
+                        </a>
+                    </div>
+                </div>
+                <div class="mappa-figure">
+                    <h3>Orari di Apertura</h3>
+                    <img class="immagineprofessionale"
+                        src="https://ma100390.github.io/TrePetalia/assets/presentazione.webp" alt="Laboratori Creativi">
+                    <table class="orari-table">
+                        <thead>
+                            <tr>
+                                <th>Giorno</th>
+                                <th>Orario</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Lunedì</td>
+                                <td><strong>9:30</strong> - <strong>12:30</strong></td>
+                            </tr>
+                            <tr>
+                                <td>Martedi</td>
+                                <td><strong>9:30</strong> - <strong>12:30</strong></td>
+                            </tr>
+                            <tr>
+                                <td>Mercoledi</td>
+                                <td><strong>9:30</strong> - <strong>12:30</strong></td>
+                            </tr>
+                            <tr>
+                                <td>Giovedi</td>
+                                <td><strong>9:30</strong> - <strong>12:30</strong></td>
+                            </tr>
+                            <tr>
+                                <td>Venerdi</td>
+                                <td><strong>9:30</strong> - <strong>12:30</strong></td>
+                            </tr>
+                            <tr>
+                                <td>Sabato</td>
+                                <td><strong>9:30</strong> - <strong>12:30</strong></td>
+                            </tr>
+                            <tr>
+                                <td>Domenica</td>
+                                <td>Chiuso</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
-            </div>
-
-            <!-- Call to Action -->
-           
+            
         </div>
     </section>
 
-
-
-
+    
 </main>

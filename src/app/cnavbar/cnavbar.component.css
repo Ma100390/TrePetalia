@@ -115,7 +115,7 @@ header {
 .navbar .nav-links span {
 
     text-decoration: none;
-    font-size: 1.2rem;
+    
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
     color: #f29668;
@@ -247,7 +247,7 @@ header {
 
     .navbar .nav-links {
         font-size: 1.75rem;
-        margin: 0.75rem;
+       
     }
 
     .hamburger {

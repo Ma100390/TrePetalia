@@ -23,7 +23,10 @@
   overflow: hidden;
 }
 .immagineprofessionale{
-  width: 25%;
+  width: 65%;
+}
+.immagineprofessionale2{
+  width: 20%;
 }
 .hero::before {
   content: "";
@@ -52,8 +55,8 @@
   justify-content: center;
   position: relative;
   gap: 20px; /* Distanza tra immagine e pulsante */
-  padding: 20px;
-  background-color: #f4f4f4; /* Colore di sfondo, puoi personalizzarlo */
+  background: radial-gradient(circle, rgba(0, 140, 255, 0.4), rgba(0, 140, 255, 0));
+  
   border-radius: 8px;
 }
 
@@ -61,9 +64,10 @@
   max-width: 100%;
   height: auto;
   border-radius: 8px; /* Arrotonda gli angoli dell'immagine */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Ombra leggera per dare profondità */
+
   transition: transform 0.3s ease-in-out; /* Effetto hover per l'immagine */
 }
+
 
 
 span.petali {
@@ -223,12 +227,19 @@ h1 .subtitle {
   font-size: 1.5rem;
 }
 
-h2,
+h2{
+  color: #2c3e50;
+  font-family: 'Arial', sans-serif;
+  font-size: 2.8rem;
+
+  text-align: center;
+
+}
 h3 {
   color: #2c3e50;
   font-family: 'Arial', sans-serif;
   font-size: 2.8rem;
-  margin-bottom: 5%;
+
   text-align: center;
 
 }
@@ -240,7 +251,7 @@ h2 {
   font-weight: 700;
   letter-spacing: 2px;
   position: relative;
-  margin: 40px 0;
+  
   padding: 10px 20px;
   transition: color 0.3s ease, transform 0.3s ease;
 }
@@ -362,16 +373,10 @@ strong {
 
 }
 
-.orari-container {
-  background: #fff;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  margin-bottom: 40px;
-}
+
 
 .orari-table {
-  width: 100%;
+  width: 65%;
   border-collapse: collapse;
   margin: 0 auto;
   border-radius: 8px;
@@ -399,49 +404,36 @@ strong {
   color: #333;
 }
 
-/* Contatti e mappa */
-.contatti-info {
-  margin-bottom: 40px;
-}
 
-.contatti-info h3,
+
+
 .mappa-figure h3 {
   font-size: 2rem;
-  font-weight: 600;
+  font-weight: 400;
   color: #007bff;
   margin-bottom: 20px;
 }
 
-.info {
-  list-style: none;
-  padding: 0;
+.info-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
   margin-bottom: 20px;
-  font-size: 18px;
-  color: #333;
 }
 
-.info-item {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 15px;
-  margin-bottom: 15px;
+.info-table th, .info-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
 }
 
-.info-item a {
-  color: #007bff;
-  text-decoration: none;
-  font-weight: 600;
-  transition: color 0.3s ease;
+.info-table th {
+  background-color: #f4f4f4;
 }
 
-.info-item a:hover {
-  color: #0056b3;
-}
 
-.info-item fa-icon {
-  color: #007bff;
-}
+
+
 
 .mappa-container {
   margin-top: 20px;
@@ -461,7 +453,7 @@ strong {
   gap: 8%;
 }
 
-.mappa-container img {
+.immagineprofessionale1{
   width: 100%;
   height: auto;
   border-radius: 10px;
@@ -492,6 +484,9 @@ strong {
   .container {
     padding: 15px;
   }
+  .immagineprofessionale2 {
+    width: 65%;
+}
   .hero-buttons1{
     align-items:normal;
     justify-content:flex-end;
@@ -505,12 +500,10 @@ strong {
   .orari-table td {
     padding: 10px;
   }
+  .contatti {
 
-  .info-item {
-
-    align-items: flex-start;
+    padding: 0px 0px;
   }
-
   .cta-button {
     padding: 12px 24px;
   }
@@ -537,10 +530,10 @@ strong {
   .contatti h2 {
     font-size: 28px;
   }
-
-  .orari-container h3 {
-    font-size: 22px;
+  .orari-table {
+    width: 100%;
   }
+
 
   .orari-table th,
   .orari-table td {
@@ -553,9 +546,7 @@ strong {
     padding: 10px 20px;
   }
 
-  .info-item {
-    font-size: 16px;
-  }
+
 
   .mappa-container img {
     max-width: 100%;
@@ -640,7 +631,7 @@ strong {
 h2 {
   font-size: 2rem;
   color: #333;
-  margin-bottom: 20px;
+  
   text-align: center;
 }
 

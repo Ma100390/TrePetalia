@@ -1,7 +1,8 @@
 <header>
   <nav class="navbar">
-    <div class="logo"><a routerLink="/" title="Vai alla pagina Home" aria-label="Vai alla pagina Home" class="logo"> <img src="https://ma100390.github.io/TrePetalia/assets/prova2.svg" class="sede-image"
-        alt="Laboratori Creativi" /><span class="nascondere">tre petali</span></a>
+    <div class="logo"><a routerLink="/" title="Vai alla pagina Home" aria-label="Vai alla pagina Home" class="logo">
+        <img src="https://ma100390.github.io/TrePetalia/assets/prova2.svg" class="sede-image"
+          alt="Laboratori Creativi" /><span class="nascondere">tre petali</span></a>
     </div>
 
 
@@ -9,16 +10,13 @@
       <li><a routerLink="/" title="Vai alla pagina Home" aria-label="Vai alla pagina Home"
           (click)="closeMenu()">Home</a></li>
       <li><a routerLink="chi-siamo-tre-petali-lecce" (click)="closeMenu()">
-            Chi Siamo</a></li>
+          Chi Siamo</a></li>
       <li><a routerLink="/casa-di-riposo-provincia-di-lecce" title="Vai alla pagina aree intervento"
           aria-label="Vai alla pagina aree intervento" (click)="closeMenu()">Casa di Riposo</a></li>
       <li><a routerLink="/assistenza-domiciliare-lecce" title="Vai alla pagina laboratori creativi"
           aria-label="Vai alla pagina progetti psicologici" (click)="closeMenu()">Assistenza Domiciliare</a></li>
-
-      <li><a routerLink="/accompagnamento-strutture-lecce" title="Vai alla pagina contatti"
-          aria-label="Vai alla pagina contatti" (click)="closeMenu()">Accompagnamento</a></li>
-
-
+          <li><a routerLink="/contatti-cooperaritiva-tre-petali" title="Vai alla pagina contatti"
+            aria-label="Vai alla pagina contatti" (click)="closeMenu()" >Contatti</a></li>
       <span (click)="toggleDropdown()" title="Vai alla pagina dei servizi" aria-label="Vai alla pagina dei servizi">
         Altri Servizi
         <fa-icon class="after-icon" [icon]="faCaretDown"></fa-icon>
@@ -26,19 +24,14 @@
 
       <!-- Lista dei servizi, mostrata solo se 'isDropdownOpen' è true -->
       <ul *ngIf="isDropdownOpen" class="dropdown-menu">
-   
-        <li><a [routerLink]="['/servizio', 'Infermieri']" (click)="closeMenu()" (click)="toggleDropdown()">
-            Infermieri</a></li>
-        <li><a [routerLink]="['/servizio', 'Fisioterapisti']" (click)="closeMenu()" (click)="toggleDropdown()">
-            Fisioterapisti</a></li>
-        <li><a [routerLink]="['/servizio', 'Psicologo']" (click)="closeMenu()" (click)="toggleDropdown()">
-            Psicologi</a></li>
-        <li><a [routerLink]="['/servizio', 'Psicoterapeuta']" (click)="closeMenu()" (click)="toggleDropdown()">
-            Psicoterapeuti</a></li>
-        <li><a [routerLink]="['/servizio', 'Disbrigo-pratiche']" (click)="closeMenu()" (click)="toggleDropdown()">
-            Disbrigo pratiche</a></li>
-            <li><a routerLink="/contatti_cooperaritiva-tre-petali" title="Vai alla pagina contatti"
-              aria-label="Vai alla pagina contatti" (click)="closeMenu()"  (click)="toggleDropdown()">Contatti</a></li>
+        <li><a [routerLink]="['/servizio', 'Infermieri-Fisioterapisti']" (click)="closeMenu()" (click)="toggleDropdown()">
+            Infermieri & Fisioterapisti</a></li>
+        <li><a [routerLink]="['/servizio', 'Psicologo & Psicoterapeuta']" (click)="closeMenu()" (click)="toggleDropdown()">
+            Psicologi & Psicoterapeuti</a></li>
+            <li><a routerLink="/accompagnamento-strutture-lecce" title="Vai alla pagina contatti"
+              aria-label="Vai alla pagina contatti" (click)="closeMenu()" (click)="toggleDropdown()">Accompagnamento in Struttura Ospedaliera</a></li>
+            <li><a [routerLink]="['/servizio', 'Disbrigo-pratiche']" (click)="closeMenu()" (click)="toggleDropdown()">
+              Disbrigo pratiche</a></li>
       </ul>
 
 
