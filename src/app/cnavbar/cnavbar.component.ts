@@ -2,7 +2,7 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { faCaretDown } from '@fortawesome/free-solid-svg-icons';
+import { faCaretDown,faCaretRight } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-cnavbar',
@@ -19,6 +19,7 @@ export class CnavbarComponent {
   }
   isMenuOpen = false;
   faCaretDown = faCaretDown;
+  faCaretRight = faCaretRight;
   toggleMenu() {
     this.isMenuOpen = !this.isMenuOpen;
   }

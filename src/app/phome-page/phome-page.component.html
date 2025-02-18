@@ -7,7 +7,7 @@
                 <span class="subtitle">Assistenza Socio-Sanitaria, Educativa e Riabilitativa</span>
             </h1>
             <div class="hero-buttons">
-                <a routerLink="/servizi" class="cta-button"
+                <a routerLink="/servizi-per-anziani-lecce" class="cta-button"
                     aria-label="Scopri tutti i servizi di assistenza offerti da Tre Petali" routerLinkActive="active">
                     Scopri i nostri servizi
                     <fa-icon [icon]="faArrowRight" class="arrow-icon"></fa-icon>
@@ -25,7 +25,7 @@
     <div class="grid">
         <div class="card">
             <div class="overlay1">
-                <h3 class="subtitle">I nostri servizi per Anziani</h3>
+                <h3 class="subtitle">I nostri servizi più richiesti</h3>
                 <a routerLink="/servizi-per-anziani-lecce" routerLinkActive="active" class="cta-button"
                     aria-label="Contatta Tre Petali per informazioni sui servizi di assistenza">
                     Scopri di più
@@ -37,8 +37,8 @@
         </div>
         <div class="card">
             <div class="overlay">
-                <span class="subtitle">Supporto alle persone fragili</span>
-                <a routerLink="/servizi-per-anziani-lecce" routerLinkActive="active" class="cta-button1"
+                <span class="subtitle">Supporto ospedaliero</span>
+                <a routerLink="/servizio/Psicologo-Psicoterapeuta" routerLinkActive="active" class="cta-button1"
                     aria-label="Contatta Tre Petali per informazioni sui servizi di assistenza">
                     Scopri di più
                     <fa-icon [icon]="faArrowRight" class="arrow-icon"></fa-icon>
@@ -50,7 +50,7 @@
         <div class="card">
             <div class="overlay">
                 <span class="subtitle">Interventi educativi per famiglie</span>
-                <a routerLink="/servizi-per-anziani-lecce" routerLinkActive="active" class="cta-button1"
+                <a routerLink="/servizio/Psicologo-Psicoterapeuta" routerLinkActive="active" class="cta-button1"
                     aria-label="Contatta Tre Petali per informazioni sui servizi di assistenza">
                     Scopri di più
                     <fa-icon [icon]="faArrowRight" class="arrow-icon"></fa-icon>
@@ -62,7 +62,7 @@
         <div class="card">
             <div class="overlay">
                 <span class="subtitle">Servizi riabilitativi</span>
-                <a routerLink="/servizi-per-anziani-lecce" routerLinkActive="active" class="cta-button1"
+                <a routerLink="/servizio/Infermieri-Fisioterapisti" routerLinkActive="active" class="cta-button1"
                     aria-label="Contatta Tre Petali per informazioni sui servizi di assistenza">
                     Scopri di più
                     <fa-icon [icon]="faArrowRight" class="arrow-icon"></fa-icon>
@@ -75,8 +75,8 @@
         </div>
         <div class="card">
             <div class="overlay">
-                <span class="subtitle">Assistenza Anziani</span>
-                <a routerLink="/servizi-per-anziani-lecce" routerLinkActive="active" class="cta-button1"
+                <span class="subtitle">Assistenza domiciliare</span>
+                <a routerLink="/assistenza-domiciliare-lecce" routerLinkActive="active" class="cta-button1"
                     aria-label="Contatta Tre Petali per informazioni sui servizi di assistenza">
                     Scopri di più
                     <fa-icon [icon]="faArrowRight" class="arrow-icon"></fa-icon>
@@ -90,7 +90,7 @@
         <div class="card">
             <div class="overlay">
                 <span class="subtitle">Strutture per Anziani</span>
-                <a routerLink="/servizi-per-anziani-lecce" routerLinkActive="active" class="cta-button1"
+                <a routerLink="/casa-di-riposo-provincia-di-lecce" routerLinkActive="active" class="cta-button1"
                     aria-label="Contatta Tre Petali per informazioni sui servizi di assistenza">
                     Scopri di più
                     <fa-icon [icon]="faArrowRight" class="arrow-icon"></fa-icon>
@@ -110,7 +110,7 @@
         <div class="hero-buttons1">
             <img class="immagineprofessionale2" src="https://ma100390.github.io/TrePetalia/assets/fiorenzo/domande_frequenti-removebg-preview.webp"
                 alt="Laboratori Creativi">
-            <a routerLink="/servizi" class="cta-button2" aria-label="Scopri i nostri servizi di assistenza"
+            <a routerLink="/servizi-per-anziani-lecce" class="cta-button2" aria-label="Scopri i nostri servizi di assistenza"
                 routerLinkActive="active">Scopri i nostri servizi
                 <fa-icon [icon]="faArrowRight" class="arrow-icon"></fa-icon>
             </a>
@@ -118,44 +118,50 @@
         </div>
         <ul class="image-container">
             <li class="value">
-                <h3>Assistenti Sociali</h3>
                 <fa-icon class="after-icon" [icon]="faUserGraduate"></fa-icon>
+                <h3>Assistenti Sociali</h3>
+                
                 <p> Esperti nell'individuare e valutare i bisogni
                     sociali delle persone, aiutano a orientare e supportare le famiglie nel percorso di
                     assistenza e integrazione, offrendo consulenze e mediazioni con i servizi pubblici e
                     privati.</p>
             </li>
             <li class="value">
-                <h3>Operatori Socio-Sanitari</h3>
                 <fa-icon class="after-icon" [icon]="faHeartbeat"></fa-icon>
+                <h3>Operatori Socio-Sanitari</h3>
+            
                 <p> Professionisti formati per fornire assistenza
                     diretta nelle attività quotidiane, contribuendo al miglioramento delle condizioni di
                     vita degli utenti, sia a domicilio che in strutture residenziali.</p>
             </li>
             <li class="value">
-                <h3>Infermiere e Fisioterapisti</h3>
                 <fa-icon class="after-icon" [icon]="faStethoscope"></fa-icon>
+                <h3>Infermiere e Fisioterapisti</h3>
+            
                 <p> Offrono cure sanitarie e monitorano la
                     salute fisica degli assistiti, con un’attenzione particolare alle esigenze dei pazienti
                     fragili e anziani, garantendo un’assistenza continuativa e professionale.</p>
             </li>
             <li class="value">
-                <h3>Psicologi e Psicoterapeuti</h3>
                 <fa-icon class="after-icon" [icon]="faBrain"></fa-icon>
+                <h3>Psicologi e Psicoterapeuti</h3>
+              
                 <p> Supportano le persone e le famiglie nel
                     superamento delle difficoltà emotive, psicologiche e relazionali, con percorsi
                     terapeutici e consulenze specifiche.</p>
             </li>
             <li class="value">
-                <h3>Educatori Professionali</h3>
                 <fa-icon class="after-icon" [icon]="faChalkboardTeacher"></fa-icon>
+                <h3>Educatori Professionali</h3>
+                
                 <p> Contribuiscono alla crescita e al benessere
                     psicologico e educativo di bambini e adulti in difficoltà, sviluppando progetti di
                     educazione e integrazione.</p>
             </li>
             <li class="value">
-                <h3>Personale Amministrativo e Logistico</h3>
                 <fa-icon class="after-icon" [icon]="faBriefcase"></fa-icon>
+                <h3>Personale Amministrativo e Logistico</h3>
+               
                 <p> Supporta l’organizzazione e la
                     gestione dei servizi, assicurando che le risorse vengano utilizzate in modo efficiente e
                     che ogni processo sia ottimizzato per offrire il miglior servizio possibile.</p>
@@ -176,57 +182,7 @@
             </header>
             <div class="mappa-container">
                 <div class="mappa-figure">
-                    <h3>Dove Trovarci</h3>
-                    <figure>
-
-                        <img class="immagineprofessionale1"
-                            src="https://ma100390.github.io/TrePetalia/assets/Cattura.PNG" alt="Mappa della sede"
-                            width="320" height="200">
-                        <figcaption>
-                            <fa-icon [icon]="faMapMarkerAlt" aria-label="Indirizzo"></fa-icon>
-                            Via Vescovo Verrienti 2, Veglie (LE)
-                        </figcaption>
-
-                    </figure>
-                    <p>Per qualsiasi domanda o per usufruire dei servizi della Cooperativa Sociale Tre Petali,
-                        contattaci.
-                    </p>
-                    <h3>I Nostri Contatti</h3>
-
-                    <!-- Tabella dei contatti -->
-                    <table class="info-table">
-                        <tr>
-                            <th>Tipo</th>
-                            <th>Dettaglio</th>
-                        </tr>
-                        <tr>
-                            <td>
-                                <fa-icon [icon]="faEnvelope" aria-label="Email"></fa-icon> Email
-                            </td>
-                            <td>
-                                <a href="mailto:info@3petali.it">info&#64;trepetali.it</a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <fa-icon [icon]="faPhone" aria-label="Telefono"></fa-icon> Telefono
-                            </td>
-                            <td>
-                                <a href="tel:+390000000000">+39 3701255832</a>
-                            </td>
-                        </tr>
-                    </table>
-                    <div class="cta-container">
-                        <a routerLink="/contatti_cooperativa-tre-petali" class="cta-button">
-                            Contattaci
-                            <fa-icon [icon]="faPhone" class="phone-icon"></fa-icon>
-                        </a>
-                    </div>
-                </div>
-                <div class="mappa-figure">
                     <h3>Orari di Apertura</h3>
-                    <img class="immagineprofessionale"
-                        src="https://ma100390.github.io/TrePetalia/assets/presentazione.webp" alt="Laboratori Creativi">
                     <table class="orari-table">
                         <thead>
                             <tr>
@@ -265,7 +221,58 @@
                             </tr>
                         </tbody>
                     </table>
+                    <h3>I Nostri Contatti</h3>
+
+                    <!-- Tabella dei contatti -->
+                    <table class="info-table">
+                        <tr>
+                            <th>Tipo</th>
+                            <th>Dettaglio</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <fa-icon [icon]="faEnvelope" class="icon-email" aria-label="Email"></fa-icon> Email
+                            </td>
+                            <td>
+                                <a href="mailto:info@3petali.it">info&#64;trepetali.it</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <fa-icon [icon]="faPhone" class="icon-phone" aria-label="Telefono"></fa-icon> Telefono
+                            </td>
+                            <td>
+                                <a href="tel:+390000000000">+39 3701255832</a>
+                            </td>
+                        </tr>
+                    </table>
                 </div>
+                <div class="mappa-figure">
+                    <h3>Dove Trovarci</h3>
+                    <figure>
+                      
+                        <img class="immagineprofessionale1"
+                            src="/assets/Cattura.webp" alt="Mappa della sede">
+                        <figcaption>
+                            <fa-icon [icon]="faMapMarkerAlt" aria-label="Indirizzo"></fa-icon>
+                            Via Vescovo Verrienti 2, Veglie (LE)
+                        </figcaption>
+
+                    </figure>
+                    <img class="immagineprofessionale"
+                    src="https://ma100390.github.io/TrePetalia/assets/presentazione.webp" alt="Laboratori Creativi">
+                    <p>Per qualsiasi domanda o per usufruire dei servizi della Cooperativa Sociale Tre Petali,
+                        contattaci.
+                    </p>
+                  
+                    <div class="cta-container">
+                        <a routerLink="/contatti_cooperativa-tre-petali" class="cta-button">
+                            Contattaci
+                            <fa-icon [icon]="faPhone" class="phone-icon"></fa-icon>
+                        </a>
+                    </div>
+                </div>
+          
             </div>
             
         </div>

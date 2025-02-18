@@ -5,19 +5,19 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Pacifico&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
-@font-face {
-  font-family: 'MyFont';
-  src: url('assets/font/FuturaBold.otf') format('opentype');
 
-}
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
 @font-face {
   font-family: 'MyFont2';
   src: url('assets/font/Poppins-Black.ttf') format('truetype');
-
-
 }
+@font-face {
+  font-family: 'MyFont1';
+  src: url('/assets/font/Poppins-ExtraLight.ttf') format('truetype'); /* Cambiato format */
+}
+
+
 .titolo1{
 
   font-family: "Roboto Mono", serif;
@@ -25,7 +25,7 @@
   letter-spacing: -3px;
 }
 .titolo2{
-  font-weight: bold;
+  
  font-family: 'MyFont2', Arial, sans-serif; 
 }
 .titolo3{
@@ -33,7 +33,14 @@
   font-weight: bold;
 font-size: 3rem;
 }
+.hero-content h1 {
+  font-size: 5rem;
 
+  font-family: MyFont2;
+  color: #ffffff;
+  text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.8), 
+  0px 0px 16px rgb(0, 0, 0);
+}
 * {
   margin: 0;
   padding: 0;
@@ -45,7 +52,7 @@ font-size: 3rem;
 main {
   max-width: 1920px;  /* Limita la larghezza massima a 1920px */
   margin: 0 auto;     /* Centra il contenuto */
-  padding: 20px;      /* Spazio interno per evitare che tocchi i bordi */
+  padding: 0px 1%;      /* Spazio interno per evitare che tocchi i bordi */
   width: 100%;        /* Assicura che si adatti allo schermo */
   box-sizing: border-box; /* Mantiene i padding dentro il max-width */
 }
@@ -53,20 +60,192 @@ main {
 
 
 .hero {
-  display: flex;
-  background: linear-gradient(rgb(180 177 177 / 0%), #82a8f5);
-  color: #fff;
-  height: 100vh;
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
+  width: 100%;
+  height: 400px;
+  background: linear-gradient(to right, #ff7e5f, #F29479);
+  position: relative;
+  overflow: hidden;
 }
 
+.hero::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://ma100390.github.io/TrePetalia/assets/fiorenzo/pan2.webp');
+  opacity: 0.2;
+  background-repeat: repeat-x;
+  animation: backgroundMove 45s linear infinite;
+}
+
+@keyframes backgroundMove {
+  0% {
+    background-position: 0 0; /* Inizia dalla posizione iniziale */
+  }
+
+  100% {
+    background-position: 100% 0; /* Si sposta completamente verso destra */
+  }
+}
 .hero-content {
-  max-width: 800px;
+  max-width: 28%;
   text-align: center;
-  margin: 3% auto;
+  margin: 4% auto;
   z-index: 3;
 }
+h1 .subtitle {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #ffffff;
+  margin-top: 5px;
+}
+.subtitle {
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #2c3e50;
+
+}
+.overlay .subtitle {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: #f7f7f7;
+
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15%, 1fr));
+  margin: auto;
+  background-color: antiquewhite;
+}
+
+.grid::before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-image: url('https://ma100390.github.io/TrePetalia/assets/fiorenzo/pan2.webp');
+  opacity: 0.2;
+}
+.card {
+  position: relative;
+  max-width: 350px;
+  text-align: center;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  border: 4px solid #f5a893;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-collapse: collapse;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+.card:hover .overlay {
+  opacity: 1;
+}
+
+.card:hover .overlay .cta-button1 {
+  opacity: 1;
+  pointer-events: auto;
+}
+a:hover {
+  text-decoration: none;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  opacity: 0;
+  flex-direction: column;
+
+}
+
+.cta-button1 {
+  display: inline-block;
+  background-color: #112e67;
+  color: #ffffff;
+  padding: 5px 8px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, opacity 0.3s ease;
+  font-family: 'Poppins', sans-serif;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.cta-button1:hover {
+  background-color: #4c74e7;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #112e67;
+  color: #ffffff;
+  padding: 5px 8px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, opacity 0.3s ease;
+  font-family: 'Poppins', sans-serif;
+  margin: 0 auto; 
+  transition: background-color 0.3s;
+  display: block; 
+  width: fit-content; 
+  z-index: 100;
+}
+.cta-butto:hover {
+  background-color: #4c74e7;
+}
+
+.overlay1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 2%;
+  height: 100%;
+  background: #fdf8f726;
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  opacity: 1;
+  flex-direction: column;
+}
+
+.immagine1 {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* Definizione dell'animazione */
@@ -83,18 +262,7 @@ main {
   }
 }
 
-.hero-content h1 {
-  font-size: 5rem;
-  margin-bottom: 2rem;
-  line-height: 1.8;
-  font-family: 'Poppins', sans-serif;
-  color: #ffffff;
-  
-  text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.8), 
-  0px 0px 16px rgb(0, 0, 0);
 
-
-}
 
 .hero-content p {
   font-size: 1.5rem;
@@ -227,23 +395,6 @@ font-weight: 100;
 }
 
 
-.cta-button {
-  display: inline-block;
-  background-color: #112e67;
-  color: #ffffff;
-  padding: 0.5rem 1rem;
-  border-radius: 5px;
-  text-decoration: none;
-  transition: background-color 0.3s ease, opacity 0.3s ease;
-  font-family: 'Poppins', sans-serif;
-  margin: 0 auto; /* Centra orizzontalmente */
-  transition: background-color 0.3s;
-  display: block; /* Fa sì che l'elemento diventi un blocco */
-  width: fit-content; 
-}
-.cta-butto:hover {
-  background-color: #4c74e7;
-}
 
 
 /* Sezione Il Nostro Team di Professionisti */
@@ -308,20 +459,60 @@ font-weight: 100;
 
 }
 
-@media (max-width: 768px) {
-  .titolo3{
 
+@media (max-width: 1600px) {
+  .hero-content {
+    max-width: 50%;
+    text-align: center;
+    margin: 4% auto;
+    z-index: 3;
+  }
+  
+}
+@media (max-width: 950px) {
+
+  .hero-content {
+    max-width: 70%;
+    text-align: center;
+    margin: 4% auto;
+    z-index: 3;
+  }
+}
+
+@media (max-width: 768px) {
+  main {
+    padding: 4px;
+  }
+  .hero-content {
+    max-width: 100%;
+    text-align: center;
+    margin: 4% auto;
+    z-index: 3;
+  }
+  .titolo3{
   font-size: 2.5rem;
+  }
+  .hero-buttons {
+    display: flex;
+    flex-direction: column;
   }
   .disposizione{
     flex-direction: column;
   }
-
   .about-content{
     margin: 0.625rem 0.25rem;
   }
+  .grid {
+    grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+  }
+  .card {
+    width: 100%;
+    max-width: 100%;
+  }
 
-
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
 
   .hero-content {
 

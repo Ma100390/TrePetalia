@@ -6,43 +6,34 @@
     max-width: 800px;
     margin: 0 auto;
     gap: 50px;
-}
-h1 {
-    font-size: 2.5rem; /* Ingrandisce il testo */
-    font-weight: bold; /* Rende il testo più marcato */
-    color: #004aad; /* Cambia il colore in blu */
-    text-transform: uppercase; /* Maiuscolo */
-    text-align: center; /* Centra il titolo */
-    margin-bottom: 20px;
-    font-family: "Arial", sans-serif; /* Spazio sotto il titolo */
-}
+} 
 
-h2 ,h3{
-    font-size: 2.5rem; /* Dimensione del testo */
-    color: #34495e; /* Colore del testo (grigio scuro) */
+h2 {
+    font-size: 2.5rem; 
+    color: #34495e; 
     text-align: left;
-    font-weight: 700; /* Grassetto */
-    letter-spacing: 2px; /* Spaziatura tra le lettere */
+    font-weight: 700; 
+    letter-spacing: 2px; 
     font-family: 'Arial', sans-serif;
-    position: relative; /* Necessario per l'effetto di ombra */
-    margin: 40px 0; /* Distanza sopra e sotto */
-    padding: 10px 20px; /* Padding interno per rendere più distanziato */
-    transition: color 0.3s ease, transform 0.3s ease; /* Transizione fluida */
+    position: relative; 
+    margin: 40px 0;
+    padding: 10px 20px; 
+    transition: color 0.3s ease, transform 0.3s ease; 
 }
 h4{
     font-family: "Arial", sans-serif;
 }
 
-h2::before ,h3::before{
-    content: ''; /* Contenuto vuoto per il pseudo-elemento */
+h2::before{
+    content: '';
     position: absolute;
     bottom: 0px;
     left: 0;
     right: 0;
-    height: 5px; /* Altezza della linea */
-    background: #3498db; /* Colore della linea */
+    height: 5px; 
+    background: #3498db; 
     border-radius: 5px;
-    width: 100%; /* Linea invisibile inizialmente */
+    width: 100%; 
 }
 
 .values-list {
@@ -81,7 +72,7 @@ strong {
 .value-item:hover {
     transform: translateY(-10px);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-    background: #ecf0f1; /* Cambia colore dello sfondo al passaggio del mouse */
+    background: #ecf0f1; 
 }
 
 .value-item h3 {
@@ -89,12 +80,12 @@ strong {
     color: #2c3e50;
     margin-top: 15px;
     font-weight: bold;
-    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1); /* Ombra del testo */
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1); 
 }
 
 .value-item p {
-    font-size: 1em;
-    color: #34495e;
+    font-size: 1.2rem;
+    color: #ffffff;
     margin-top: 10px;
 }
 

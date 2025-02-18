@@ -3,12 +3,24 @@ header {
     top: 0;
     z-index: 1000;
 
-}
+        max-width: 1920px;
+        margin: 0 auto;
+        padding: 0px 1%;
+        width: 100%;
+        box-sizing: border-box;
 
+}
+.nascondere{
+    font-family: MyFont2;
+}
 .sede-image {
-    width: 25%;
+    width: 50px; /* Cambia in base alle tue esigenze */
+    height: auto; /* Mantiene le proporzioni */
 }
-
+  .nascondere1{
+    font-family: MyFont1;
+    font-size: 9px;
+  }
 .navbar {
     display: flex;
     background: #ffffff;
@@ -17,12 +29,12 @@ header {
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
     position: relative;
     z-index: 10;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 
 .navbar .logo {
-    font-family: 'MyFont2', Arial, sans-serif;
+    font-family: 'MyFont2';
     font-weight: bold;
     color: #213766;
     font-size: 1.2rem;
@@ -36,22 +48,8 @@ header {
     transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }
 
-.nascondere {
-    display: none;
-}
 
-.after-icon {
-    height: auto;
-    width: 100%;
-    position: relative;
-    pointer-events: auto;
-    line-height: inherit;
-    color: inherit;
-    font-size: inherit;
-    padding-left: 5px;
-    padding-right: 5px;
-    color: #213766;
-}
+
 
 .dropdown-menu {
     display: block;
@@ -82,44 +80,61 @@ header {
 
 .navbar .nav-links li {
     position: relative;
+    display: flex;
+    justify-content: space-between;
 
 }
 
 .navbar .nav-links a {
-
     text-decoration: none;
-    font-size: 1.2rem;
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
+    font-size: 1.1rem;
     color: #213766;
     display: contents;
 }
 
 .navbar .nav-links a:hover {
-
-
-    color: #1a72c9;
-
-}
-
-.navbar .nav-links span:hover {
     color: #1a72c9;
 }
+
 
 .logo {
     display: flex;
     align-items: center;
+    flex-direction: row;
+
+}
+.logo1 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 
 }
 
-.navbar .nav-links span {
-
+.altriServizi {
     text-decoration: none;
-    
+    font-size: 1.1rem;
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
-    color: #f29668;
+    color: #213766;
+
     cursor: pointer;
+}
+.altriServizi :hover {
+    color: #f29668;
+}
+.after-icon {
+    height: auto;
+    width: 100%;
+    position: relative;
+    pointer-events: auto;
+    line-height: inherit;
+    color: inherit;
+    font-size: inherit;
+    padding-left: 5px;
+    padding-right: 5px;
+    color: #213766;
 }
 
 .hamburger {
@@ -136,7 +151,7 @@ header {
     margin: 0.25rem;
 }
 
-@media (max-width: 48em) {
+@media (max-width: 58em) {
     .nav-links {
         display: flex;
         flex-direction: column;
@@ -195,19 +210,19 @@ header {
 @media (max-width: 30em) {
     .navbar .nav-links a {
         color: #213766;
+        font-size: 1.75rem;
     }
-    .nascondere {
-        display: inline;
-    }
+  
     .dropdown-menu li a {
         display: ruby;
         /* Riduci il padding interno del link */
     }
 
     .navbar .nav-links li {
-        margin: 2%;
-        color: #213766;
+        margin: 0% 2%;
+        
         text-align: end;
+        display: block;
     }
 
     /* Adatta per schermi più piccoli come smartphone in modalità verticale */
@@ -229,12 +244,14 @@ header {
         visibility: hidden;
         transition: max-height 0.3s ease, opacity 0.3s ease, visibility 0.3s ease;
     }
-
+    .nascondere1{
+        font-size: 8px;
+      }
     .navbar {
         justify-content: space-between
     }
 
-    span {
+    .altriServizi {
         font-size: 1.75rem;
       
     }

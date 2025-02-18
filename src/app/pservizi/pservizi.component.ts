@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faHome, faHouseUser, faCar, faWheelchair, faHospital, faFileAlt, faBrain, faUserMd, faHandsHelping, faUserNurse } from '@fortawesome/free-solid-svg-icons';
-
+import { faArrowRight} from '@fortawesome/free-solid-svg-icons';
 @Component({
   selector: 'app-pservizi',
   standalone: true,
@@ -20,4 +20,5 @@ export class PserviziComponent {
   faUserMd = faUserMd;
   faHandsHelping = faHandsHelping;
   faUserNurse = faUserNurse;
+  faArrowRight = faArrowRight;
 }

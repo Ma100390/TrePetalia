@@ -1,59 +1,123 @@
 <main>
-  <section role="banner">
+  <section class="hero" role="banner">
     <div class="hero-content">
-      <div class="services-grid">
-        <!-- Card per Casa di Riposo -->
-        <div class="card">
-          <div class="card-icon"><fa-icon [icon]="faHome" class="service-icon"></fa-icon></div>
-          <h3 class="card-title">Casa di Riposo</h3>
-          <p class="card-description">Struttura residenziale per anziani, con assistenza 24/7.</p>
-          <a href="tel:+393331234567" class="call-button" aria-label="Chiama Casa di Riposo">Chiama</a>
-        </div>
 
-        <!-- Card per Assistenza Domiciliare -->
-        <div class="card">
-          <div class="card-icon"><fa-icon [icon]="faHouseUser" class="service-icon"></fa-icon></div>
-          <h3 class="card-title">Assistenza Domiciliare</h3>
-          <p class="card-description">Supporto assistenziale e infermieristico a domicilio.</p>
-          <a href="tel:+393331234567" class="call-button" aria-label="Chiama Assistenza Domiciliare">Chiama</a>
+        <h1>
+            I servizi 
+            <span class="subtitle">Assistenza Socio-Sanitaria, Educativa e Riabilitativa</span>
+        </h1>
+        <div class="hero-buttons">
+     
+            <a routerLink="/contatti-cooperaritiva-tre-petali" routerLinkActive="active" class="cta-button"
+                aria-label="Contatta Tre Petali per informazioni sui servizi di assistenza">
+                Contattaci
+                <fa-icon [icon]="faArrowRight" class="arrow-icon"></fa-icon>
+            </a>
         </div>
-
-        <!-- Altre card per i nuovi servizi -->
-        <div class="card">
-          <div class="card-icon"><fa-icon [icon]="faFileAlt" class="service-icon"></fa-icon></div>
-          <h3 class="card-title">Disbrigo Pratiche</h3>
-          <p class="card-description">Supporto per gestione documentazione e pratiche amministrative.</p>
-          <a href="tel:+393331234567" class="call-button" aria-label="Chiama per Disbrigo Pratiche">Chiama</a>
-        </div>
-
-        <div class="card">
-          <div class="card-icon"><fa-icon [icon]="faBrain" class="service-icon"></fa-icon></div>
-          <h3 class="card-title">Psicoterapeuta</h3>
-          <p class="card-description">Servizio di psicoterapia professionale a supporto del benessere mentale.</p>
-          <a href="tel:+393331234567" class="call-button" aria-label="Chiama Psicoterapeuta">Chiama</a>
-        </div>
-
-        <div class="card">
-          <div class="card-icon"><fa-icon [icon]="faUserMd" class="service-icon"></fa-icon></div>
-          <h3 class="card-title">Psicologo</h3>
-          <p class="card-description">Assistenza psicologica per il benessere emotivo e mentale.</p>
-          <a href="tel:+393331234567" class="call-button" aria-label="Chiama Psicologo">Chiama</a>
-        </div>
-
-        <div class="card">
-          <div class="card-icon"><fa-icon [icon]="faHandsHelping" class="service-icon"></fa-icon></div>
-          <h3 class="card-title">Fisioterapisti</h3>
-          <p class="card-description">Servizi di fisioterapia personalizzati per migliorare la mobilità e il benessere fisico.</p>
-          <a href="tel:+393331234567" class="call-button" aria-label="Chiama Fisioterapisti">Chiama</a>
-        </div>
-
-        <div class="card">
-          <div class="card-icon"><fa-icon [icon]="faUserNurse" class="service-icon"></fa-icon></div>
-          <h3 class="card-title">Infermieri</h3>
-          <p class="card-description">Assistenza infermieristica professionale e domiciliare.</p>
-          <a href="tel:+393331234567" class="call-button" aria-label="Chiama Infermieri">Chiama</a>
-        </div>
-      </div>
     </div>
-  </section>
+</section>
+  <div class="grid">
+    <div class="card">
+        <div class="overlay1">
+            <h1 class="subtitle">I nostri servizi di assistenza</h1>
+            <a routerLink="/servizi-per-anziani-lecce" routerLinkActive="active" class="cta-button"
+                aria-label="Contatta Tre Petali per informazioni sui servizi di assistenza">
+                Contattaci
+                <fa-icon [icon]="faArrowRight" class="arrow-icon"></fa-icon>
+            </a>
+        </div>
+        <img class="immagine1" src="https://ma100390.github.io/TrePetalia/assets/sfondo5.webp"
+            alt="Laboratori Creativi">
+           
+    </div>
+    <div class="card">
+        <div class="overlay">
+          <div class="card-icon"><fa-icon [icon]="faHome" class="service-icon"></fa-icon></div>
+            <span class="subtitle">Struttura residenziale per anziani con assistenza 24/7</span>
+            <a href="tel:+393331234567" routerLinkActive="active" class="cta-button1"
+                aria-label="Chiama Casa di Riposo">
+                Chiama Ora
+                <fa-icon [icon]="faArrowRight" class="arrow-icon"></fa-icon>
+            </a>
+        </div>
+        <img class="immagine1" src="/assets/chi-siamo/cooperativa-tre-petali.webp"
+            alt="Laboratori Creativi" />
+          
+    </div>
+    <div class="card">
+        <div class="overlay">
+          <div class="card-icon"><fa-icon [icon]="faBrain" class="service-icon"></fa-icon></div>
+            <span class="subtitle">Interventi educativi personalizzati per famiglie</span>
+            <a href="tel:+393331234567" routerLinkActive="active" class="cta-button1"
+            aria-label="Chiama Casa di Riposo">
+            Chiama Ora
+            <fa-icon [icon]="faArrowRight" class="arrow-icon"></fa-icon>
+        </a>
+        </div>
+        <img class="immagine1" src="/assets/chi-siamo/cooperativa-tre-petali-sociale.webp"
+            alt="Laboratori Creativi" />
+    </div>
+    <div class="card">
+        <div class="overlay">
+          <div class="card-icon"><fa-icon [icon]="faHandsHelping" class="service-icon"></fa-icon></div>
+            <span class="subtitle">Supporto assistenziale e infermieristico a domicilio</span>
+            <a href="tel:+393331234567" routerLinkActive="active" class="cta-button1"
+            aria-label="Chiama Casa di Riposo">
+            Chiama Ora
+            <fa-icon [icon]="faArrowRight" class="arrow-icon"></fa-icon>
+        </a>
+        </div>
+
+        <img class="immagine1" src="https://ma100390.github.io/TrePetalia/assets/salute.webp"
+            alt="Laboratori Creativi" />
+
+    </div>
+    <div class="card">
+        <div class="overlay">
+          <div class="card-icon"><fa-icon [icon]="faHouseUser" class="service-icon"></fa-icon></div>
+            <span class="subtitle">Assistenza Domiciliare personalizzato per Anziani</span>
+            <a href="tel:+393331234567" routerLinkActive="active" class="cta-button1"
+            aria-label="Chiama Casa di Riposo">
+            Chiama Ora
+            <fa-icon [icon]="faArrowRight" class="arrow-icon"></fa-icon>
+        </a>
+        </div>
+
+        <img class="immagine1" src="https://ma100390.github.io/TrePetalia/assets/presenza4.webp"
+            alt="Laboratori Creativi" />
+
+    </div>
+    <div class="card">
+        <div class="overlay">
+          <div class="card-icon"><fa-icon [icon]="faCar" class="service-icon"></fa-icon></div>
+            <span class="subtitle">Trasporto in Struttura Ospedaliera in Regione Puglia</span>
+            <a href="tel:+393331234567" routerLinkActive="active" class="cta-button1"
+            aria-label="Chiama Casa di Riposo">
+            Chiama Ora
+            <fa-icon [icon]="faArrowRight" class="arrow-icon"></fa-icon>
+        </a>
+        </div>
+
+        <img class="immagine1" src="https://ma100390.github.io/TrePetalia/assets/porto1.webp"
+            alt="Laboratori Creativi">
+
+    </div>
+    <div class="card">
+      <div class="overlay">
+        <div class="card-icon"><fa-icon [icon]="faFileAlt" class="service-icon"></fa-icon></div>
+          <span class="subtitle">Disbrigo Pratiche Amministrative</span>
+          <a href="tel:+393331234567" routerLinkActive="active" class="cta-button1"
+          aria-label="Chiama la Cooperativa Tre Petali">
+          Chiama Ora
+          <fa-icon [icon]="faArrowRight" class="arrow-icon"></fa-icon>
+      </a>
+      </div>
+
+      <img class="immagine1" src="/assets/disbrigo-pratiche-lecce.webp"
+          alt="Laboratori Creativi">
+
+  </div>
+  </div>
+
+
 </main>

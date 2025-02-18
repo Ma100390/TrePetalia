@@ -2,7 +2,7 @@
   <nav class="navbar">
     <div class="logo"><a routerLink="/" title="Vai alla pagina Home" aria-label="Vai alla pagina Home" class="logo">
         <img src="https://ma100390.github.io/TrePetalia/assets/prova2.svg" class="sede-image"
-          alt="Laboratori Creativi" /><span class="nascondere">tre petali</span></a>
+          alt="Laboratori Creativi" /><div class="logo1"><span class="nascondere">tre petali</span><span class="nascondere1">COOPERATIVA SOCIALE</span></div></a>
     </div>
 
 
@@ -17,7 +17,7 @@
           aria-label="Vai alla pagina progetti psicologici" (click)="closeMenu()">Assistenza Domiciliare</a></li>
           <li><a routerLink="/contatti-cooperaritiva-tre-petali" title="Vai alla pagina contatti"
             aria-label="Vai alla pagina contatti" (click)="closeMenu()" >Contatti</a></li>
-      <span (click)="toggleDropdown()" title="Vai alla pagina dei servizi" aria-label="Vai alla pagina dei servizi">
+      <span class="altriServizi" (click)="toggleDropdown()" title="Vai alla pagina dei servizi" aria-label="Vai alla pagina dei servizi">
         Altri Servizi
         <fa-icon class="after-icon" [icon]="faCaretDown"></fa-icon>
       </span>
@@ -25,13 +25,14 @@
       <!-- Lista dei servizi, mostrata solo se 'isDropdownOpen' è true -->
       <ul *ngIf="isDropdownOpen" class="dropdown-menu">
         <li><a [routerLink]="['/servizio', 'Infermieri-Fisioterapisti']" (click)="closeMenu()" (click)="toggleDropdown()">
-            Infermieri & Fisioterapisti</a></li>
-        <li><a [routerLink]="['/servizio', 'Psicologo & Psicoterapeuta']" (click)="closeMenu()" (click)="toggleDropdown()">
-            Psicologi & Psicoterapeuti</a></li>
+            Infermieri & Fisioterapisti  <fa-icon class="after-icon1" [icon]="faCaretRight"></fa-icon></a></li>
+        <li><a [routerLink]="['/servizio', 'Psicologo-Psicoterapeuta']" (click)="closeMenu()" (click)="toggleDropdown()">
+            Psicologi & Psicoterapeuti  <fa-icon class="after-icon1" [icon]="faCaretRight"></fa-icon></a></li>
             <li><a routerLink="/accompagnamento-strutture-lecce" title="Vai alla pagina contatti"
-              aria-label="Vai alla pagina contatti" (click)="closeMenu()" (click)="toggleDropdown()">Accompagnamento in Struttura Ospedaliera</a></li>
+              aria-label="Vai alla pagina contatti" (click)="closeMenu()" (click)="toggleDropdown()">
+              Accompagnamento in Struttura Ospedaliera  <fa-icon class="after-icon1" [icon]="faCaretRight"></fa-icon></a></li>
             <li><a [routerLink]="['/servizio', 'Disbrigo-pratiche']" (click)="closeMenu()" (click)="toggleDropdown()">
-              Disbrigo pratiche</a></li>
+              Disbrigo Pratiche  <fa-icon class="after-icon1" [icon]="faCaretRight"></fa-icon></a></li>
       </ul>
 
 
